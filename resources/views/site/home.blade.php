@@ -19,7 +19,7 @@
         </div>
         <!--/.container -->
       </div>
-      <!--/.owl-slide -->
+      <!--/.owl-de -->
       <div class="owl-slide d-flex align-items-center bg-overlay bg-overlay-1500" style="background-image: url(site/images/homepage/2.jpg);">
         <div class="container">
           <div class="row">

@@ -33516,11 +33516,9 @@ Author:		elemis
                     top: 50%;
                     transform: translateY(-50%);
                     background: rgba(255, 255, 255, .7);
-                    /*  background: rgba(255, 255, 255, .7);rgba(0, 0, 0, .03) */
-                    color: #3f78e0;
-                    /* box-shadow: 0 .25rem .75rem rgba(30, 34, 40, .02);*/
-                    box-shadow: 0 .25rem .75rem rgba(40, 34, 40, .02);
-                    font-size: 1.8rem;
+                    color: #343f52;
+                    box-shadow: 0 .25rem .75rem rgba(30, 34, 40, .02);
+                    font-size: 1.2rem;
                     width: 2.2rem;
                     height: 2.2rem;
                     line-height: 2.2rem;
@@ -33548,46 +33546,12 @@ Author:		elemis
                 }
                 
                 .owl-carousel .owl-nav button.owl-prev {
-                    left: -2.4rem;
-                    right: auto;
+                    left: 1rem
                 }
                 
                 .owl-carousel .owl-nav button.owl-next {
                     left: auto;
-                    right: -2.4rem
-                }
-                
-                @media only screen and (max-width: 750px) {
-                    .owl-carousel .owl-nav button.owl-next {
-                        left: auto;
-                        right: 1rem
-                    }
-                    .owl-carousel .owl-nav button.owl-prev {
-                        left: 1rem;
-                        right: auto;
-                    }
-                    .owl-carousel .owl-nav button.owl-next,
-                    .owl-carousel .owl-nav button.owl-prev {
-                        z-index: 100;
-                        cursor: pointer;
-                        position: absolute;
-                        top: 45%;
-                        transform: translateY(-50%);
-                        background: white;
-                        color: #3f78e0;
-                        /*background: #3f78e0;
-                        color: white;*/
-                        /* box-shadow: 0 .25rem .75rem rgba(30, 34, 40, .02);*/
-                        box-shadow: 0 .25rem .75rem rgba(40, 34, 40, .02);
-                        font-size: 1.4rem;
-                        width: 2.2rem;
-                        height: 2.2rem;
-                        line-height: 2.2rem;
-                        border-radius: 100%;
-                        text-shadow: none;
-                        transition: all .2s ease-in-out;
-                        pointer-events: all
-                    }
+                    right: 1rem
                 }
                 
                 .owl-carousel.nav-bottom .owl-nav {
