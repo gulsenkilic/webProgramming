@@ -3,7 +3,7 @@
     <div class="hero-slider-wrapper bg-dark ">
         <div class="hero-slider owl-carousel dots-over" data-nav="true" data-dots="true" data-autoplay="true">
             <div class="owl-slide d-flex align-items-center bg-overlay bg-overlay-1500"
-                style="background-image: url(site/images/homepage/1.jpg);">
+                style="background-image: url(site/images/homepage/2.jpg);">
                 <div class="container">
                     <div class="row">
                         <div class="col-md-10 offset-md-1 col-lg-7 offset-lg-0 col-xl-6 col-xxl-5 text-center text-lg-start">
@@ -25,7 +25,7 @@
             </div>
             <!--/.owl-de -->
             <div class="owl-slide d-flex align-items-center bg-overlay bg-overlay-1500"
-                style="background-image: url(site/images/homepage/2.jpg);">
+                style="background-image: url(site/images/homepage/1.jpg);">
                 <div class="container">
                     <div class="row">
                         <div class="col-md-11 col-lg-8 col-xl-7 col-xxl-6 mx-auto text-center">
@@ -109,7 +109,7 @@
     <!-- container -->
 
 
-    <section id="snippet-1" class="wrapper bg-light wrapper-border">
+    <section id="snippet-1" class="wrapper bg-light wrapper-border mb-6">
         <div class="container pt-md-10 pb-13 pb-md-15">
             <h2 class="display-4 mb-3 text-center">Üniversitemizden Son Haberler</h2>
             <!-- p class="lead fs-lg mb-10 text-center px-md-16 px-lg-21 px-xl-0">Here are the latest company news from our blog
@@ -137,7 +137,7 @@
                         <!-- /.post-header -->
                         <div class="post-footer">
                             <ul class="post-meta">
-                                <li class="post-date"><i class="uil uil-calendar-alt"></i><span>14 Apr 2021</span></li>
+                                <li class="post-date"><i class="uil uil-calendar-alt"></i><span>14 Nisan 2021</span></li>
                                 <li class="post-comments"><a href="#"><i class="uil uil-comment"></i>4</a></li>
                             </ul>
                             <!-- /.post-meta -->
@@ -165,7 +165,7 @@
                         <!-- /.post-header -->
                         <div class="post-footer">
                             <ul class="post-meta">
-                                <li class="post-date"><i class="uil uil-calendar-alt"></i><span>29 Mar 2021</span></li>
+                                <li class="post-date"><i class="uil uil-calendar-alt"></i><span>29 Mart 2021</span></li>
                                 <li class="post-comments"><a href="#"><i class="uil uil-comment"></i>3</a></li>
                             </ul>
                             <!-- /.post-meta -->
@@ -194,7 +194,7 @@
                         <!-- /.post-header -->
                         <div class="post-footer">
                             <ul class="post-meta">
-                                <li class="post-date"><i class="uil uil-calendar-alt"></i><span>26 Feb 2021</span></li>
+                                <li class="post-date"><i class="uil uil-calendar-alt"></i><span>26 Şubat 2021</span></li>
                                 <li class="post-comments"><a href="#"><i class="uil uil-comment"></i>6</a></li>
                             </ul>
                             <!-- /.post-meta -->
@@ -221,7 +221,7 @@
                         </div>
                         <div class="post-footer">
                             <ul class="post-meta">
-                                <li class="post-date"><i class="uil uil-calendar-alt"></i><span>7 Jan 2021</span>
+                                <li class="post-date"><i class="uil uil-calendar-alt"></i><span>7 Haziran 2021</span>
                                 </li>
                                 <li class="post-comments"><a href="#"><i class="uil uil-comment"></i>2</a></li>
                             </ul>
@@ -239,4 +239,430 @@
         
     </section>
     <!-- /section -->
+  
+
+    <section class="wrapper bg-light">
+        <div class="container py-15 py-md-1">
+          <div class="row text-center">
+            <div class="col-lg-10 mx-auto position-relative">
+              <div class="position-relative">
+                <div class="shape pale-pink rellax w-18 h-18" data-rellax-speed="1" style="top: 1rem; left: -4.2rem;">
+                  <img src="site/images/homepage/hex.svg" class="svg-inject icon-svg w-100 h-100" alt="" />
+                </div>
+                <div class="shape pale-primary rellax w-18 h-18" data-rellax-speed="1" style="bottom: 2rem; right: -3.5rem;">
+                  <img src="site/images/homepage/circle.svg" class="svg-inject icon-svg w-100 h-100" alt="" />
+                </div>
+                <video poster="site/images/homepage/movie.jpg" class="player" playsinline controls preload="none">
+                  <source src="site/images/homepage/movie.mp4" type="video/mp4">
+                  <source src="site/images/homepage/movie.webm" type="video/webm">
+                </video>
+              </div>
+            </div>
+            <!--/column -->
+          </div>
+          <!--/.row -->
+        
+        </div>
+        <!-- /.container -->
+      </section>
+<hr class="double my-8"/>
+    <div class="container">
+        
+        <div class="row">
+                <table class="table table-hover table-duyurular"> 
+                    <tbody>
+                        <tr class="text-white" style="background-color: black">
+                            <td colspan="2"><h3 class="text-center text-white"><span class="typer text-white" 
+                                data-loop="false" 
+                                data-delay="100" 
+                                data-words="ÜNİVERİSTEMİZDEN SON DUYURULAR,ÜNİVERİSTEMİZDEN SON DUYURULAR">
+                          </span><span class="cursor text-primary" data-owner="typer"></span></h3></td>
+                            
+                        </tr>
+                        <tr>
+                            <td>
+                                <table>
+                                    <tbody>
+                                        <tr><td style="background-color: black" class="text-white text-center">Pazartesi</td></tr>
+                                        <tr><td> 18 Nisan</td></tr>
+                                    </tbody>
+                                </table>
+                            </td>
+                            <td><a href="#"><h5>2022 Yaz Okulu Yurt Ücretleri</h5></a></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <table>
+                                    <tbody>
+                                        <tr><td style="background-color: black" class="text-white text-center">Çarşamba</td></tr>
+                                        <tr><td> 30 Mart</td></tr>
+                                    </tbody>
+                                </table>
+                            </td>
+                            <td><a href="#"><h5>TÜBİTAK 2022 Yılı Üniversite Öğrencisi Stajyer Alımı</h5></a></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <table>
+                                    <tbody>
+                                        <tr><td style="background-color: black" class="text-white text-center">Pazar</td></tr>
+                                        <tr><td> 23 Ocak</td></tr>
+                                    </tbody>
+                                </table>
+                            </td>
+                            <td><a href="#"><h6>Olumsuz Hava Koşulları Nedeniyle 24-25 Ocak 2022 Tarihlerinde Eğitime Ara Verilmiştir</h6></a></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <table>
+                                    <tbody>
+                                        <tr><td style="background-color: black" class="text-white text-center">Cuma</td></tr>
+                                        <tr><td> 21 Ocak</td></tr>
+                                    </tbody>
+                                </table>
+                            </td>
+                            <td><a href="#"><h5>2021-2022 Bahar Yarıyılı Kurum İçi Yatay Geçiş Başvuru Kılavuzu</h5></a></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <table>
+                                    <tbody>
+                                        <tr><td style="background-color: black" class="text-white text-center">Salı</td></tr>
+                                        <tr><td> 11 Ocak</td></tr>
+                                    </tbody>
+                                </table>
+                            </td>
+                            <td><a href="#"><h5>Siber Güvenlik Girişimlerine Özel Hızlandırma Programı Cybercube'un Başvuruları Devam Ediyor!</h5></a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            <!--div class="col-12 col-md-6">
+                <table class="table table-hover table-duyurular"> 
+                    <tbody>
+                        <tr>
+                            <td colspan="2"><h3 class="text-center">ÜNİVERİSTEMİZİN SON ETKİNLİKLERİ</h3></td>
+                            
+                        </tr>
+                        <tr>
+                            <td>
+                                <img src="site/images/homepage/7.jfif" alt="" width="100px">
+                            </td>
+                            <td><a href="#"><h5>IWA DIPCON 2022 4th Regional Conference on Diffuse Pollution & Eutrophication</h5></a>
+                                <i class="uil uil-calendar-alt"></i><span>24 Ekim 2022</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <img src="site/images/homepage/8.jfif" alt="" width="100px">
+                            </td>
+                            <td><a href="#"><h5>
+                                VII. İstanbul Hipofiz Sempozyumu</h5></a>
+                                <i class="uil uil-calendar-alt"></i><span>115 Nisan 2022</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <img src="site/images/homepage/9.jfif" alt="" width="100px">
+                            </td>
+                            <td><a href="#"><h6>25. Makine & Teknoloji Günleri</h6></a>
+                                <i class="uil uil-calendar-alt"></i><span>12 Nisan 2022 </span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <img src="site/images/homepage/10.jfif" alt="" width="100px">
+                            </td>
+                            <td><a href="#"><h5>13. Gelişim Girişim Günleri</h5></a>
+                                <i class="uil uil-calendar-alt"></i><span>18 Mart 2022</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <img src="site/images/homepage/11.jfif" alt="" width="100px">
+                            </td>
+                            <td><a href="#"><h5>Mühendislikte Topuk Sesleri '22</h5></a>
+                                <i class="uil uil-calendar-alt"></i><span>15 Mart 2022</span>
+                        </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div-->
+        </div>
+    </div>
+    <!-- div class="container">
+        <div class="row">
+            <div class="col-12 col-md-6">
+                <table class="table table-hover table-duyurular"> 
+                    <tbody>
+                        <tr>
+                            <td colspan="2"><h3 class="text-center">ÜNİVERİSTEMİZDEN SON DUYURULAR</h3></td>
+                            
+                        </tr>
+                        <tr>
+                            <td>
+                                <table>
+                                    <tbody>
+                                        <tr><td style="background-color: black" class="text-white text-center">Pazartesi</td></tr>
+                                        <tr><td> 18 Nisan</td></tr>
+                                    </tbody>
+                                </table>
+                            </td>
+                            <td><a href="#"><h5>2022 Yaz Okulu Yurt Ücretleri</h5></a></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <table>
+                                    <tbody>
+                                        <tr><td style="background-color: black" class="text-white text-center">Çarşamba</td></tr>
+                                        <tr><td> 30 Mart</td></tr>
+                                    </tbody>
+                                </table>
+                            </td>
+                            <td><a href="#"><h5>TÜBİTAK 2022 Yılı Üniversite Öğrencisi Stajyer Alımı</h5></a></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <table>
+                                    <tbody>
+                                        <tr><td style="background-color: black" class="text-white text-center">Pazar</td></tr>
+                                        <tr><td> 23 Ocak</td></tr>
+                                    </tbody>
+                                </table>
+                            </td>
+                            <td><a href="#"><h6>Olumsuz Hava Koşulları Nedeniyle 24-25 Ocak 2022 Tarihlerinde Eğitime Ara Verilmiştir</h6></a></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <table>
+                                    <tbody>
+                                        <tr><td style="background-color: black" class="text-white text-center">Cuma</td></tr>
+                                        <tr><td> 21 Ocak</td></tr>
+                                    </tbody>
+                                </table>
+                            </td>
+                            <td><a href="#"><h5>2021-2022 Bahar Yarıyılı Kurum İçi Yatay Geçiş Başvuru Kılavuzu</h5></a></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <table>
+                                    <tbody>
+                                        <tr><td style="background-color: black" class="text-white text-center">Salı</td></tr>
+                                        <tr><td> 11 Ocak</td></tr>
+                                    </tbody>
+                                </table>
+                            </td>
+                            <td><a href="#"><h5>Siber Güvenlik Girişimlerine Özel Hızlandırma Programı Cybercube'un Başvuruları Devam Ediyor!</h5></a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div >
+            
+                <table class="table table-hover table-duyurular"> 
+                    <tbody>
+                        <tr>
+                            <td colspan="2"><h3 class="text-center">ÜNİVERİSTEMİZİN SON ETKİNLİKLERİ</h3></td>
+                            
+                        </tr>
+                        <tr>
+                            <td>
+                                <img src="site/images/homepage/7.jfif" alt="" width="150px">
+                            </td>
+                            <td><a href="#"><h5>IWA DIPCON 2022 4th Regional Conference on Diffuse Pollution & Eutrophication</h5></a>
+                                <i class="uil uil-calendar-alt"></i><span>24 Ekim 2022</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <img src="site/images/homepage/8.jfif" alt="" width="150px">
+                            </td>
+                            <td><a href="#"><h5>
+                                VII. İstanbul Hipofiz Sempozyumu</h5></a>
+                                <i class="uil uil-calendar-alt"></i><span>115 Nisan 2022</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <img src="site/images/homepage/9.jfif" alt="" width="150px">
+                            </td>
+                            <td><a href="#"><h6>25. Makine & Teknoloji Günleri</h6></a>
+                                <i class="uil uil-calendar-alt"></i><span>12 Nisan 2022 </span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <img src="site/images/homepage/10.jfif" alt="" width="150px">
+                            </td>
+                            <td><a href="#"><h5>13. Gelişim Girişim Günleri</h5></a>
+                                <i class="uil uil-calendar-alt"></i><span>18 Mart 2022</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <img src="site/images/homepage/11.jfif" alt="" width="150px">
+                            </td>
+                            <td><a href="#"><h5>Mühendislikte Topuk Sesleri '22</h5></a>
+                                <i class="uil uil-calendar-alt"></i><span>15 Mart 2022</span>
+                        </td>
+                        </tr>
+                    </tbody>
+                </table>
+           
+        </div>
+    </div -->
+    <section id="snippet-1" class="wrapper bg-light wrapper-border">
+        <div class="container pt-md-10 pb-13 pb-md-15">
+            <h2 class="display-4 mb-3 text-center">ETKİNLİK TAKVİMİ</h2>
+            <div class="carousel owl-carousel blog grid-view" data-margin="30" data-dots="true" data-autoplay="true"  data-nav="true"
+                data-autoplay-timeout="5000"
+                data-responsive='{"0":{"items": "1"}, "768":{"items": "2"}, "992":{"items": "2"}, "1200":{"items": "3"}}'>
+                <div class="item">
+                    <article>
+                        <figure class="overlay overlay-1 hover-scale rounded mb-5"><a href="#"> <img
+                                    src="site/images/homepage/7.jfif" alt="" /></a>
+                            <figcaption>
+                                <h5 class="from-top mb-0">Read More</h5>
+                            </figcaption>
+                        </figure>
+                        <div class="post-header">
+                            <div class="post-category text-line">
+                                <a href="#" class="hover" rel="category">Eğitim</a>
+                            </div>
+                            <!-- /.post-category -->
+                            <h2 class="post-title h3 mt-1 mb-3"><a class="link-dark" href="../../blog-post.html">
+                                IWA DIPCON 2022 4th Regional Conference on Diffuse Pollution & Eutrophication
+                           </a></h2>
+                        </div>
+                        <!-- /.post-header -->
+                        <div class="post-footer">
+                            <ul class="post-meta">
+                                <li class="post-date"><i class="uil uil-calendar-alt"></i><span>14 Nisan 2021</span></li>
+                                <li class="post-comments"><a href="#"><i class="uil uil-comment"></i>4</a></li>
+                            </ul>
+                            <!-- /.post-meta -->
+                        </div>
+                        <!-- /.post-footer -->
+                    </article>
+                    <!-- /article -->
+                </div>
+                <!-- /.item -->
+                <div class="item">
+                    <article>
+                        <figure class="overlay overlay-1 hover-scale rounded mb-5"><a href="#"> <img
+                                    src="site/images/homepage/8.jfif" alt="" /></a>
+                            <figcaption>
+                                <h5 class="from-top mb-0">Read More</h5>
+                            </figcaption>
+                        </figure>
+                        <div class="post-header">
+                            <div class="post-category text-line">
+                                <a href="#" class="hover" rel="category">Üniversite</a>
+                            </div>
+                            <!-- /.post-category -->
+                            <h2 class="post-title h3 mt-1 mb-3"><a class="link-dark" href="../../blog-post.html">VII. İstanbul Hipofiz Sempozyumu</a></h2>
+                        </div>
+                        <!-- /.post-header -->
+                        <div class="post-footer">
+                            <ul class="post-meta">
+                                <li class="post-date"><i class="uil uil-calendar-alt"></i><span>29 Mart 2021</span></li>
+                                <li class="post-comments"><a href="#"><i class="uil uil-comment"></i>3</a></li>
+                            </ul>
+                            <!-- /.post-meta -->
+                        </div>
+                        <!-- /.post-footer -->
+                    </article>
+                    <!-- /article -->
+                </div>
+                <!-- /.item -->
+                <div class="item">
+                    <article>
+                        <figure class="overlay overlay-1 hover-scale rounded mb-5"><a href="#"> <img
+                                    src="site/images/homepage/9.jfif" alt="" /></a>
+                            <figcaption>
+                                <h5 class="from-top mb-0">Read More</h5>
+                            </figcaption>
+                        </figure>
+                        <div class="post-header">
+                            <div class="post-category text-line">
+                                <a href="#" class="hover" rel="category">Sosyal</a>
+                            </div>
+                            <!-- /.post-category -->
+                            <h2 class="post-title h3 mt-1 mb-3"><a class="link-dark"
+                                    href="site/images/homepage/2.jpg">25. Makine & Teknoloji Günleri</a></h2>
+                        </div>
+                        <!-- /.post-header -->
+                        <div class="post-footer">
+                            <ul class="post-meta">
+                                <li class="post-date"><i class="uil uil-calendar-alt"></i><span>26 Şubat 2021</span></li>
+                                <li class="post-comments"><a href="#"><i class="uil uil-comment"></i>6</a></li>
+                            </ul>
+                            <!-- /.post-meta -->
+                        </div>
+                        <!-- /.post-footer -->
+                    </article>
+                    <!-- /article -->
+                </div>
+                <!-- /.item -->
+                <div class="item">
+                    <article>
+                        <figure class="overlay overlay-1 hover-scale rounded mb-5"><a href="#"> <img
+                                    src="site/images/homepage/10.jfif" alt="" /></a>
+                            <figcaption>
+                                <h5 class="from-top mb-0">Read More</h5>
+                            </figcaption>
+                        </figure>
+                        <div class="post-header">
+                            <div class="post-category text-line">
+                                <a href="#" class="hover" rel="category">Başarılar</a>
+                            </div>
+                            <!-- /.post-category -->
+                            <h2 class="post-title h3 mt-1 mb-3"><a class="link-dark" href="../../blog-post.html">13. Gelişim Girişim Günleri</a></h2>
+                        </div>
+                        <div class="post-footer">
+                            <ul class="post-meta">
+                                <li class="post-date"><i class="uil uil-calendar-alt"></i><span>7 Haziran 2021</span>
+                                </li>
+                                <li class="post-comments"><a href="#"><i class="uil uil-comment"></i>2</a></li>
+                            </ul>
+                            <!-- /.post-meta -->
+                        </div>
+                        <!-- /.post-footer -->
+                    </article>
+                    <!-- /article -->
+                </div>
+                <!-- /.item -->
+                <div class="item">
+                    <article>
+                        <figure class="overlay overlay-1 hover-scale rounded mb-5"><a href="#"> <img
+                                    src="site/images/homepage/11.jfif" alt="" /></a>
+                            <figcaption>
+                                <h5 class="from-top mb-0">Read More</h5>
+                            </figcaption>
+                        </figure>
+                        <div class="post-header">
+                            <div class="post-category text-line">
+                                <a href="#" class="hover" rel="category">Başarılar</a>
+                            </div>
+                            <!-- /.post-category -->
+                            <h2 class="post-title h3 mt-1 mb-3"><a class="link-dark" href="../../blog-post.html">Mühendislikte Topuk Sesleri '22</a></h2>
+                        </div>
+                        <div class="post-footer">
+                            <ul class="post-meta">
+                                <li class="post-date"><i class="uil uil-calendar-alt"></i><span>7 Haziran 2021</span>
+                                </li>
+                                <li class="post-comments"><a href="#"><i class="uil uil-comment"></i>2</a></li>
+                            </ul>
+                            <!-- /.post-meta -->
+                        </div>
+                        <!-- /.post-footer -->
+                    </article>
+                    <!-- /article -->
+                </div>
+                <!-- /.item -->
+            </div>
+            <!-- /.owl-carousel -->
+        </div>
+        <!-- /.container -->
+        
+    </section>
+   
 @endsection
