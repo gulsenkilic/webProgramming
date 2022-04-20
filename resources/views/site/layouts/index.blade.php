@@ -25,7 +25,7 @@
     <link rel="stylesheet" href="{{ asset('site/css/sandbox/style.css') }}">
     <link rel="stylesheet" href="{{ asset('site/css/common.css') }}">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  
+    @yield('head')
 
 </head>
 
@@ -36,13 +36,14 @@
     @include('site.layouts.footer')
 
 
-    @yield('js-up')
+    @yield('js-up')    
 
     <script src="{{ asset('site/js/jquery-3.6.0.min.js') }}"></script>
     <script src="{{ asset('site/js/bootstrap.bundle.min.js') }}"></script>
     <script src="{{ asset('site/js/sandbox/plugins.js') }}"></script>
     <script src="{{ asset('site/js/sandbox/theme.js') }}"></script>
     <script src="{{ asset('site/js/script.js') }}"></script>
+    
     @yield('js')
 
 </body>

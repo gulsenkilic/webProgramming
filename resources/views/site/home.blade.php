@@ -1,4 +1,5 @@
 @extends('site.layouts.index')
+
 @section('content')
     <div class="hero-slider-wrapper bg-dark ">
         <div class="hero-slider owl-carousel dots-over" data-nav="true" data-dots="true" data-autoplay="true">
@@ -119,7 +120,7 @@
                 data-responsive='{"0":{"items": "1"}, "768":{"items": "2"}, "992":{"items": "2"}, "1200":{"items": "3"}}'>
                 <div class="item">
                     <article>
-                        <figure class="overlay overlay-1 hover-scale rounded mb-5"><a href="#"> <img
+                        <figure class="overlay overlay-1 hover-scale rounded mb-5"><a href="{{route('news1')}}"> <img
                                     src="site/images/homepage/3.jpg" alt="" /></a>
                             <figcaption>
                                 <h5 class="from-top mb-0">Read More</h5>
@@ -130,7 +131,7 @@
                                 <a href="#" class="hover" rel="category">Eğitim</a>
                             </div>
                             <!-- /.post-category -->
-                            <h2 class="post-title h3 mt-1 mb-3"><a class="link-dark" href="../../blog-post.html">
+                            <h2 class="post-title h3 mt-1 mb-3"><a class="link-dark" href="{{route('news1')}}">
                               2022-2023 Yılı Erasmus Öğrenci Hareketliliği Başvuruları 
                            </a></h2>
                         </div>
@@ -149,7 +150,7 @@
                 <!-- /.item -->
                 <div class="item">
                     <article>
-                        <figure class="overlay overlay-1 hover-scale rounded mb-5"><a href="#"> <img
+                        <figure class="overlay overlay-1 hover-scale rounded mb-5"><a href="{{route('news2')}}"> <img
                                     src="site/images/homepage/4.webp" alt="" /></a>
                             <figcaption>
                                 <h5 class="from-top mb-0">Read More</h5>
@@ -160,7 +161,7 @@
                                 <a href="#" class="hover" rel="category">Üniversite</a>
                             </div>
                             <!-- /.post-category -->
-                            <h2 class="post-title h3 mt-1 mb-3"><a class="link-dark" href="../../blog-post.html">İstanbul Üniversitesi ile Gülşen Kılıç Üniversitesi Arasında İş Birliği Protokolü İmzalandı</a></h2>
+                            <h2 class="post-title h3 mt-1 mb-3"><a class="link-dark" href="{{route('news2')}}">İstanbul Üniversitesi ile Gülşen Kılıç Üniversitesi Arasında İş Birliği Protokolü İmzalandı</a></h2>
                         </div>
                         <!-- /.post-header -->
                         <div class="post-footer">
@@ -177,7 +178,7 @@
                 <!-- /.item -->
                 <div class="item">
                     <article>
-                        <figure class="overlay overlay-1 hover-scale rounded mb-5"><a href="#"> <img
+                        <figure class="overlay overlay-1 hover-scale rounded mb-5"><a href="{{route('news3')}}"> <img
                                     src="site/images/homepage/5.jpg" alt="" /></a>
                             <figcaption>
                                 <h5 class="from-top mb-0">Read More</h5>
@@ -189,7 +190,7 @@
                             </div>
                             <!-- /.post-category -->
                             <h2 class="post-title h3 mt-1 mb-3"><a class="link-dark"
-                                    href="site/images/homepage/2.jpg">Bahçeköy Yerleşkesi'nde Organize Edilen Etkinlikte Fidanlar Toprakla Buluştu</a></h2>
+                                    href="{{route('news3')}}">Bahçeköy Yerleşkesi'nde Organize Edilen Etkinlikte Fidanlar Toprakla Buluştu</a></h2>
                         </div>
                         <!-- /.post-header -->
                         <div class="post-footer">
@@ -206,7 +207,7 @@
                 <!-- /.item -->
                 <div class="item">
                     <article>
-                        <figure class="overlay overlay-1 hover-scale rounded mb-5"><a href="#"> <img
+                        <figure class="overlay overlay-1 hover-scale rounded mb-5"><a href="{{route('news4')}}"> <img
                                     src="site/images/homepage/6.jfif" alt="" /></a>
                             <figcaption>
                                 <h5 class="from-top mb-0">Read More</h5>
@@ -217,7 +218,7 @@
                                 <a href="#" class="hover" rel="category">Başarılar</a>
                             </div>
                             <!-- /.post-category -->
-                            <h2 class="post-title h3 mt-1 mb-3"><a class="link-dark" href="../../blog-post.html">Mühendislik Fakültesi Öğretim Üyelerimiz “Kimya Bilimine Yön Veren 100 Türk” Listesi’nde Yer Aldı</a></h2>
+                            <h2 class="post-title h3 mt-1 mb-3"><a class="link-dark" href="{{route('news4')}}">Mühendislik Fakültesi Öğretim Üyelerimiz “Kimya Bilimine Yön Veren 100 Türk” Listesi’nde Yer Aldı</a></h2>
                         </div>
                         <div class="post-footer">
                             <ul class="post-meta">
@@ -664,5 +665,6 @@
         <!-- /.container -->
         
     </section>
-   
+
 @endsection
+
