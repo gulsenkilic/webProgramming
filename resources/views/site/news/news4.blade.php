@@ -15,7 +15,7 @@
            <br>
            <p> 2017 yılında başlatmış olduğu Bilime Yön verenler Araştırma serisi kapsamında; 2017 yılında Bilime Yön Veren 100 Türk, 2018 yılında Tıp Bilimine Yön Veren 100 Türk araştırmasını gerçekleştirerek  sonuçlarını kitap haline getirdiği çalışmayla kamuoyu ile paylaşan Turkishtime, söz konusu seriye bu yıl Kimya Bilimine Yön Veren 100 Türk Araştırması ile devam etti. Hacettepe Üniversitesi, Kimya Bölümü, Biyokimya Ana Bilim Dalı Öğretim Üyesi ve TÜBA Asli Üyesi Prof. Dr. Adil Denizli öncülüğünde gerçekleştirilen “Kimya Bilimine Yön Veren 100 Türk Araştırması”, Kimya alanında önde gelen değerli bilim insanlarını bir araya getirdi. </p>
         <p>DAraştırma kitabı, kimyanın beş ana bilim dalındaki (Organik Kimya, İnorganik Kimya, Analitik Kimya, Fiziksel Kimya, Biyokimya) Türk bilim insanlarını, araştırmalarının aldığı atıf sayısını gösteren ve evrensel kabul gören en yüksek H-İndeksi değerine (Google Scholar Veri tabanı kullanılarak) göre listelendi. </p>
-        <img src="site/images/homepage/6.jfif" alt="" tyle="width: 100%">
+        <img src="site/images/homepage/6.jfif" alt="" style="width: 100%">
         </div>
     </div>
 @endsection

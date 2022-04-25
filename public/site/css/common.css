@@ -125,3 +125,7 @@
     -ms-transform: scale(0.8);
     transform: scale(0.8);
 }
+
+ol li {
+    list-style-type: square;
+}

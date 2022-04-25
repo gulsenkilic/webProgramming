@@ -16,7 +16,7 @@
         <b>Online Başvuru Dönemi 14-28 Şubat tarihleri arasındadır.</b>
         <p>Detaylı bilgiye  www.erasmus.yildiz.edu.tr  sayfamızdan ulaşabilirsiniz.</p>
         <p>Başarılı bir dönem geçirmeniz dileğiyle…</p>
-        <img src="site/images/homepage/3.jpg" alt="" tyle="width: 100%">
+        <img src="site/images/homepage/3.jpg" alt="" style="width: 100%">
         </div>
     </div>
 @endsection

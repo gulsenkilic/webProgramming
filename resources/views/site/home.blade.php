@@ -289,7 +289,7 @@
                                     </tbody>
                                 </table>
                             </td>
-                            <td><a href="#"><h5>2022 Yaz Okulu Yurt Ücretleri</h5></a></td>
+                            <td><a href="{{route('notice1')}}"><h5>2022 Yaz Okulu Yurt Ücretleri</h5></a></td>
                         </tr>
                         <tr>
                             <td>
@@ -300,7 +300,7 @@
                                     </tbody>
                                 </table>
                             </td>
-                            <td><a href="#"><h5>TÜBİTAK 2022 Yılı Üniversite Öğrencisi Stajyer Alımı</h5></a></td>
+                            <td><a href="{{route('notice2')}}"><h5>TÜBİTAK 2022 Yılı Üniversite Öğrencisi Stajyer Alımı</h5></a></td>
                         </tr>
                         <tr>
                             <td>
@@ -311,7 +311,7 @@
                                     </tbody>
                                 </table>
                             </td>
-                            <td><a href="#"><h6>Olumsuz Hava Koşulları Nedeniyle 24-25 Ocak 2022 Tarihlerinde Eğitime Ara Verilmiştir</h6></a></td>
+                            <td><a href="{{route('notice3')}}"><h6>Olumsuz Hava Koşulları Nedeniyle 24-25 Ocak 2022 Tarihlerinde Eğitime Ara Verilmiştir</h6></a></td>
                         </tr>
                         <tr>
                             <td>
@@ -322,7 +322,7 @@
                                     </tbody>
                                 </table>
                             </td>
-                            <td><a href="#"><h5>2021-2022 Bahar Yarıyılı Kurum İçi Yatay Geçiş Başvuru Kılavuzu</h5></a></td>
+                            <td><a href="{{route('notice4')}}"><h5>2021-2022 Bahar Yarıyılı Kurum İçi Yatay Geçiş Başvuru Kılavuzu</h5></a></td>
                         </tr>
                         <tr>
                             <td>
@@ -333,7 +333,7 @@
                                     </tbody>
                                 </table>
                             </td>
-                            <td><a href="#"><h5>Siber Güvenlik Girişimlerine Özel Hızlandırma Programı Cybercube'un Başvuruları Devam Ediyor!</h5></a></td>
+                            <td><a href="{{route('notice5')}}"><h5>Siber Güvenlik Girişimlerine Özel Hızlandırma Programı Cybercube'un Başvuruları Devam Ediyor!</h5></a></td>
                         </tr>
                     </tbody>
                 </table>
@@ -518,7 +518,7 @@
                 data-responsive='{"0":{"items": "1"}, "768":{"items": "2"}, "992":{"items": "2"}, "1200":{"items": "3"}}'>
                 <div class="item">
                     <article>
-                        <figure class="overlay overlay-1 hover-scale rounded mb-5"><a href="#"> <img
+                        <figure class="overlay overlay-1 hover-scale rounded mb-5"><a href="{{route('attraction1')}}"> <img
                                     src="site/images/homepage/7.jfif" alt="" /></a>
                             <figcaption>
                                 <h5 class="from-top mb-0">Read More</h5>
@@ -529,7 +529,7 @@
                                 <a href="#" class="hover" rel="category">Eğitim</a>
                             </div>
                             <!-- /.post-category -->
-                            <h2 class="post-title h3 mt-1 mb-3"><a class="link-dark" href="../../blog-post.html">
+                            <h2 class="post-title h3 mt-1 mb-3"><a class="link-dark" href="{{route('attraction1')}}">
                                 IWA DIPCON 2022 4th Regional Conference on Diffuse Pollution & Eutrophication
                            </a></h2>
                         </div>
@@ -548,7 +548,7 @@
                 <!-- /.item -->
                 <div class="item">
                     <article>
-                        <figure class="overlay overlay-1 hover-scale rounded mb-5"><a href="#"> <img
+                        <figure class="overlay overlay-1 hover-scale rounded mb-5"><a href="{{route('attraction2')}}"> <img
                                     src="site/images/homepage/8.jfif" alt="" /></a>
                             <figcaption>
                                 <h5 class="from-top mb-0">Read More</h5>
@@ -559,7 +559,7 @@
                                 <a href="#" class="hover" rel="category">Üniversite</a>
                             </div>
                             <!-- /.post-category -->
-                            <h2 class="post-title h3 mt-1 mb-3"><a class="link-dark" href="../../blog-post.html">VII. İstanbul Hipofiz Sempozyumu</a></h2>
+                            <h2 class="post-title h3 mt-1 mb-3"><a class="link-dark" href="{{route('attraction2')}}">VII. İstanbul Hipofiz Sempozyumu</a></h2>
                         </div>
                         <!-- /.post-header -->
                         <div class="post-footer">
@@ -576,7 +576,7 @@
                 <!-- /.item -->
                 <div class="item">
                     <article>
-                        <figure class="overlay overlay-1 hover-scale rounded mb-5"><a href="#"> <img
+                        <figure class="overlay overlay-1 hover-scale rounded mb-5"><a href="{{route('attraction3')}}"> <img
                                     src="site/images/homepage/9.jfif" alt="" /></a>
                             <figcaption>
                                 <h5 class="from-top mb-0">Read More</h5>
@@ -588,7 +588,7 @@
                             </div>
                             <!-- /.post-category -->
                             <h2 class="post-title h3 mt-1 mb-3"><a class="link-dark"
-                                    href="site/images/homepage/2.jpg">25. Makine & Teknoloji Günleri</a></h2>
+                                    href="{{route('attraction3')}}">25. Makine & Teknoloji Günleri</a></h2>
                         </div>
                         <!-- /.post-header -->
                         <div class="post-footer">
@@ -605,7 +605,7 @@
                 <!-- /.item -->
                 <div class="item">
                     <article>
-                        <figure class="overlay overlay-1 hover-scale rounded mb-5"><a href="#"> <img
+                        <figure class="overlay overlay-1 hover-scale rounded mb-5"><a href="{{route('attraction4')}}"> <img
                                     src="site/images/homepage/10.jfif" alt="" /></a>
                             <figcaption>
                                 <h5 class="from-top mb-0">Read More</h5>
@@ -616,7 +616,7 @@
                                 <a href="#" class="hover" rel="category">Başarılar</a>
                             </div>
                             <!-- /.post-category -->
-                            <h2 class="post-title h3 mt-1 mb-3"><a class="link-dark" href="../../blog-post.html">13. Gelişim Girişim Günleri</a></h2>
+                            <h2 class="post-title h3 mt-1 mb-3"><a class="link-dark" href="{{route('attraction4')}}">13. Gelişim Girişim Günleri</a></h2>
                         </div>
                         <div class="post-footer">
                             <ul class="post-meta">
@@ -633,7 +633,7 @@
                 <!-- /.item -->
                 <div class="item">
                     <article>
-                        <figure class="overlay overlay-1 hover-scale rounded mb-5"><a href="#"> <img
+                        <figure class="overlay overlay-1 hover-scale rounded mb-5"><a href="{{route('attraction5')}}"> <img
                                     src="site/images/homepage/11.jfif" alt="" /></a>
                             <figcaption>
                                 <h5 class="from-top mb-0">Read More</h5>
@@ -644,7 +644,7 @@
                                 <a href="#" class="hover" rel="category">Başarılar</a>
                             </div>
                             <!-- /.post-category -->
-                            <h2 class="post-title h3 mt-1 mb-3"><a class="link-dark" href="../../blog-post.html">Mühendislikte Topuk Sesleri '22</a></h2>
+                            <h2 class="post-title h3 mt-1 mb-3"><a class="link-dark" href="{{route('attraction5')}}">Mühendislikte Topuk Sesleri '22</a></h2>
                         </div>
                         <div class="post-footer">
                             <ul class="post-meta">
