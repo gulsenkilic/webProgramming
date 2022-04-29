@@ -11,7 +11,15 @@
           <button type="button" class="btn-close btn-close-white offcanvas-close offcanvas-nav-close" aria-label="Close"></button>
         </div>
         <ul class="navbar-nav">
-          <li class="nav-item"><a class="nav-link" href="#">Link</a></li>
+
+          <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#">Üniversitemiz</a>
+            <ul class="dropdown-menu">
+              <li class="nav-item"><a class="dropdown-item" href="{{route('about')}}">Hakkımızda</a></li>
+              <li class="nav-item"><a class="dropdown-item" href="{{route('about2')}}">Vizyon ve Misyon</a></li>
+            </ul>
+          </li>
+
+
           <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#">Dropdown</a>
             <ul class="dropdown-menu">
               <li class="nav-item"><a class="dropdown-item" href="#">Action</a></li>

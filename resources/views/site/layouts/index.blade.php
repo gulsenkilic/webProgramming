@@ -18,11 +18,13 @@
     
 
     <meta name="csrf-token" content="{{ csrf_token() }}">
-    <link rel="preload" href="{{ asset('site/css/sandbox/fonts/dm.css') }}" as="style"
+    <link rel="preload" href="{{ asset('site/css/sandbox/fonts/unicons.css') }}" as="style"
         onload="this.rel='stylesheet'">
     <link rel="stylesheet" href="{{ asset('site/css/bootstrap.min.css') }}">
     <link rel="stylesheet" href="{{ asset('site/css/sandbox/plugins.css') }}">
     <link rel="stylesheet" href="{{ asset('site/css/sandbox/style.css') }}">
+    <link rel="stylesheet" href="{{ asset('site/css/sandbox/colors/orange.css') }}">
+
     <link rel="stylesheet" href="{{ asset('site/css/common.css') }}">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     @yield('head')

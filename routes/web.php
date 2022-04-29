@@ -32,3 +32,7 @@ Route::get('/attraction3', [PagesController::class, 'attraction3'])->name('attra
 Route::get('/attraction4', [PagesController::class, 'attraction4'])->name('attraction4');
 Route::get('/attraction5', [PagesController::class, 'attraction5'])->name('attraction5');
 
+Route::get('/about',[PagesController::class, 'about'])->name('about');
+Route::get('/vizyon-misyon',[PagesController::class, 'about2'])->name('about2');
+
+

@@ -55,5 +55,11 @@ class PagesController extends Controller{
     public function attraction5(){
         return view('site.attractions.attraction5');
     }
+    public function about(){
+        return view('site.about.aboutPage');
+    }
+    public function about2(){
+        return view('site.about.vizyon-misyon');
+    }
 }
 ?>
