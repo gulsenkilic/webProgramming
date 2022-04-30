@@ -7,7 +7,7 @@
       </div>
       <div class="navbar-collapse offcanvas-nav">
         <div class="offcanvas-header d-lg-none d-xl-none">
-          <a href="./index.html"><img src="{{ asset('site/images/logo/logo.png') }}" alt="" /></a>
+          <a href="{{ route('homepage') }}"><img src="{{ asset('site/images/logo/logo.png') }}" alt="" /></a>
           <button type="button" class="btn-close btn-close-white offcanvas-close offcanvas-nav-close" aria-label="Close"></button>
         </div>
         <ul class="navbar-nav">
@@ -16,28 +16,11 @@
             <ul class="dropdown-menu">
               <li class="nav-item"><a class="dropdown-item" href="{{route('about')}}">Hakkımızda</a></li>
               <li class="nav-item"><a class="dropdown-item" href="{{route('about2')}}">Vizyon ve Misyon</a></li>
+              <li class="nav-item"><a class="dropdown-item" href="{{route('about3')}}">Üniversite Yönetimi</a></li>
+
             </ul>
           </li>
 
-
-          <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#">Dropdown</a>
-            <ul class="dropdown-menu">
-              <li class="nav-item"><a class="dropdown-item" href="#">Action</a></li>
-              <li class="dropdown"><a class="dropdown-item dropdown-toggle" href="#">Dropdown</a>
-                <ul class="dropdown-menu">
-                  <li class="dropdown"><a class="dropdown-item dropdown-toggle" href="#">Dropdown</a>
-                    <ul class="dropdown-menu">
-                      <li class="nav-item"><a class="dropdown-item" href="#">Action</a></li>
-                      <li class="nav-item"><a class="dropdown-item" href="#">Another Action</a></li>
-                    </ul>
-                  </li>
-                  <li class="nav-item"><a class="dropdown-item" href="#">Action</a></li>
-                  <li class="nav-item"><a class="dropdown-item" href="#">Another Action</a></li>
-                </ul>
-              </li>
-              <li class="nav-item"><a class="dropdown-item" href="#">Another Action</a></li>
-            </ul>
-          </li>
           <li class="nav-item"><a class="nav-link" href="#">Mega Menu</a>
             <ul class="dropdown-menu mega-menu">
               <li class="mega-menu-content">
@@ -90,6 +73,25 @@
             </ul>
             <!--/.dropdown-menu -->
           </li>
+          <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#">Öğrenci</a>
+            <ul class="dropdown-menu">
+              <li class="nav-item"><a class="dropdown-item" href="{{route('prospectiveSt')}}">Aday Öğrenci</a></li>
+              <li class="dropdown"><a class="dropdown-item dropdown-toggle" href="#">Dropdown</a>
+                <ul class="dropdown-menu">
+                  <li class="dropdown"><a class="dropdown-item dropdown-toggle" href="#">Dropdown</a>
+                    <ul class="dropdown-menu">
+                      <li class="nav-item"><a class="dropdown-item" href="#">Action</a></li>
+                      <li class="nav-item"><a class="dropdown-item" href="#">Another Action</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item"><a class="dropdown-item" href="#">Action</a></li>
+                  <li class="nav-item"><a class="dropdown-item" href="#">Another Action</a></li>
+                </ul>
+              </li>
+              <li class="nav-item"><a class="dropdown-item" href="#">Another Action</a></li>
+            </ul>
+          </li>
+         
           <li class="nav-item"><a class="nav-link" href="#">Link</a></li>
         </ul>
         <!-- /.navbar-nav -->
@@ -110,7 +112,7 @@
       <!-- /.navbar-other -->
       <div class="offcanvas-info text-inverse">
         <button type="button" class="btn-close btn-close-white offcanvas-close offcanvas-info-close" aria-label="Close"></button>
-        <a href="./index.html"><img src="./assets/img/logo-light.png" srcset="./assets/img/logo-light@2x.png 2x" alt="" /></a>
+        <a href="./index.html"><img src="{{ asset('site/images/logo/logo.png') }}" alt="" /></a>
         <div class="mt-4 widget">
           <p>Sandbox is a multipurpose HTML5 template with various layouts which will be a great solution for your business.</p>
         </div>

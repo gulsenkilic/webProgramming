@@ -61,5 +61,12 @@ class PagesController extends Controller{
     public function about2(){
         return view('site.about.vizyon-misyon');
     }
+    public function about3(){
+        return view('site.about.administration');
+    }
+    public function prospectiveSt(){
+        return view('site.student.prospective');
+        
+    }
 }
 ?>

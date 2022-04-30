@@ -34,5 +34,8 @@ Route::get('/attraction5', [PagesController::class, 'attraction5'])->name('attra
 
 Route::get('/about',[PagesController::class, 'about'])->name('about');
 Route::get('/vizyon-misyon',[PagesController::class, 'about2'])->name('about2');
+Route::get('/adminstartion',[PagesController::class, 'about3'])->name('about3');
+
+Route::get('/prospective',[PagesController::class, 'prospectiveSt'])->name('prospectiveSt');
 
 
