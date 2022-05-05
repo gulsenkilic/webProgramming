@@ -129,3 +129,24 @@
 ol li {
     list-style-type: square;
 }
+
+.w-image-meta {
+    line-height: 1.6;
+}
+
+.w-image.meta_modern .w-image-meta {
+    pointer-events: none;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    max-height: 100%;
+    padding: 3rem 1rem 0.6rem;
+    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    border-bottom-left-radius: inherit;
+    border-bottom-right-radius: inherit;
+    background: linear-gradient(transparent, rgba(30, 30, 30, 0.8)) repeat-x;
+    color: #fff;
+}
