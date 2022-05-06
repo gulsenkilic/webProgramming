@@ -134,3 +134,15 @@ ol li {
     position: absolute;
     background-color: white;
 }
+
+
+/*background: url(bayrak-siiri_1482498107.gif) no-repeat center center fixed;*/
+
+.image {
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: center;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}

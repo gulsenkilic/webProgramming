@@ -37,5 +37,10 @@ Route::get('/vizyon-misyon',[PagesController::class, 'about2'])->name('about2');
 Route::get('/adminstartion',[PagesController::class, 'about3'])->name('about3');
 
 Route::get('/prospective',[PagesController::class, 'prospectiveSt'])->name('prospectiveSt');
+Route::get('/cap-yandal',[PagesController::class, 'capyandal'])->name('cap-yandal');
+Route::get('/erasmus',[PagesController::class, 'erasmus'])->name('erasmus');
+Route::get('/mevlana',[PagesController::class, 'mevlana'])->name('mevlana');
+Route::get('/farabi',[PagesController::class, 'farabi'])->name('farabi');
 
+Route::get('/akademik',[PagesController::class, 'akademik'])->name('akademik');
 

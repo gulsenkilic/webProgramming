@@ -68,5 +68,26 @@ class PagesController extends Controller{
         return view('site.student.prospective');
         
     }
+    public function capyandal(){
+        return view('site.student.cap-yandal');
+        
+    }
+    public function erasmus(){
+        return view('site.student.erasmus');
+        
+    }
+    public function mevlana(){
+        return view('site.student.mevlana');
+        
+    }
+    public function farabi(){
+        return view('site.student.farabi');
+        
+    }
+
+    public function akademik(){
+        return view('site.akademik.index');
+        
+    }
 }
 ?>
