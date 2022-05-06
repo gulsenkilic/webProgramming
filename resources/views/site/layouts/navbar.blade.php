@@ -122,7 +122,7 @@
         <div class="offcanvas-info text-inverse">
             <button type="button" class="btn-close btn-close-white offcanvas-close offcanvas-info-close"
                 aria-label="Close"></button>
-            <a href="./index.html"><img src="{{ asset('site/images/logo/logo.png') }}" alt="" /></a>
+            <a href="{{ route('homepage') }}"><img src="{{ asset('site/images/logo/logo2.png') }}" alt="" /></a>
             <div class="mt-4 widget">
                 <p>Sandbox is a multipurpose HTML5 template with various layouts which will be a great solution for your
                     business.</p>
