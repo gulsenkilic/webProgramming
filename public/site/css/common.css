@@ -129,3 +129,8 @@
 ol li {
     list-style-type: square;
 }
+
+.d {
+    position: absolute;
+    background-color: white;
+}
