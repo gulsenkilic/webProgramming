@@ -89,5 +89,51 @@ class PagesController extends Controller{
         return view('site.akademik.index');
         
     }
+     public function yabanci(){
+        return view('site.okullar.yabanci-diller.yabanci');
+        
+    }
+    public function yabanciNew1(){
+        return view('site.okullar.yabanci-diller.news.yabanciNew1');
+        
+    }
+    public function yabanciNew2(){
+        return view('site.okullar.yabanci-diller.news.yabanciNew2');
+        
+    }
+    public function yabanciNew3(){
+        return view('site.okullar.yabanci-diller.news.yabanciNew3');
+        
+    }
+    public function yabanciNew4(){
+        return view('site.okullar.yabanci-diller.news.yabanciNew4');
+        
+    }
+    public function yabanciAkademik(){
+        return view('site.okullar.yabanci-diller.akademik');
+        
+    }
+    public function yabanciAbout(){
+        return view('site.okullar.yabanci-diller.about');
+        
+    }
+    public function yabanciDuyurular(){
+        return view('site.okullar.yabanci-diller.duyurular');
+        
+    }
+    public function yabanciDuyurular1(){
+        return view('site.okullar.yabanci-diller.duyurular.duyuru1');
+        
+    }
+    public function yabanciDuyurular2(){
+        return view('site.okullar.yabanci-diller.duyurular.duyuru2');
+        
+    }
+    public function yabanciDuyurular3(){
+        return view('site.okullar.yabanci-diller.duyurular.duyuru3');
+        
+    }
+    
+
 }
 ?>

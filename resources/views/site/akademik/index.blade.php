@@ -24,11 +24,11 @@
             <div class="tab-pane fade show active justify-content-center align-items-center" id="tab2-1">
                 <div class="container" id="okul">
                     <div class="table-responsive bg-white p-2">
-                        <table class="table table-bordered text-left table-hover">
+                        <table class="table table-bordered text-left table-hover bg-soft-primary border-primary border border-2">
 
                             <tr>
                                 <td style="width: 10%"><img src="site/images/logo/logo.png" alt=""></td>
-                                <td class="text-uppercase text-center"><a href="" class="text-dark"><h4>YABANCI DİLLER YÜKSEKOKULU</h4></a></td>
+                                <td class="text-uppercase text-center"><a href="{{route('yabanci')}}" class="text-dark"><h4>YABANCI DİLLER YÜKSEKOKULU</h4></a></td>
                             </tr>
                             <tr>
                                 <td style="width: 10%"><img src="site/images/logo/logo.png" alt=""></td>
@@ -46,7 +46,7 @@
             <div class="tab-pane fade" id="tab2-2">
                 <div class="container" id="fak-bol">
                     <div class="table-responsive bg-white p-2">
-                        <table class="table table-bordered text-left table-hover ">
+                        <table class="table table-bordered text-left table-hover border-primary border border-2  bg-soft-primary">
 
                             <tr>
                                 <td style="width: 10%"><img src="site/images/logo/logo.png" alt=""></td>
@@ -87,7 +87,7 @@
             <div class="tab-pane fade" id="tab2-3">
                 <div class="container" id="ens">
                     <div class="table-responsive bg-white p-2">
-                        <table class="table table-bordered text-left table-hover ">
+                        <table class="table table-bordered text-left table-hover border-primary border border-2  bg-soft-primary">
 
                             <tr>
                                 <td style="width: 10%"><img src="site/images/logo/logo.png" alt=""></td>
