@@ -33,9 +33,9 @@
                                     <h6 class="dropdown-header">Okullar</h6>
 
                                     <ul class="list-unstyled">
-                                        <li><a class="dropdown-item" href="#">Yabancı Diller Yüksekokulu</a></li>
-                                        <li><a class="dropdown-item" href="#">Meslek YüksekOkulu</a></li>
-                                        <li><a class="dropdown-item" href="#">Sağlık Hizmetleri Meslek</a></li>
+                                        <li><a class="dropdown-item" href="{{ route('yabanci') }}">Yabancı Diller Yüksekokulu</a></li>
+                                        <li><a class="dropdown-item" href="{{ route('yabanci') }}">Meslek YüksekOkulu</a></li>
+                                        <li><a class="dropdown-item" href="{{ route('yabanci') }}">Sağlık Hizmetleri Meslek</a></li>
                                     </ul>
                                 </div>
                                 <!--/column -->
@@ -44,18 +44,18 @@
                                     <div class="row gx-0">
                                         <div class="col-lg-6">
                                             <ul class="list-unstyled">
-                                                <li><a class="dropdown-item" href="#">Diş Hekimliği Fakültesi</a></li>
-                                                <li><a class="dropdown-item" href="#">Hukuk Fakültesi</a></li>
-                                                <li><a class="dropdown-item" href="#">Mühendislik Fakültesi</a></li>
-                                                <li><a class="dropdown-item" href="#">Eğitim Bilimleri Fakültesi</a>
+                                                <li><a class="dropdown-item" href="{{ route('muh') }}">Diş Hekimliği Fakültesi</a></li>
+                                                <li><a class="dropdown-item" href="{{ route('muh') }}">Hukuk Fakültesi</a></li>
+                                                <li><a class="dropdown-item" href="{{ route('muh') }}">Mühendislik Fakültesi</a></li>
+                                                <li><a class="dropdown-item" href="{{ route('muh') }}">Eğitim Bilimleri Fakültesi</a>
                                                 </li>
                                             </ul>
                                         </div>
                                         <div class="col-lg-6">
                                           <ul class="list-unstyled">
-                                              <li><a class="dropdown-item" href="#">İletişim Fakültesi</a></li>
-                                              <li><a class="dropdown-item" href="#">Mimarlık Fakültesi</a></li>
-                                              <li><a class="dropdown-item" href="#">Tıp Fakültesi</a></li>
+                                              <li><a class="dropdown-item" href="{{ route('muh') }}">İletişim Fakültesi</a></li>
+                                              <li><a class="dropdown-item" href="{{ route('muh') }}">Mimarlık Fakültesi</a></li>
+                                              <li><a class="dropdown-item" href="{{ route('muh') }}">Tıp Fakültesi</a></li>
                                           </ul>
                                       </div>
                                     </div>
@@ -64,10 +64,10 @@
                                 <div class="col-lg-3">
                                     <h6 class="dropdown-header">Enstitüler</h6>
                                     <ul class="list-unstyled">
-                                        <li><a class="dropdown-item" href="#">Sağlık Bilimleri Enstitüler</a></li>
-                                        <li><a class="dropdown-item" href="#">Adli Tıp ve Adli Bilimler Enstitüsü</a>
+                                        <li><a class="dropdown-item" href="{{ route('muh') }}">Sağlık Bilimleri Enstitüler</a></li>
+                                        <li><a class="dropdown-item" href="{{ route('muh') }}">Adli Tıp ve Adli Bilimler Enstitüsü</a>
                                         </li>
-                                        <li><a class="dropdown-item" href="#">Sağlık Bilimleri Enstitüler</a></li>
+                                        <li><a class="dropdown-item" href="{{ route('muh') }}">Sağlık Bilimleri Enstitüler</a></li>
                                     </ul>
                                 </div>
                                 <!--/column -->
@@ -98,7 +98,7 @@
                     </ul>
                 </li>
 
-                <li class="nav-item"><a class="nav-link" href="#">Link</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Yerleşkeler</a></li>
             </ul>
             <!-- /.navbar-nav -->
         </div>

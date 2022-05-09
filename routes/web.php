@@ -69,6 +69,16 @@ Route::get('/muhensilik-fakultesi/duyurular/duyurular/duyuru1',[PagesController:
 Route::get('/muhensilik-fakultesi/duyurular/duyurular/duyuru2',[PagesController::class, 'muhDuyurular2'])->name('muhDuyurular2');
 Route::get('/muhensilik-fakultesi/duyurular/duyurular/duyuru3',[PagesController::class, 'muhDuyurular3'])->name('muhDuyurular3');
 
+Route::get('/muhensilik-fakultesi/bolumler/bilgisayar-muhendisligi',[PagesController::class, 'bilgisayar'])->name('bilgisayar');
+Route::get('/muhensilik-fakultesi/bolumler/bilgisayar-muhendisligi/new1',[PagesController::class, 'bilgisayarNew1'])->name('bilgisayarNew1');
+Route::get('/muhensilik-fakultesi/bolumler/bilgisayar-muhendisligi/new2',[PagesController::class, 'bilgisayarNew2'])->name('bilgisayarNew2');
+Route::get('/muhensilik-fakultesi/bolumler/bilgisayar-muhendisligi/new3',[PagesController::class, 'bilgisayarNew3'])->name('bilgisayarNew3');
+Route::get('/muhensilik-fakultesi/bolumler/bilgisayar-muhendisligi/akademik-kadro',[PagesController::class, 'bilgisayarKadro'])->name('bilgisayarKadro');
+Route::get('/muhensilik-fakultesi/bolumler/bilgisayar-muhendisligi/duyurular',[PagesController::class, 'bilgisayarDuyuru'])->name('bilgisayarDuyuru');
+Route::get('/muhensilik-fakultesi/bolumler/bilgisayar-muhendisligi/duyurular/duyuru1',[PagesController::class, 'bilDuyurular1'])->name('bilDuyurular1');
+Route::get('/muhensilik-fakultesi/bolumler/bilgisayar-muhendisligi/duyurular/duyuru2',[PagesController::class, 'bilDuyurular2'])->name('bilDuyurular2');
+Route::get('/muhensilik-fakultesi/bolumler/bilgisayar-muhendisligi/duyurular/duyuru3',[PagesController::class, 'bilDuyurular3'])->name('bilDuyurular3');
+Route::get('/muhensilik-fakultesi/bolumler/bilgisayar-muhendisligi/iletisim',[PagesController::class, 'bililetisim'])->name('bililetisim');
 
 
 

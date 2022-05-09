@@ -9,29 +9,29 @@
 
             <tr>
                 <td style="width: 10%"><img src="{{asset('site/images/logo/logo.png')}}" alt=""></td>
-                <td class="text-uppercase text-center"><a href=""><h4>Bilgisayar Mühendisliği </h4></a></td>
+                <td class="text-uppercase text-center"><a href="{{route('bilgisayar')}}"><h4>Bilgisayar Mühendisliği </h4></a></td>
             </tr>
             <tr>
                 <td style="width: 10%"><img src="{{asset('site/images/logo/logo.png')}}" alt=""></td>
-                <td class="text-uppercase text-center"><a href=""><h4>Endüstri Mühendisliği</h4></a></td>
+                <td class="text-uppercase text-center"><a href="{{route('bilgisayar')}}"><h4>Endüstri Mühendisliği</h4></a></td>
             </tr>
             <tr>
                 <td style="width: 10%"><img src="{{asset('site/images/logo/logo.png')}}" alt=""></td>
-                <td class="text-uppercase text-center"><a href="{{route('muh')}}"><h4>Makina Mühendisliği</h4></a></td>
+                <td class="text-uppercase text-center"><a href="{{route('bilgisayar')}}"><h4>Makina Mühendisliği</h4></a></td>
             </tr>
 
 
             <tr>
                 <td style="width: 10%"><img src="{{asset('site/images/logo/logo.png')}}" alt=""></td>
-                <td class="text-uppercase text-center"><a href=""><h4>Elektrik-Elektronik Mühensiliği </h4></a></td>
+                <td class="text-uppercase text-center"><a href="{{route('bilgisayar')}}"><h4>Elektrik-Elektronik Mühensiliği </h4></a></td>
             </tr>
             <tr>
                 <td style="width: 10%"><img src="{{asset('site/images/logo/logo.png')}}" alt=""></td>
-                <td class="text-uppercase text-center"><a href=""><h4>Yazılım Mühendisliği</h4></a></td>
+                <td class="text-uppercase text-center"><a href="{{route('bilgisayar')}}"><h4>Yazılım Mühendisliği</h4></a></td>
             </tr>
             <tr>
                 <td style="width: 10%"><img src="{{asset('site/images/logo/logo.png')}}" alt=""></td>
-                <td class="text-uppercase text-center"><a href=""><h4>Gıda Mühendisliği</h4></a></td>
+                <td class="text-uppercase text-center"><a href="{{route('bilgisayar')}}"><h4>Gıda Mühendisliği</h4></a></td>
             </tr>
            
         </table>

@@ -78,7 +78,7 @@
                                             <!-- /.post-category -->
                                             <h2 class="post-title h3 mt-1 mb-3"><a class="link-dark"
                                                     href="{{ route('muh-new2') }}">
-                                                    IEEE En İyi Bildiri ve En İyi Sunum Ödülleri BAU’ya!    
+                                                    IEEE En İyi Bildiri ve En İyi Sunum Ödülleri GKU’ya!    
                                                 </a></h2>
                                         </div>
                                         <!-- /.post-header -->

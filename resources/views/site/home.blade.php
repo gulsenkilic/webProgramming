@@ -1,7 +1,8 @@
 @extends('site.layouts.index')
 
 @section('content')
-    <div class="hero-slider-wrapper bg-dark ">
+<!--div class="container"></div-->
+    <div class="hero-slider-wrapper bg-dark  ">
         <div class="hero-slider owl-carousel dots-over" data-nav="true" data-dots="true" data-autoplay="true">
             <div class="owl-slide d-flex align-items-center bg-overlay bg-overlay-1500"
                 style="background-image: url(site/images/homepage/2.jpg);">
@@ -730,35 +731,37 @@
         </div>
         <!-- /.container -->
         <div class="container">
-            <section class="wrapper bg-light">
-                <div class="container py-14 py-md-14">
-                    <div class="row">
+            <section class="wrapper bg-orange mb-6">
+                <div class="container  py-md-6">
+                    <h3 class="text-center text-uppercase display-2 mb-6">Sayılarla GKU:</h3>
+
+                    <div class="card ">
                         <div class="col-xl-10 mx-auto">
-                            <div class="row align-items-center counter-wrapper gy-6 text-center">
+                            <div class="row align-items-center counter-wrapper  text-center">
                                 <div class="col-md-3">
                                     <img src="site/images/about/check.svg"
-                                        class="svg-inject icon-svg icon-svg-lg text-primary mb-3" alt="" />
+                                        class="svg-inject icon-svg icon-svg-lg text-primary mb-3 mt-3" alt="" />
                                     <h3 class="counter">7518</h3>
                                     <p>Öğrenci</p>
                                 </div>
                                 <!--/column -->
                                 <div class="col-md-3">
                                     <img src="site/images/about/user.svg"
-                                        class="svg-inject icon-svg icon-svg-lg text-primary mb-3" alt="" />
+                                        class="svg-inject icon-svg icon-svg-lg text-primary mb-3 mt-3" alt="" />
                                     <h3 class="counter">3472</h3>
                                     <p>Çalışan</p>
                                 </div>
                                 <!--/column -->
                                 <div class="col-md-3">
                                     <img src="site/images/about/briefcase-2.svg"
-                                        class="svg-inject icon-svg icon-svg-lg text-primary mb-3" alt="" />
+                                        class="svg-inject icon-svg icon-svg-lg text-primary mb-3 mt-3"  alt="" />
                                     <h3 class="counter">21848</h3>
                                     <p>Mezun</p>
                                 </div>
                                 <!--/column -->
                                 <div class="col-md-3">
                                     <img src="site/images/about/award-2.svg"
-                                        class="svg-inject icon-svg icon-svg-lg text-primary mb-3" alt="" />
+                                        class="svg-inject icon-svg icon-svg-lg text-primary mb-3 mt-3" alt="" />
                                     <h3 class="counter">403</h3>
                                     <p>Ödül</p>
                                 </div>

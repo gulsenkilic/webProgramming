@@ -177,6 +177,45 @@ class PagesController extends Controller{
         return view('site.fakulteler.muh.duyurular.duyuru3');
         
     }
-
+    public function bilgisayar(){
+        return view('site.fakulteler.muh.bolumler.bil.bil');
+        
+    }
+    public function bilgisayarNew1(){
+        return view('site.fakulteler.muh.bolumler.bil.news.news1');
+        
+    }
+    public function bilgisayarNew2(){
+        return view('site.fakulteler.muh.bolumler.bil.news.news2');
+        
+    }
+    public function bilgisayarNew3(){
+        return view('site.fakulteler.muh.bolumler.bil.news.news3');
+        
+    }
+    public function bilgisayarKadro(){
+        return view('site.fakulteler.muh.bolumler.bil.akademik');
+        
+    }
+    public function bilgisayarDuyuru(){
+        return view('site.fakulteler.muh.bolumler.bil.duyurular');
+        
+    }
+    public function bilDuyurular1(){
+        return view('site.fakulteler.muh.bolumler.bil.duyurular.duyuru1');
+        
+    }
+    public function bilDuyurular2(){
+        return view('site.fakulteler.muh.bolumler.bil.duyurular.duyuru2');
+        
+    }
+    public function bilDuyurular3(){
+        return view('site.fakulteler.muh.bolumler.bil.duyurular.duyuru3');
+        
+    }
+    public function bililetisim(){
+        return view('site.fakulteler.muh.bolumler.bil.iletisim');
+        
+    }
 }
 ?>
