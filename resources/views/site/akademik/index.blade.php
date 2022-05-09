@@ -58,7 +58,7 @@
                             </tr>
                             <tr>
                                 <td style="width: 10%"><img src="site/images/logo/logo.png" alt=""></td>
-                                <td class="text-uppercase text-center"><a href=""><h4>Mühendislik Fakültesi</h4></a></td>
+                                <td class="text-uppercase text-center"><a href="{{route('muh')}}"><h4>Mühendislik Fakültesi</h4></a></td>
                             </tr>
 
 

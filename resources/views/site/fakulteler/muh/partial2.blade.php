@@ -6,19 +6,23 @@
             <table class="table text-right  table-hover ">
                 <tbody>
                     <tr>
-                        <td><a href="{{ route('yabanci') }}">ANA SAYFA</a></td>
+                        <td><a href="{{ route('muh') }}">ANA SAYFA</a></td>
 
                     </tr>
                     <tr>
-                        <td><a href="{{route('yabanciAkademik')}}">AKADEMİK KADRO</a></td>
+                        <td><a href="{{ route('muhAbout') }}">FAKULTE HAKKINDA</a></td>
 
                     </tr>
                     <tr>
-                        <td><a href="{{route('yabanciAbout')}}"> YDO HAKKINDA</a></td>
+                        <td><a href="{{ route('muhKadro') }}">AKADEMİK KADRO</a></td>
 
                     </tr>
                     <tr>
-                        <td><a href="{{route('yabanciDuyurular')}}">DUYURULAR</a></td>
+                        <td><a href="{{route('muhBolumler')}}"> BÖLÜMLER</a></td>
+
+                    </tr>
+                    <tr>
+                        <td><a href="{{route('muhDuyuru')}}">DUYURULAR</a></td>
                     </tr>
                     <tr>
                         <td><a href="{{route('yabanciOgrenci')}}">ÖĞRENCİ </a></td>

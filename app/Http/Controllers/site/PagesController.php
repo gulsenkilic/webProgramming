@@ -133,7 +133,50 @@ class PagesController extends Controller{
         return view('site.okullar.yabanci-diller.duyurular.duyuru3');
         
     }
-    
+    public function yabanciOgrenci(){
+        return view('site.okullar.yabanci-diller.ogrenci');
+        
+    }
+    public function muh(){
+        return view('site.fakulteler.muh.muh');
+        
+    }
+    public function muhNew1(){
+        return view('site.fakulteler.muh.news.news1');
+        
+    }
+    public function muhNew2(){
+        return view('site.fakulteler.muh.news.news2');
+        
+    }
+    public function muhAbout(){
+        return view('site.fakulteler.muh.about');
+        
+    }
+    public function muhKadro(){
+        return view('site.fakulteler.muh.kadro');
+        
+    }
+    public function muhBolumler(){
+        return view('site.fakulteler.muh.bolumler');
+        
+    }
+    public function muhDuyuru(){
+        return view('site.fakulteler.muh.duyurular');
+        
+    }
+    public function muhDuyurular1(){
+        return view('site.fakulteler.muh.duyurular.duyuru1');
+        
+    }
+    public function muhDuyurular2(){
+        return view('site.fakulteler.muh.duyurular.duyuru2');
+        
+    }
+    public function muhDuyurular3(){
+        return view('site.fakulteler.muh.duyurular.duyuru3');
+        
+    }
 
 }
 ?>

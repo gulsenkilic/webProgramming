@@ -50,11 +50,27 @@ Route::get('/yabanci-diller-meslek-yuksekokulu/news2',[PagesController::class, '
 Route::get('/yabanci-diller-meslek-yuksekokulu/news3',[PagesController::class, 'yabanciNew3'])->name('yabanciNew3');
 Route::get('/yabanci-diller-meslek-yuksekokulu/news4',[PagesController::class, 'yabanciNew4'])->name('yabanciNew4');
 Route::get('/yabanci-diller-meslek-yuksekokulu/akademik-kadro',[PagesController::class, 'yabanciAkademik'])->name('yabanciAkademik');
-Route::get('/yabanci-diller-meslek-yuksekokulu/hakkında',[PagesController::class, 'yabanciAbout'])->name('yabanciAbout');
+Route::get('/yabanci-diller-meslek-yuksekokulu/ydyo-hakkında',[PagesController::class, 'yabanciAbout'])->name('yabanciAbout');
 Route::get('/yabanci-diller-meslek-yuksekokulu/duyurular',[PagesController::class, 'yabanciDuyurular'])->name('yabanciDuyurular');
 Route::get('/yabanci-diller-meslek-yuksekokulu/duyurular/duyuru1',[PagesController::class, 'yabanciDuyurular1'])->name('yabanciDuyurular1');
 Route::get('/yabanci-diller-meslek-yuksekokulu/duyurular/duyuru2',[PagesController::class, 'yabanciDuyurular2'])->name('yabanciDuyurular2');
 Route::get('/yabanci-diller-meslek-yuksekokulu/duyurular/duyuru3',[PagesController::class, 'yabanciDuyurular3'])->name('yabanciDuyurular3');
+Route::get('/yabanci-diller-meslek-yuksekokulu/ogrenci',[PagesController::class, 'yabanciOgrenci'])->name('yabanciOgrenci');
+
+
+Route::get('/muhensilik-fakultesi',[PagesController::class, 'muh'])->name('muh');
+Route::get('/muhensilik-fakultesi/new1',[PagesController::class, 'muhNew1'])->name('muh-new1');
+Route::get('/muhensilik-fakultesi/new2',[PagesController::class, 'muhNew2'])->name('muh-new2');
+Route::get('/muhensilik-fakultesi/fakulte-hakkında',[PagesController::class, 'muhAbout'])->name('muhAbout');
+Route::get('/muhensilik-fakultesi/akademik-kadro',[PagesController::class, 'muhKadro'])->name('muhKadro');
+Route::get('/muhensilik-fakultesi/bolumler',[PagesController::class, 'muhBolumler'])->name('muhBolumler');
+Route::get('/muhensilik-fakultesi/duyurular',[PagesController::class, 'muhDuyuru'])->name('muhDuyuru');
+Route::get('/muhensilik-fakultesi/duyurular/duyurular/duyuru1',[PagesController::class, 'muhDuyurular1'])->name('muhDuyurular1');
+Route::get('/muhensilik-fakultesi/duyurular/duyurular/duyuru2',[PagesController::class, 'muhDuyurular2'])->name('muhDuyurular2');
+Route::get('/muhensilik-fakultesi/duyurular/duyurular/duyuru3',[PagesController::class, 'muhDuyurular3'])->name('muhDuyurular3');
+
+
+
 
 
 
