@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Site\PagesController;
+use App\Http\Controllers\Admin\AdminController;
 
 /*
 |--------------------------------------------------------------------------
@@ -80,7 +81,55 @@ Route::get('/muhensilik-fakultesi/bolumler/bilgisayar-muhendisligi/duyurular/duy
 Route::get('/muhensilik-fakultesi/bolumler/bilgisayar-muhendisligi/duyurular/duyuru3',[PagesController::class, 'bilDuyurular3'])->name('bilDuyurular3');
 Route::get('/muhensilik-fakultesi/bolumler/bilgisayar-muhendisligi/iletisim',[PagesController::class, 'bililetisim'])->name('bililetisim');
 
+//ADMİN
+//Route::middleware(['IsLogin'])->group(function () { //eğer login yapmşşsa loginle devam eder
+    Route::get('unv-admin', [AdminController::class, 'redirectToLogin'])->name('adminRedirectToLogin');
+    Route::get('unv-admin/login', [AdminController::class, 'login'])->name('adminLoginPage');
+    //Route::post('unv-admin/login/process', [AdminController::class, 'loginProcess'])->name('adminLoginProcess');//BACKEND İLE KONTRL EDİLİR
+//});
+//Route::middleware(['IsAdmin'])->group(function () {
+    Route::get('unv-admin/logout', [AdminController::class, 'logout'])->name('adminLogoutPage');
+    Route::get('unv-admin/dashboard', [AdminController::class, 'dashboard'])->name('adminDashboardPage');
+    /*Route::get('unv-admin/passes', [AdminController::class, 'passes'])->name('adminPassesPage');
+    Route::get('unv-admin/attractions', [AdminController::class, 'attractions'])->name('adminAttractionsPage');
+    Route::get('unv-admin/bookings', [AdminController::class, 'bookings'])->name('adminBookingsPage');
+    Route::get('unv-admin/reservations', [AdminController::class, 'reservations'])->name('adminReservationsPage');
+    Route::get('unv-admin/payments', [AdminController::class, 'payments'])->name('adminPaymentsPage');
+    Route::get('unv-admin/pass/add', [AdminController::class, 'redirectToPass'])->name('adminPassAddPage');
+    Route::post('unv-admin/pass/add/process', [AdminController::class, 'addPass'])->name('adminPassAddProcessPage');
+    Route::get('unv-admin/pass/edit', [AdminController::class, 'redirectToPassEdit'])->name('adminPassEditPage');
+    Route::post('unv-admin/pass/edit/process', [AdminController::class, 'editPass'])->name('adminPassEditProcessPage');
+    Route::get('unv-admin/attraction/add', [AdminController::class, 'redirectToAttraction'])->name('adminAttractionAddPage');
+    Route::post('unv-admin/attraction/add/process', [AdminController::class, 'addAttraction'])->name('adminAttractionAddProcessPage');
+    Route::get('unv-admin/attraction/edit', [AdminController::class, 'redirectToAttractionEdit'])->name('adminAttractionEditPage');
+    Route::post('unv-admin/attraction/edit/process', [AdminController::class, 'editAttraction'])->name('adminAttractionEditProcessPage');
+    Route::get('unv-admin/bookings', [AdminController::class, 'bookings'])->name('adminBookingsPage');
+    Route::get('unv-admin/booking/detail', [AdminController::class, 'redirectToBookingDetail'])->name('adminBookingDetailPage');
+    Route::get('unv-admin/booking/edit', [AdminController::class, 'redirectToBookingEdit'])->name('adminBookingEditPage');
+    Route::post('unv-admin/booking/edit/process', [AdminController::class, 'editBooking'])->name('adminBookingEditProcessPage');
+    Route::post('unv-admin/bookings/detail/reservation/edit', [AdminController::class, 'editReservation'])->name('adminBookingDetailReservation');
+    Route::get('unv-admin/reservation/edit', [AdminController::class, 'editReservationInfos'])->name('adminReservationEditPage');
+    Route::post('unv-admin/reservation/edit/process', [AdminController::class, 'updateReservation'])->name('adminReservationUpdate');
+    Route::get('unv-admin/adminlist', [AdminController::class, 'listAdmins'])->name('adminListPage');
+    Route::get('unv-admin/admin/add', [AdminController::class, 'redirectToAddAdmin'])->name('adminAddAdminPage');
+    Route::post('unv-admin/admin/add/process', [AdminController::class, 'addAdmin'])->name('adminAddProcessPage');
+    Route::get('unv-admin/admin/edit', [AdminController::class, 'redirectToEditAdmin'])->name('adminEditAdminPage');
+    Route::post('unv-admin/admin/edit/process', [AdminController::class, 'editAdmin'])->name('adminEditAdminProcessPage');
+    Route::get('unv-admin/bookings/detail/qrandpnr', [AdminController::class, 'redirectToQrAndPnr'])->name('adminBookingDetailQrAndPnr');
+    Route::get('unv-admin/payments', [AdminController::class, 'payments'])->name('adminPaymentsPage');
+    Route::get('unv-admin/reviews', [AdminController::class, 'reviews'])->name('adminReviewsPage');
+    Route::get('unv-admin/review/edit', [AdminController::class, 'redirectToEditReview'])->name('adminReviewEditPage');
+    Route::post('unv-admin/review/edit/process', [AdminController::class, 'editReview'])->name('adminReviewEditProcessPage');
+    Route::get('unv-admin/discounts', [AdminController::class, 'discounts'])->name('adminDiscountsPage');
+    Route::get('unv-admin/discount/edit', [AdminController::class, 'redirectToEditDiscount'])->name('adminDiscountEditPage');
+    Route::post('unv-admin/discount/edit/process', [AdminController::class, 'editDiscount'])->name('adminDiscountEditProcessPage');
+    Route::get('unv-admin/discount/add', [AdminController::class, 'redirectToAddDiscount'])->name('adminDiscountAddPage');
+    Route::post('unv-admin/discount/add/process', [AdminController::class, 'addDiscount'])->name('adminDiscountAddProcessPage');
 
-
+    Route::get('unv-admin/blogs', [AdminController::class, 'blogs'])->name('adminBlogPage');
+    Route::get('unv-admin/blog/delete/{id}', [AdminController::class, 'deleteBlog'])->name('deleteBlog');
+    Route::get('unv-admin/blog/edit/{id}', [AdminController::class, 'editBlog'])->name('editBlog');
+    Route::post('unv-admin/blog/process', [AdminController::class, 'processBlog'])->name('processBlog');*/
+//});
 
 
