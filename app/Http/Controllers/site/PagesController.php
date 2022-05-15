@@ -217,5 +217,13 @@ class PagesController extends Controller{
         return view('site.fakulteler.muh.bolumler.bil.iletisim');
         
     }
+    public function iletisim(){
+        return view('site.other.iletisim');
+        
+    }
+    public function yerleskeler(){
+        return view('site.other.yerleske');
+        
+    }
 }
 ?>

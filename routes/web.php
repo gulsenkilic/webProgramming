@@ -81,6 +81,10 @@ Route::get('/muhensilik-fakultesi/bolumler/bilgisayar-muhendisligi/duyurular/duy
 Route::get('/muhensilik-fakultesi/bolumler/bilgisayar-muhendisligi/duyurular/duyuru3',[PagesController::class, 'bilDuyurular3'])->name('bilDuyurular3');
 Route::get('/muhensilik-fakultesi/bolumler/bilgisayar-muhendisligi/iletisim',[PagesController::class, 'bililetisim'])->name('bililetisim');
 
+Route::get('/iletisim',[PagesController::class, 'iletisim'])->name('iletisim');
+Route::get('/yerleskeler',[PagesController::class, 'yerleskeler'])->name('yerleskeler');
+
+
 //ADMİN
 //Route::middleware(['IsLogin'])->group(function () { //eğer login yapmşşsa loginle devam eder
     Route::get('unv-admin', [AdminController::class, 'redirectToLogin'])->name('adminRedirectToLogin');

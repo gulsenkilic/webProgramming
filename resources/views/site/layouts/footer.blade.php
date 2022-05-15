@@ -4,7 +4,7 @@
         <div class="col-md-4 col-lg-3">
           <div class="widget">
             <img class="mb-4" src="{{ asset('site/images/logo/logo2.png') }}" alt="" />
-            <p class="mb-4">© 2021 Sandbox. <br class="d-none d-lg-block" />All rights reserved.</p>
+            <p class="mb-4">© 2021 GÜLŞEN KILIÇ ÜNİVERSİTESİ. <br class="d-none d-lg-block" />Tüm hakları saklıdır.</p>
             <nav class="nav social social-white">
               <a href="#"><i class="uil uil-twitter"></i></a>
               <a href="#"><i class="uil uil-facebook-f"></i></a>
@@ -19,22 +19,30 @@
         <!-- /column -->
         <div class="col-md-4 col-lg-3">
           <div class="widget">
-            <h4 class="widget-title text-white mb-3">Get in Touch</h4>
-            <address class="pe-xl-15 pe-xxl-17">Moonshine St. 14/05 Light City, London, United Kingdom</address>
-            <a href="mailto:#">info@email.com</a><br /> +00 (123) 456 78 90
+            <h4 class="widget-title text-white mb-3">İletişime Geçin</h4>
+            <address class="pe-xl-15 pe-xxl-17">Çırağan Caddesi
+
+              Osmanpaşa Mektebi Sokak
+              
+              No: 4 - 6
+              
+              34353 Beşiktaş,
+              
+              İSTANBUL / TÜRKİYE</address>
+            <a href="mailto:#">info@gku.com</a><br /> +00 (123) 456 78 90
           </div>
           <!-- /.widget -->
         </div>
         <!-- /column -->
         <div class="col-md-4 col-lg-3">
           <div class="widget">
-            <h4 class="widget-title text-white mb-3">Learn More</h4>
+            <h4 class="widget-title text-white mb-3">Daha Fazla</h4>
             <ul class="list-unstyled  mb-0">
-              <li><a href="#">About Us</a></li>
-              <li><a href="#">Our Story</a></li>
-              <li><a href="#">Projects</a></li>
-              <li><a href="#">Terms of Use</a></li>
-              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="{{ route('about') }}">Hakkımızda</a></li>
+              <li><a href="{{ route('about2') }}">Vizyon ve Misyonumuz</a></li>
+              <li><a href="{{ route('about3') }}">Üniversite Yönetimi</a></li>
+              <li><a href="{{ route('about3') }}">Akademik Kadro</a></li>
+              <li><a href="#">İletişim</a></li>
             </ul>
           </div>
           <!-- /.widget -->
@@ -42,17 +50,17 @@
         <!-- /column -->
         <div class="col-md-12 col-lg-3">
           <div class="widget">
-            <h4 class="widget-title text-white mb-3">Our Newsletter</h4>
-            <p class="mb-5">Subscribe to our newsletter to get our news & deals delivered to you.</p>
+            <h4 class="widget-title text-white mb-3">Haber Bülteni</h4>
+            <p class="mb-5">Yeni haberlerden haberdar olmak için mail grubumuza kaydolun.</p>
             <div class="newsletter-wrapper">
               <!-- Begin Mailchimp Signup Form -->
               <div id="mc_embed_signup2">
                 <form action="https://elemisfreebies.us20.list-manage.com/subscribe/post?u=aa4947f70a475ce162057838d&amp;id=b49ef47a9a" method="post" id="mc-embedded-subscribe-form2" name="mc-embedded-subscribe-form" class="validate dark-fields" target="_blank" novalidate>
                   <div id="mc_embed_signup_scroll2">
                     <div class="mc-field-group input-group form-floating">
-                      <input type="email" value="" name="EMAIL" class="required email form-control" placeholder="Email Address" id="mce-EMAIL2">
-                      <label for="mce-EMAIL2">Email Address</label>
-                      <input type="submit" value="Join" name="subscribe" id="mc-embedded-subscribe2" class="btn btn-primary">
+                      <input type="email" value="" name="EMAIL" class="required email form-control" placeholder="Email Adresi" id="mce-EMAIL2">
+                      <label for="mce-EMAIL2">Email Adresiniz</label>
+                      <input type="submit" value="Kaydol" name="subscribe" id="mc-embedded-subscribe2" class="btn btn-primary">
                     </div>
                     <div id="mce-responses2" class="clear">
                       <div class="response" id="mce-error-response2" style="display:none"></div>

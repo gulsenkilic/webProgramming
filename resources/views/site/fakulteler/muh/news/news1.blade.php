@@ -1,6 +1,7 @@
 @extends('site.layouts.index')
 @section('content')
     @include('site.fakulteler.muh.partial')
+    <h1 class="display-4 pt-2 mb-3 text-center text-primary"> MÜHENDİSLİK FAKÜLTESİ</h1>
     <h3 class="text-right">Huawei İş Birliği ile Gülşen Kılıç Üniversitesi'nde Mobil Uygulama Geliştirme Eğitimleri Başladı
     </h3>
     <hr class="my-5">

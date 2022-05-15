@@ -13,7 +13,7 @@
             </div>
             <ul class="navbar-nav">
 
-                <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#">Üniversitemiz</a>
+                <li class="nav-item dropdown"><a class="nav-link dropdown-toggle">Üniversitemiz</a>
                     <ul class="dropdown-menu">
                         <li class="nav-item"><a class="dropdown-item" href="{{ route('about') }}">Hakkımızda</a>
                         </li>
@@ -78,7 +78,7 @@
                     </ul>
                     <!--/.dropdown-menu -->
                 </li>
-                <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#">Öğrenci</a>
+                <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" >Öğrenci</a>
                     <ul class="dropdown-menu">
                         <li class="nav-item"><a class="dropdown-item" href="{{ route('prospectiveSt') }}">Aday
                                 Öğrenci</a></li>
@@ -98,7 +98,9 @@
                     </ul>
                 </li>
 
-                <li class="nav-item"><a class="nav-link" href="#">Yerleşkeler</a></li>
+                <li class="nav-item"><a class="nav-link" href="{{ route('yerleskeler') }}">Yerleşkeler</a></li>
+                <li class="nav-item"><a class="nav-link" href="{{ route('iletisim') }}">İletişim</a></li>
+
             </ul>
             <!-- /.navbar-nav -->
         </div>
@@ -107,10 +109,7 @@
             <ul class="navbar-nav flex-row align-items-center ms-auto" data-sm-skip="true">
                 <li class="nav-item"><a class="nav-link" data-toggle="offcanvas-info"><i
                             class="uil uil-info-circle"></i></a></li>
-                <li class="nav-item d-none d-md-block">
-                    <a href="#" class="btn btn-sm btn-primary rounded-pill" data-bs-toggle="modal"
-                        data-bs-target="#modal-01">Sign In</a>
-                </li>
+               
                 <li class="nav-item d-lg-none">
                     <div class="navbar-hamburger"><button class="hamburger animate plain"
                             data-toggle="offcanvas-nav"><span></span></button></div>
@@ -124,28 +123,36 @@
                 aria-label="Close"></button>
             <a href="{{ route('homepage') }}"><img src="{{ asset('site/images/logo/logo2.png') }}" alt="" /></a>
             <div class="mt-4 widget">
-                <p>Sandbox is a multipurpose HTML5 template with various layouts which will be a great solution for your
-                    business.</p>
+                <p>Gülşen Kılıç Üniversitesi Türkiye ve Dünyanın En Köklü ve En yaratıcı üniversitelerinden biri</p>
             </div>
             <!-- /.widget -->
             <div class="widget">
-                <h4 class="widget-title text-white mb-3">Contact Info</h4>
-                <address> Moonshine St. 14/05 <br /> Light City, London </address>
-                <a href="mailto:first.last@email.com">info@email.com</a><br /> +00 (123) 456 78 90
+                <h4 class="widget-title text-white mb-3">İletişim Bilgileri</h4>
+                <address> Çırağan Caddesi
+
+                    Osmanpaşa Mektebi Sokak
+                    
+                    No: 4 - 6
+                    
+                    34353 Beşiktaş,
+                    
+                    İSTANBUL / TÜRKİYE</address>
+                    <a href="mailto:#">info@gku.com</a><br /> +00 (123) 456 78 90
             </div>
             <!-- /.widget -->
             <div class="widget">
-                <h4 class="widget-title text-white mb-3">Learn More</h4>
-                <ul class="list-unstyled">
-                    <li><a href="#">Our Story</a></li>
-                    <li><a href="#">Terms of Use</a></li>
-                    <li><a href="#">Privacy Policy</a></li>
-                    <li><a href="#">Contact Us</a></li>
-                </ul>
+                <h4 class="widget-title text-white mb-3">Daha Fazla</h4>
+            <ul class="list-unstyled  mb-0">
+              <li><a href="{{ route('about') }}">Hakkımızda</a></li>
+              <li><a href="{{ route('about2') }}">Vizyon ve Misyonumuz</a></li>
+              <li><a href="{{ route('about3') }}">Üniversite Yönetimi</a></li>
+              <li><a href="{{ route('about3') }}">Akademik Kadro</a></li>
+              <li><a href="#">İletişim</a></li>
+            </ul>
             </div>
             <!-- /.widget -->
             <div class="widget">
-                <h4 class="widget-title text-white mb-3">Follow Us</h4>
+                <h4 class="widget-title text-white mb-3">Bizi Takip Edin</h4>
                 <nav class="nav social social-white">
                     <a href="#"><i class="uil uil-twitter"></i></a>
                     <a href="#"><i class="uil uil-facebook-f"></i></a>
@@ -162,38 +169,5 @@
     <!-- /.container -->
 </nav>
 <!-- /.navbar -->
-<div class="modal fade" id="modal-01" tabindex="-1">
-    <div class="modal-dialog modal-dialog-centered modal-sm">
-        <div class="modal-content text-center">
-            <div class="modal-body">
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                <h3 class="mb-4">Login to Sandbox</h3>
-                <form class="text-start mb-3">
-                    <div class="form-floating mb-4">
-                        <input type="email" class="form-control" placeholder="Email" id="loginEmail">
-                        <label for="loginEmail">Email</label>
-                    </div>
-                    <div class="form-floating mb-4">
-                        <input type="password" class="form-control" placeholder="Password" id="loginPassword">
-                        <label for="loginPassword">Password</label>
-                    </div>
-                    <a class="btn btn-primary rounded-pill btn-login w-100 mb-2">Log In</a>
-                </form>
-                <!-- /form -->
-                <p class="mb-1"><a href="#" class="hover">Forgot Password?</a></p>
-                <p class="mb-0">Don't have an account? <a href="#" class="hover">Sign up</a></p>
-                <div class="divider-icon my-4">or</div>
-                <nav class="nav social justify-content-center text-center">
-                    <a href="#" class="btn btn-circle btn-sm btn-google"><i class="uil uil-google"></i></a>
-                    <a href="#" class="btn btn-circle btn-sm btn-facebook-f"><i class="uil uil-facebook-f"></i></a>
-                    <a href="#" class="btn btn-circle btn-sm btn-twitter"><i class="uil uil-twitter"></i></a>
-                </nav>
-                <!--/.social -->
-            </div>
-            <!--/.modal-content -->
-        </div>
-        <!--/.modal-body -->
-    </div>
-    <!--/.modal-dialog -->
-</div>
+
 <!--/.modal -->

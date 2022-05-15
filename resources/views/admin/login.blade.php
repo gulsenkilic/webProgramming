@@ -10,12 +10,18 @@
 
 <body>
     <div class="wrapper fadeInDown">
+        <div class="d-flex flex-center mb-15">
+            <a href="#">
+                <img src="{{ asset('site/images/logo/logo.png') }}" class="max-h-100px" alt="">
+            </a>
+        </div>
+        <br>
         <div id="formContent">
             <!-- Tabs Titles -->
 
             <!-- Icon -->
             <div class="fadeIn first">
-                <p class="lead">GulsenKilicUniversity Panel</p>
+                <p class="lead">Gulsen Kilic University Admin Panel</p>
             </div>
             <!-- Login Form -->
             <!--@if ($errors->any())
@@ -31,9 +37,7 @@
             </form>
 
             <!-- Remind Passowrd -->
-            <div id="formFooter">
-                <!--a class="underlineHover" href="#">Forgot Password?</a-->
-            </div>
+        
 
         </div>
     </div>

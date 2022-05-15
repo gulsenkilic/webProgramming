@@ -204,7 +204,7 @@
                             <div class="container">
                                 <div class="row">
                                     <img class="rounded  mb-2"
-                                        src="https://universitem.GKU.edu.tr/wp-content/uploads/2021/03/dishekimligi-scaled.jpg"
+                                        src="https://universitem.hacettepe.edu.tr/wp-content/uploads/2021/03/dishekimligi-scaled.jpg"
                                         alt="" />
                                     <h4 class="mb-1 d">Diş Hekimliği Fakültesi</h4>
 
@@ -216,7 +216,7 @@
                             <div class="container">
                                 <div class="row">
                                     <img class="rounded  mb-2"
-                                        src="https://universitem.GKU.edu.tr/wp-content/uploads/2021/03/ecza_banner.jpg"
+                                        src="https://universitem.hacettepe.edu.tr/wp-content/uploads/2021/03/ecza_banner.jpg"
                                         alt="" />
                                     <h4 class="mb-1 d">Eczacılık Fakültesi</h4>
 
@@ -227,7 +227,7 @@
                             <div class="container">
                                 <div class="row">
                                     <img class="rounded  mb-2"
-                                        src="https://universitem.GKU.edu.tr/wp-content/uploads/2021/03/edebiyatfakultesi-scaled.jpg"
+                                        src="https://universitem.hacettepe.edu.tr/wp-content/uploads/2021/03/edebiyatfakultesi-scaled.jpg"
                                         alt="" />
                                     <h4 class="mb-1 d">Edebiyat Fakültesi</h4>
 
@@ -237,7 +237,7 @@
                             <div class="container">
                                 <div class="row">
                                     <img class="rounded  mb-2"
-                                        src="https://universitem.GKU.edu.tr/wp-content/uploads/2021/03/egitim_banner.jpg"
+                                        src="https://universitem.hacettepe.edu.tr/wp-content/uploads/2021/03/egitim_banner.jpg"
                                         alt="" />
                                     <h4 class="mb-1 d">Eğitim Fakültesi</h4>
 
@@ -248,7 +248,7 @@
                             <div class="container">
                                 <div class="row">
                                     <img class="rounded  mb-2"
-                                        src="https://universitem.GKU.edu.tr/wp-content/uploads/2021/03/ftr_banner.jpg"
+                                        src="https://universitem.hacettepe.edu.tr/wp-content/uploads/2021/03/ftr_banner.jpg"
                                         alt="" />
                                     <h4 class="mb-1 d">Fizik Tedavi ve Rehabilitasyon Fakültesi</h4>
 
@@ -259,7 +259,7 @@
                             <div class="container">
                                 <div class="row">
                                     <img class="rounded  mb-2"
-                                        src="https://universitem.GKU.edu.tr/wp-content/uploads/2021/03/fenfakultesi-scaled.jpg"
+                                        src="https://universitem.hacettepe.edu.tr/wp-content/uploads/2021/03/fenfakultesi-scaled.jpg"
                                         alt="" />
                                     <h4 class="mb-1 d">Fen Fakültesi</h4>
 
@@ -270,7 +270,7 @@
                             <div class="container">
                                 <div class="row">
                                     <img class="rounded  mb-2"
-                                        src="https://universitem.GKU.edu.tr/wp-content/uploads/2021/03/gsf-scaled.jpg"
+                                        src="https://universitem.hacettepe.edu.tr/wp-content/uploads/2021/03/gsf-scaled.jpg"
                                         alt="" />
                                     <h4 class="mb-1 d">Güzel Sanatlar Fakültesi</h4>
 
@@ -281,7 +281,7 @@
                             <div class="container">
                                 <div class="row">
                                     <img class="rounded  mb-2"
-                                        src="https://universitem.GKU.edu.tr/wp-content/uploads/2021/03/hemsirelik_banner-1.jpg"
+                                        src="https://universitem.hacettepe.edu.tr/wp-content/uploads/2021/03/hemsirelik_banner-1.jpg"
                                         alt="" />
                                     <h4 class="mb-1 d">Hemşirelik Fakültesi</h4>
 
@@ -292,7 +292,7 @@
                             <div class="container">
                                 <div class="row">
                                     <img class="rounded  mb-2"
-                                        src="https://universitem.GKU.edu.tr/wp-content/uploads/2021/03/hukuk_banner.jpg"
+                                        src="https://universitem.hacettepe.edu.tr/wp-content/uploads/2021/03/hukuk_banner.jpg"
                                         alt="" />
                                     <h4 class="mb-1 d">Hukuk Fakültesi</h4>
 
@@ -303,7 +303,7 @@
                             <div class="container">
                                 <div class="row">
                                     <img class="rounded  mb-2"
-                                        src="https://universitem.GKU.edu.tr/wp-content/uploads/2021/03/iletisim_banner.jpg"
+                                        src="https://universitem.hacettepe.edu.tr/wp-content/uploads/2021/03/iletisim_banner.jpg"
                                         alt="" />
                                     <h4 class="mb-1 d">İletişim Fakültesi</h4>
 
@@ -314,7 +314,7 @@
                             <div class="container">
                                 <div class="row">
                                     <img class="rounded  mb-2"
-                                        src="https://universitem.GKU.edu.tr/wp-content/uploads/2021/03/iktisadi_banner.jpg"
+                                        src="https://universitem.hacettepe.edu.tr/wp-content/uploads/2021/03/iktisadi_banner.jpg"
                                         alt="" />
                                     <h4 class="mb-1 d">İktisadi ve İdari Bilimler Fakültesi</h4>
 
@@ -325,7 +325,7 @@
                             <div class="container">
                                 <div class="row">
                                     <img class="rounded  mb-2"
-                                        src="https://universitem.GKU.edu.tr/wp-content/uploads/2021/03/muhendislik-fakultesi-scaled.jpg"
+                                        src="https://universitem.hacettepe.edu.tr/wp-content/uploads/2021/03/muhendislik-fakultesi-scaled.jpg"
                                         alt="" />
                                     <h4 class="mb-1 d">Mühendislik Fakültesi</h4>
 
@@ -336,7 +336,7 @@
                             <div class="container">
                                 <div class="row">
                                     <img class="rounded  mb-2"
-                                        src="https://universitem.GKU.edu.tr/wp-content/uploads/2021/03/saglik_banner.jpg"
+                                        src="https://universitem.hacettepe.edu.tr/wp-content/uploads/2021/03/saglik_banner.jpg"
                                         alt="" />
                                     <h4 class="mb-1 d">Sağlık Bilimleri Fakültesi</h4>
 
@@ -347,7 +347,7 @@
                             <div class="container">
                                 <div class="row">
                                     <img class="rounded  mb-2"
-                                        src="https://universitem.GKU.edu.tr/wp-content/uploads/2021/03/saglikbilimleri_banner.jpg"
+                                        src="https://universitem.hacettepe.edu.tr/wp-content/uploads/2021/03/saglikbilimleri_banner.jpg"
                                         alt="" />
                                     <h4 class="mb-1 d">Spor Bilimleri Fakültesi</h4>
 
@@ -358,7 +358,7 @@
                             <div class="container">
                                 <div class="row">
                                     <img class="rounded  mb-2"
-                                        src="https://universitem.GKU.edu.tr/wp-content/uploads/2021/03/tipfakultesi-scaled.jpg"
+                                        src="https://universitem.hacettepe.edu.tr/wp-content/uploads/2021/03/tipfakultesi-scaled.jpg"
                                         alt="" />
                                     <h4 class="mb-1 d">Tıp Fakültesi</h4>
 
@@ -369,7 +369,7 @@
                             <div class="container">
                                 <div class="row">
                                     <img class="rounded  mb-2"
-                                        src="https://universitem.GKU.edu.tr/wp-content/uploads/2021/04/kapak_konservatuvar.jpg"
+                                        src="https://universitem.hacettepe.edu.tr/wp-content/uploads/2021/04/kapak_konservatuvar.jpg"
                                         alt="" />
                                     <h4 class="mb-1 d">Ankara Devlet Konservatuvarı</h4>
 
@@ -380,7 +380,7 @@
                             <div class="container">
                                 <div class="row">
                                     <img class="rounded  mb-2"
-                                        src="https://universitem.GKU.edu.tr/wp-content/uploads/2021/04/kapak_mtyo.jpg"
+                                        src="https://universitem.hacettepe.edu.tr/wp-content/uploads/2021/04/kapak_mtyo.jpg"
                                         alt="" />
                                     <h4 class="mb-1 d">Mesleki Teknoloji Yüksekokulu</h4>
 
@@ -391,7 +391,7 @@
                             <div class="container">
                                 <div class="row">
                                     <img class="rounded  mb-2"
-                                        src="https://universitem.GKU.edu.tr/wp-content/uploads/2021/04/kapak_ydyo.jpg"
+                                        src="https://universitem.hacettepe.edu.tr/wp-content/uploads/2021/04/kapak_ydyo.jpg"
                                         alt="" />
                                     <h4 class="mb-1 d">Yabancı Diller Yüksekokulu</h4>
 
@@ -402,7 +402,7 @@
                             <div class="container">
                                 <div class="row">
                                     <img class="rounded  mb-2"
-                                        src="https://universitem.GKU.edu.tr/wp-content/uploads/2021/04/kapak_aso.jpg"
+                                        src="https://universitem.hacettepe.edu.tr/wp-content/uploads/2021/04/kapak_aso.jpg"
                                         alt="" />
                                     <h4 class="mb-1 d">GKU ASO 1. OSB Meslek Yüksekokulu</h4>
 
@@ -413,7 +413,7 @@
                             <div class="container">
                                 <div class="row">
                                     <img class="rounded  mb-2"
-                                        src="https://universitem.GKU.edu.tr/wp-content/uploads/2021/07/kapak_baskent1.jpg"
+                                        src="https://universitem.hacettepe.edu.tr/wp-content/uploads/2021/07/kapak_baskent1.jpg"
                                         alt="" />
                                     <h4 class="mb-1 d">Başkent OSB Teknik Bilimler Meslek Yüksekokulu</h4>
 
@@ -424,7 +424,7 @@
                             <div class="container">
                                 <div class="row">
                                     <img class="rounded  mb-2"
-                                        src="https://universitem.GKU.edu.tr/wp-content/uploads/2021/04/kapaksagbil.jpg"
+                                        src="https://universitem.hacettepe.edu.tr/wp-content/uploads/2021/04/kapaksagbil.jpg"
                                         alt="" />
                                     <h4 class="mb-1 d">Sağlık Hizmetleri Meslek Yüksekokulu</h4>
 
@@ -435,7 +435,7 @@
                             <div class="container">
                                 <div class="row">
                                     <img class="rounded  mb-2"
-                                        src="https://universitem.GKU.edu.tr/wp-content/uploads/2021/04/kapak_sosbil.jpg"
+                                        src="https://universitem.hacettepe.edu.tr/wp-content/uploads/2021/04/kapak_sosbil.jpg"
                                         alt="" />
                                     <h4 class="mb-1 d">Sosyal Bilimler Meslek Yüksekokulu</h4>
 

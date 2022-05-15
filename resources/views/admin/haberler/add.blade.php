@@ -51,7 +51,54 @@
                                                 </option>
                                             </select></td>
                                     </tr>
+                                    <tr>
+                                        <th>Yayınlanacağı Sayfa</th>
+                                        <td><select class="form-select" name="status">
+                                            <option value="">
+                                                Yayınlanacağı Yer
+                                            </option>
+                                                <option value="EĞİTİM">
+                                                    ANA SAYFA
+                                                </option>
+                                                <option value="AKADEMİK">
+                                                    MÜHENDİSLİK FAKULTESİ
+                                                </option>
+                                                <option value="GENEL">
+                                                    DİŞ HEKİMLİĞİ FAKULTESİ
+                                                </option>
+                                                <option value="ETKİNLİK">
+                                                    EDEBİYAT FAKULTESİ
+                                                </option>
 
+                                                <option value="EĞİTİM">
+                                                    FEN FAKULTESİ
+                                                </option>
+                                                <option value="AKADEMİK">
+                                                    YABANCI DİLLER MESLEK Y.O
+                                                </option>
+                                                <option value="GENEL">
+                                                    SAĞLIK BİLİMLERİ MESLEK Y.O
+                                                </option>
+                                                <option value="ETKİNLİK">
+                                                    BİLGİSAYAR MUHENDİSLİĞİ
+                                                </option>
+                                                <option value="ETKİNLİK">
+                                                    ENDUTIRI MUHENDİSLİĞİ
+                                                </option>
+                                                <option value="ETKİNLİK">
+                                                    YAZILIM MUHENDİSLİĞİ
+                                                </option>
+                                                <option value="ETKİNLİK">
+                                                    MAKİNA MUHENDİSLİĞİ
+                                                </option>
+                                                <option value="ETKİNLİK">
+                                                    ELEKTIRIK ELEKTRONIK MUHENDİSLİĞİ
+                                                </option>
+                                                <option value="ETKİNLİK">
+                                                    GIDA MUHENDİSLİĞİ
+                                                </option>
+                                            </select></td>
+                                    </tr>
                                     <tr class="mt-5">
                                         <td><input class="btn btn-primary" type="submit" value="EKLE">
                                         </td>

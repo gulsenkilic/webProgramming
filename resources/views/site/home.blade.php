@@ -1,7 +1,7 @@
 @extends('site.layouts.index')
 
 @section('content')
-<!--div class="container"></div-->
+    <!--div class="container"></div-->
     <div class="hero-slider-wrapper bg-dark  ">
         <div class="hero-slider owl-carousel dots-over" data-nav="true" data-dots="true" data-autoplay="true">
             <div class="owl-slide d-flex align-items-center bg-overlay bg-overlay-1500"
@@ -116,7 +116,7 @@
 
 
     <section class="wrapper bg-light">
-        <div class="container py-14 py-md-16">
+        <div class="container py-14 py-md-5">
             <div class="row gx-lg-8 gx-xl-12 gy-10 gy-lg-0">
                 <div class="col-lg-4 mt-lg-2">
                     <h2 class="display-4 mb-3">Üniversitemizden Son Haberler</h2>
@@ -274,7 +274,7 @@
     <!-- /section -->
 
     <section class="wrapper bg-light">
-        <div class="container py-15 py-md-1">
+        <div class="container py-8 py-md-1">
             <div class="row text-center">
                 <div class="col-lg-10 mx-auto position-relative">
                     <div class="position-relative">
@@ -286,9 +286,9 @@
                             style="bottom: 2rem; right: -3.5rem;">
                             <img src="site/images/homepage/circle.svg" class="svg-inject icon-svg w-100 h-100" alt="" />
                         </div>
-                        <video poster="site/images/homepage/movie.jpg" class="player" playsinline controls
+                        <video poster="site/images/homepage/movie.jpg" class="player" autoplay loop playsinline muted
                             preload="none">
-                            <source src="site/images/homepage/movie.mp4" type="video/mp4">
+                            <source src="site/images/homepage/movie.mp4"  type="video/mp4">
                             <source src="site/images/homepage/movie.webm" type="video/webm">
                         </video>
                     </div>
@@ -403,179 +403,9 @@
                     </tr>
                 </tbody>
             </table>
-            <!--div class="col-12 col-md-6">
-                                <table class="table table-hover table-duyurular">
-                                    <tbody>
-                                        <tr>
-                                            <td colspan="2"><h3 class="text-center">ÜNİVERİSTEMİZİN SON ETKİNLİKLERİ</h3></td>
-                                            
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <img src="site/images/homepage/7.jfif" alt="" width="100px">
-                                            </td>
-                                            <td><a href="#"><h5>IWA DIPCON 2022 4th Regional Conference on Diffuse Pollution & Eutrophication</h5></a>
-                                                <i class="uil uil-calendar-alt"></i><span>24 Ekim 2022</span>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <img src="site/images/homepage/8.jfif" alt="" width="100px">
-                                            </td>
-                                            <td><a href="#"><h5>
-                                                VII. İstanbul Hipofiz Sempozyumu</h5></a>
-                                                <i class="uil uil-calendar-alt"></i><span>115 Nisan 2022</span>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <img src="site/images/homepage/9.jfif" alt="" width="100px">
-                                            </td>
-                                            <td><a href="#"><h6>25. Makine & Teknoloji Günleri</h6></a>
-                                                <i class="uil uil-calendar-alt"></i><span>12 Nisan 2022 </span>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <img src="site/images/homepage/10.jfif" alt="" width="100px">
-                                            </td>
-                                            <td><a href="#"><h5>13. Gelişim Girişim Günleri</h5></a>
-                                                <i class="uil uil-calendar-alt"></i><span>18 Mart 2022</span>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <img src="site/images/homepage/11.jfif" alt="" width="100px">
-                                            </td>
-                                            <td><a href="#"><h5>Mühendislikte Topuk Sesleri '22</h5></a>
-                                                <i class="uil uil-calendar-alt"></i><span>15 Mart 2022</span>
-                                        </td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div-->
-        </div>
+            </div>
     </div>
-    <!-- div class="container">
-                        <div class="row">
-                            <div class="col-12 col-md-6">
-                                <table class="table table-hover table-duyurular">
-                                    <tbody>
-                                        <tr>
-                                            <td colspan="2"><h3 class="text-center">ÜNİVERİSTEMİZDEN SON DUYURULAR</h3></td>
-                                            
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <table>
-                                                    <tbody>
-                                                        <tr><td style="background-color: black" class="text-white text-center">Pazartesi</td></tr>
-                                                        <tr><td> 18 Nisan</td></tr>
-                                                    </tbody>
-                                                </table>
-                                            </td>
-                                            <td><a href="#"><h5>2022 Yaz Okulu Yurt Ücretleri</h5></a></td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <table>
-                                                    <tbody>
-                                                        <tr><td style="background-color: black" class="text-white text-center">Çarşamba</td></tr>
-                                                        <tr><td> 30 Mart</td></tr>
-                                                    </tbody>
-                                                </table>
-                                            </td>
-                                            <td><a href="#"><h5>TÜBİTAK 2022 Yılı Üniversite Öğrencisi Stajyer Alımı</h5></a></td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <table>
-                                                    <tbody>
-                                                        <tr><td style="background-color: black" class="text-white text-center">Pazar</td></tr>
-                                                        <tr><td> 23 Ocak</td></tr>
-                                                    </tbody>
-                                                </table>
-                                            </td>
-                                            <td><a href="#"><h6>Olumsuz Hava Koşulları Nedeniyle 24-25 Ocak 2022 Tarihlerinde Eğitime Ara Verilmiştir</h6></a></td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <table>
-                                                    <tbody>
-                                                        <tr><td style="background-color: black" class="text-white text-center">Cuma</td></tr>
-                                                        <tr><td> 21 Ocak</td></tr>
-                                                    </tbody>
-                                                </table>
-                                            </td>
-                                            <td><a href="#"><h5>2021-2022 Bahar Yarıyılı Kurum İçi Yatay Geçiş Başvuru Kılavuzu</h5></a></td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <table>
-                                                    <tbody>
-                                                        <tr><td style="background-color: black" class="text-white text-center">Salı</td></tr>
-                                                        <tr><td> 11 Ocak</td></tr>
-                                                    </tbody>
-                                                </table>
-                                            </td>
-                                            <td><a href="#"><h5>Siber Güvenlik Girişimlerine Özel Hızlandırma Programı Cybercube'un Başvuruları Devam Ediyor!</h5></a></td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div >
-                            
-                                <table class="table table-hover table-duyurular">
-                                    <tbody>
-                                        <tr>
-                                            <td colspan="2"><h3 class="text-center">ÜNİVERİSTEMİZİN SON ETKİNLİKLERİ</h3></td>
-                                            
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <img src="site/images/homepage/7.jfif" alt="" width="150px">
-                                            </td>
-                                            <td><a href="#"><h5>IWA DIPCON 2022 4th Regional Conference on Diffuse Pollution & Eutrophication</h5></a>
-                                                <i class="uil uil-calendar-alt"></i><span>24 Ekim 2022</span>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <img src="site/images/homepage/8.jfif" alt="" width="150px">
-                                            </td>
-                                            <td><a href="#"><h5>
-                                                VII. İstanbul Hipofiz Sempozyumu</h5></a>
-                                                <i class="uil uil-calendar-alt"></i><span>115 Nisan 2022</span>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <img src="site/images/homepage/9.jfif" alt="" width="150px">
-                                            </td>
-                                            <td><a href="#"><h6>25. Makine & Teknoloji Günleri</h6></a>
-                                                <i class="uil uil-calendar-alt"></i><span>12 Nisan 2022 </span>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <img src="site/images/homepage/10.jfif" alt="" width="150px">
-                                            </td>
-                                            <td><a href="#"><h5>13. Gelişim Girişim Günleri</h5></a>
-                                                <i class="uil uil-calendar-alt"></i><span>18 Mart 2022</span>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <img src="site/images/homepage/11.jfif" alt="" width="150px">
-                                            </td>
-                                            <td><a href="#"><h5>Mühendislikte Topuk Sesleri '22</h5></a>
-                                                <i class="uil uil-calendar-alt"></i><span>15 Mart 2022</span>
-                                        </td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                           
-                        </div>
-                    </div -->
+  
     <section id="snippet-1" class="wrapper bg-light wrapper-border">
         <div class="container pt-md-10 pb-5 pb-md-1">
             <h2 class="display-4 mb-3 text-center">ETKİNLİK TAKVİMİ</h2>
@@ -592,14 +422,14 @@
                             </figcaption>
                         </figure>
                         <!--div class="post-header">
-                                            <div class="post-category text-line">
-                                                <a href="#" class="hover" rel="category">Eğitim</a>
-                                            </div>
-                                         
-                                            <h2 class="post-title h3 mt-1 mb-3"><a class="link-dark" href="{{ route('attraction1') }}">
-                                                IWA DIPCON 2022 4th Regional Conference on Diffuse Pollution & Eutrophication
-                                           </a></h2>
-                                        </div-->
+                                                <div class="post-category text-line">
+                                                    <a href="#" class="hover" rel="category">Eğitim</a>
+                                                </div>
+                                             
+                                                <h2 class="post-title h3 mt-1 mb-3"><a class="link-dark" href="{{ route('attraction1') }}">
+                                                    IWA DIPCON 2022 4th Regional Conference on Diffuse Pollution & Eutrophication
+                                               </a></h2>
+                                            </div-->
                         <!-- /.post-header -->
                         <div class="post-footer">
                             <ul class="post-meta">
@@ -623,12 +453,12 @@
                             </figcaption>
                         </figure>
                         <!--div class="post-header">
-                                            <div class="post-category text-line">
-                                                <a href="#" class="hover" rel="category">Üniversite</a>
-                                            </div>
-                                         
-                                            <h2 class="post-title h3 mt-1 mb-3"><a class="link-dark" href="{{ route('attraction2') }}">VII. İstanbul Hipofiz Sempozyumu</a></h2>
-                                        </div -->
+                                                <div class="post-category text-line">
+                                                    <a href="#" class="hover" rel="category">Üniversite</a>
+                                                </div>
+                                             
+                                                <h2 class="post-title h3 mt-1 mb-3"><a class="link-dark" href="{{ route('attraction2') }}">VII. İstanbul Hipofiz Sempozyumu</a></h2>
+                                            </div -->
                         <!-- /.post-header -->
                         <div class="post-footer">
                             <ul class="post-meta">
@@ -652,12 +482,12 @@
                             </figcaption>
                         </figure>
                         <!--div class="post-header">
-                                            <div class="post-category text-line">
-                                                <a href="#" class="hover" rel="category">Sosyal</a>
-                                            </div>
-                                            <h2 class="post-title h3 mt-1 mb-3"><a class="link-dark"
-                                                    href="{{ route('attraction3') }}">25. Makine & Teknoloji Günleri</a></h2>
-                                        </div-->
+                                                <div class="post-category text-line">
+                                                    <a href="#" class="hover" rel="category">Sosyal</a>
+                                                </div>
+                                                <h2 class="post-title h3 mt-1 mb-3"><a class="link-dark"
+                                                        href="{{ route('attraction3') }}">25. Makine & Teknoloji Günleri</a></h2>
+                                            </div-->
                         <!-- /.post-header -->
                         <div class="post-footer">
                             <ul class="post-meta">
@@ -681,11 +511,11 @@
                             </figcaption>
                         </figure>
                         <!--div class="post-header">
-                                            <div class="post-category text-line">
-                                                <a href="#" class="hover" rel="category">Başarılar</a>
-                                            </div>
-                                            <h2 class="post-title h3 mt-1 mb-3"><a class="link-dark" href="{{ route('attraction4') }}">13. Gelişim Girişim Günleri</a></h2>
-                                        </div-->
+                                                <div class="post-category text-line">
+                                                    <a href="#" class="hover" rel="category">Başarılar</a>
+                                                </div>
+                                                <h2 class="post-title h3 mt-1 mb-3"><a class="link-dark" href="{{ route('attraction4') }}">13. Gelişim Girişim Günleri</a></h2>
+                                            </div-->
                         <div class="post-footer">
                             <ul class="post-meta">
                                 <li class="post-date"><i class="uil uil-calendar-alt"></i><span>7 Haziran 2021</span>
@@ -708,11 +538,11 @@
                             </figcaption>
                         </figure>
                         <!--div class="post-header">
-                                            <div class="post-category text-line">
-                                                <a href="#" class="hover" rel="category">Başarılar</a>
-                                            </div>
-                                            <h2 class="post-title h3 mt-1 mb-3"><a class="link-dark" href="{{ route('attraction5') }}">Mühendislikte Topuk Sesleri '22</a></h2>
-                                        </div-->
+                                                <div class="post-category text-line">
+                                                    <a href="#" class="hover" rel="category">Başarılar</a>
+                                                </div>
+                                                <h2 class="post-title h3 mt-1 mb-3"><a class="link-dark" href="{{ route('attraction5') }}">Mühendislikte Topuk Sesleri '22</a></h2>
+                                            </div-->
                         <div class="post-footer">
                             <ul class="post-meta">
                                 <li class="post-date"><i class="uil uil-calendar-alt"></i><span>7 Haziran 2021</span>
@@ -754,7 +584,7 @@
                                 <!--/column -->
                                 <div class="col-md-3">
                                     <img src="site/images/about/briefcase-2.svg"
-                                        class="svg-inject icon-svg icon-svg-lg text-primary mb-3 mt-3"  alt="" />
+                                        class="svg-inject icon-svg icon-svg-lg text-primary mb-3 mt-3" alt="" />
                                     <h3 class="counter">21848</h3>
                                     <p>Mezun</p>
                                 </div>
@@ -778,13 +608,13 @@
             <!-- /section -->
             <!--hr class="double my-2" />
 
-                <h1 class="text-center display-4 mb-3"><span class="underline-3 style-1 yellow"><i
-                            class="uil uil-location-pin-alt"></i> BİZ NERDEYİZ?</span></h1>
-                <div class="row mb-10">
-                    <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12037.314669014475!2d28.99603911954346!3d41.0399411602627!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xdcd33e38cf3b830b!2zRG9sbWFiYWjDp2UgU2FyYXnEsQ!5e0!3m2!1str!2str!4v1650873696018!5m2!1str!2str"
-                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-                </div-->
+                    <h1 class="text-center display-4 mb-3"><span class="underline-3 style-1 yellow"><i
+                                class="uil uil-location-pin-alt"></i> BİZ NERDEYİZ?</span></h1>
+                    <div class="row mb-10">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12037.314669014475!2d28.99603911954346!3d41.0399411602627!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xdcd33e38cf3b830b!2zRG9sbWFiYWjDp2UgU2FyYXnEsQ!5e0!3m2!1str!2str!4v1650873696018!5m2!1str!2str"
+                            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div-->
         </div>
 
     </section>
