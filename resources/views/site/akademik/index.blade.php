@@ -27,7 +27,7 @@
                         <table class="table table-bordered text-left table-hover bg-soft-primary border-primary border border-2">
 
                             <tr>
-                                <td style="width: 10%"><img src="site/images/logo/logo.png" alt=""></td>
+                                <td style="width: 10%"><img src="{{ asset('site/images/logo/logo.png') }}" alt=""></td>
                                 <td class="text-uppercase text-center"><a href="{{route('yabanci')}}" class="text-dark"><h4>YABANCI DİLLER YÜKSEKOKULU</h4></a></td>
                             </tr>
                             <tr>

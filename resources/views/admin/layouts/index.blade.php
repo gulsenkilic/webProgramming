@@ -30,6 +30,7 @@
 
     @yield('head')
     <meta name="theme-color" content="#136f8b">
+    <meta name="msapplication-TileColor" content="#136f8b">
 </head>
 
 <body id="kt_body"
@@ -38,17 +39,18 @@
     @include('admin.layouts.navbar')
     @include('admin.layouts.menu')
 
-    @yield('content')
+  
     
     @include('admin.layouts.footer')
 
     @yield('js-up')
-
-
+    
+    <script src = "//cdn.ckeditor.com/4.14.1/standard/ckeditor.js" > < /script>
     <script src="{{ asset('admin/js/jquery-3.6.0.min.js') }}"></script>
     <script src="{{ asset('admin/js/scripts.bundle.js') }}"></script>
     <script src="{{ asset('admin/js/plugins.bundle.js') }}"></script>
     <script src="{{ asset('admin/js/script.js') }}"></script>
+    <!--begin::Page Vendors Javascript(used by this page)-->
     <script src="{{ asset('admin/js/datatables.bundle.js') }}"></script>
     <script src="{{ asset('admin/js/fullcalendar.bundle.js') }}"></script>
     <!--end::Page Vendors Javascript-->
