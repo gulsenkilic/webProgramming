@@ -10,9 +10,7 @@
 
 </p>
 
-<p class="mb-3">Törene öğrencilerimizin ailelerinin katılımları <b>2 Kişi</b> ile sınırlıdır. 
-
-</p>
+<p class="mb-3">Törene öğrencilerimizin ailelerinin katılımları <b>2 Kişi</b> ile sınırlıdır. </p>
 
 <p class="mb-3">Törene katılmak isteyen öğrencilerin daha sonra duyurulacak bir tarihe kadar katılımlarını imza ile bölüm sekreterliğine bildirmesi gerekmektedir. </p>
 

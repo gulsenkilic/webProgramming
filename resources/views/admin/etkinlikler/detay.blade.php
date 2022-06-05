@@ -6,7 +6,7 @@
 
                 <div class="card border-dark mb-3 w-100">
                     <div class="card-header">
-                        <p class="pt-7 text-dark">ETKİNLİK TARİHİ : 14/04/2022</p>
+                        <p class="pt-7 text-dark">ETKİNLİK TARİHİ : {{$etkinlik->ta}}</p>
                         <a type="button" class="btn btn-warning h-100 mt-4"
                         href='{{ route('etkinlikler') }}'>GERİ DÖN</a>
                     </div>
@@ -15,27 +15,48 @@
                             <div class="table-responsive">
                                 <table class="table table-hover mt-0">
                                     <tr>
-                                        <th>Etkinlik Başlığı</th>
-                                        <td>IWA DIPCON 2022 4th Regional Conference on Diffuse Pollution &
-                                            Eutrophication</td>
+                                        <th>Slug</th>
+                                        <td>{{$etkinlik->slug}}</td> 
+                                    </tr>
+                                    <tr>
+                                        <th>Başlık</th>
+                                        <td>{{$etkinlik->baslik}}</td> 
                                     </tr>
                                     <tr>
                                         <th>Etkinlik Metni</th>
-                                        <td>
-                                         
-
-                                        </td>
+                                        <td>{{$etkinlik->metin}}</td>
                                     </tr>
                                     <tr>
                                         <th>Resim</th>
-                                        <td><img id="defaultPicture" width="150px"
-                                            src="{{asset('site/images/homepage/7.jfif')}}">
-                                       </td>
-                                    </tr>
-                                   
-                                    <tr class="mt-5">
-                                        <td><a class="btn btn-primary h-100 mt-4" href="{{route('etkinlik1Edit')}}">EDİT</a>
+                                        <td>
+                                        
+                                            <img id="defaultPicture" width="150px"
+                                                src="{{asset($etkinlik->resim)}}">
+                                        
                                         </td>
+                                    </tr>
+                                    <tr>
+                                        <th>Kategori</th>
+                                        <td>{{$etkinlik->kategori}}</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Yayınlanacağı Sayfa</th>
+                                        <td>{{$etkinlik->konum}}</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Statü</th>
+                                        <td>{{$etkinlik->statu }}</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Son güncelleme</th>
+                                        <td>{{$etkinlik->updated_at}} </td>
+                                    </tr>
+
+                                    <tr class="mt-5">
+                                        
+                                        <td><a class="btn btn-primary h-100 mt-4"
+                                            href="{{ route('etkinlikEdit', ['id' => "$etkinlik->id"]) }} ">GÜNCELLE</a>
+                                    </td>
                                     </tr>
 
 

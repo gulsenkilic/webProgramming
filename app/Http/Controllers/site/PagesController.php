@@ -6,10 +6,28 @@ use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Session;
 use Illuminate\Support\Facades\App;
+use App\Models\Duyurular;
+use App\Models\Etkinlik;
+use App\Models\Haber;
+use App\Models\Yerleske;
+use App\Models\AkademikKadro;
 
 class PagesController extends Controller{
     public function index(){
-        return view('site.home');
+        $haberler =  Haber::where('konum','=','ana_sayfa')->get();
+        $duyurular =  Duyurular::where('konum','=','ana_sayfa')->get();
+        $data=[
+            'haberler'=>$haberler,
+            'duyurular'=>$duyurular
+        ];
+       
+        return view('site.home',$data);
+    }
+    public function haberDetay($slug){
+        
+        $haber =  Haber::where('slug','=',$slug)->first();
+        return view('site.news.news1',['haber'=>$haber]);
+       
     }
     public function news1(){
         return view('site.news.news1');

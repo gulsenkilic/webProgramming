@@ -24,12 +24,13 @@
                 <p class="lead">Gulsen Kilic University Admin Panel</p>
             </div>
             <!-- Login Form -->
-            <!--@if ($errors->any())
+            @if ($errors->any())
                 <div class="alert alert-danger" style="margin: 10px">
                     {{ $errors->first() }}
                 </div>
-            @endif hata mesajı yazdırma-->
-            <form action="{{ route('adminDashboardPage')}}" method="">
+            @endif
+            
+            <form action="{{ route('adminLoginProcess') }}" method="Post">
                 @csrf
                 <input type="text" id="login" class="fadeIn second" name="userName" placeholder="username">
                 <input type="password" id="password" class="fadeIn third" name="password" placeholder="password">

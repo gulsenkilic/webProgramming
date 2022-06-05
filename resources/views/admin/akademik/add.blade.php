@@ -7,70 +7,109 @@
                 <div class="card border-dark mb-3 w-100">
                     <div class="card-header">
                         <p class="pt-7 text-dark">AKADEMİK PERSONEL EKLE</p>
-                        <a type="button" class="btn btn-warning h-100 mt-4" href='{{ route('akademikPanel') }}'>GERİ
+                        <a type="button" class="btn btn-warning h-100 mt-4" href='{{ route('processAkademikEkle') }}'>GERİ
                             DÖN</a>
                     </div>
                     <div class="card-body text-dark">
-                        <form action="{{ route('akademikPanel') }} " method="">
-                            <input type="hidden" name="id">
+                        <form action="{{ route('processAkademikEkle') }}" method="post" enctype="multipart/form-data">
+                            <input type="hidden" name="id" >
                             @csrf
                             <div class="table-responsive">
                                 <table class="table table-hover mt-0">
                                     <tr>
-                                        <td>UNVAN</td>
-                                        <td><input class="form-control" type="text"></td>
+
+                                        <th>Resim</th>
+                                        <td><input name="image" class="form-control" type="file"></td>
+                                        </td>
                                     </tr>
                                     <tr>
-                                        <td>AD-SOYAD</td>
-                                        <td><input class="form-control" type="text"></td>
+                                        <th>Unvan</th>
+                                        <td><input name="unvan" class="form-control" type="text"></td>
                                     </tr>
                                     <tr>
-                                        <th>GÖREVİ</th>
-                                        <td><select class="form-select" name="status">
+                                        <th>Ad - Soyad</th>
+                                        <td><input name="ad_soyad" class="form-control" type="text"></td>
+                                    </tr>
+                                    <tr>
+                                        <th>Mail</th>
+                                        <td><input name="mail" class="form-control" type="text"></td>
+                                    </tr>
+                                    <tr>
+                                        <th>Tel</th>
+                                        <td><input name="tel" class="form-control" type="text"></td>
+                                    </tr>
+                                    <tr>
+                                        <th>Sosyal Medya</th>
+                                        <td>
+                                            <textarea class="form-control ckeditor" name="sosyal_medya"></textarea>
+
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>Eğitim Bilgileri</th>
+                                        <td>
+                                            <textarea class="form-control ckeditor" name="egitim_bilgileri"></textarea>
+
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>Avesis</th>
+                                        <td><input name="avesis" class="form-control" type="text"></td>
+                                    </tr>
+
+
+                                    <tr>
+                                        <th>Yayınlanacağı Sayfa</th>
+                                        <td><select class="form-select" name="konum">
                                                 <option value="">
-                                                    LÜTFEN BİR SEÇİM YAPIN
+
                                                 </option>
-                                                <option value="EĞİTİM">
-                                                    REKTÖR
+                                                <option value="ana_sayfa">
+                                                    ANA SAYFA
                                                 </option>
-                                                <option value="AKADEMİK">
-                                                    REKTÖR YARDIMCISI
+                                                <option value="muhendislik_fak">
+                                                    MÜHENDİSLİK FAKULTESİ
                                                 </option>
-                                                <option value="GENEL">
-                                                    GENEL SEKRETER
+
+                                                <option value="edebiyat_fak">
+                                                    EDEBİYAT FAKULTESİ
                                                 </option>
-                                                <option value="ETKİNLİK">
-                                                    MUHENDİSLİK FAKULTESI DEKANI
+
+                                                <option value="fen_fak">
+                                                    FEN FAKULTESİ
                                                 </option>
-                                                <option value="ETKİNLİK">
-                                                    DİŞ HEKİMLİĞİ FAKULTESI DEKANI
+                                                <option value="yabanci_diller">
+                                                    YABANCI DİLLER MESLEK Y.O
                                                 </option>
-                                                <option value="ETKİNLİK">
-                                                    EĞİTİM FAKULTESI DEKANI
+
+                                                <option value="bilgisayar_muh">
+                                                    BİLGİSAYAR MUHENDİSLİĞİ
                                                 </option>
-                                                <option value="ETKİNLİK">
-                                                    FEN FAKULTESI DEKANI
+                                                <option value="endustri_muh">
+                                                    ENDUTIRI MUHENDİSLİĞİ
                                                 </option>
-                                                <option value="ETKİNLİK">
-                                                    FEM EDEBİYAT FAKULTESI DEKANI
+
+                                                <option value="makina_muh">
+                                                    MAKİNA MUHENDİSLİĞİ
                                                 </option>
+
                                             </select></td>
                                     </tr>
                                     <tr>
-                                        <td>TELEFON</td>
-                                        <td><input class="form-control" type="text"></td>
-                                    </tr>
-                                    <tr>
-                                        <td>EMAIL</td>
-                                        <td><input class="form-control" type="text"></td>
-                                    </tr>
-                                    <tr>
-                                        <td>AVESIS LINK</td>
-                                        <td><input class="form-control" type="text"></td>
-                                    </tr>
-                                    <tr>
-                                        <th>Resim</th>
-                                        <td><input name="image" class="form-control" type="file"></td>
+                                        <th>Statü</th>
+                                        <td><select class="form-select" name="statu">
+                                                <option value="">
+
+                                                </option>
+                                                <option value="aktif">
+                                                    AKTİF
+                                                </option>
+                                                <option value="pasif">
+                                                    PASİF
+                                                </option>
+
+
+                                            </select></td>
                                     </tr>
 
 

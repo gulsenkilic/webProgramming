@@ -1,6 +1,6 @@
 @extends('admin.layouts.index')
 @section('content')
-<div class="card-body mt-10">
+<div class=" mt-10">
     <div class="card border-dark  ">
         <div class="card-header">
             <p class="pt-7 text-primary"><b>YABANCI DILLER MESLEK YUKSEK OKULU </b></p>
@@ -8,12 +8,9 @@
 
         </div>
     </div>
-    
-
-    
 </div>
 
-<div class="card-body py-3 mt-10">
+<div class="card-body ">
     <div class="content-container">
 
 
@@ -41,69 +38,19 @@
                         </thead>
                         <tbody>
 
+                            @foreach ($personeller as $personel)
                             <tr>
-                                <td><img src="{{ asset('site/images/about/yonetim/t4.jpg') }}" width="150px" alt="" />
-                                </td>
-                                <td>Öğr. Gör. Mehmet ATASAGUN</td>
-                                <td> <b>Müdür</b> </td>
-                                <td>0212 765 44 78</td>
-                                <td>mehmet.atasagun@sfl.bau.edu.tr</td>
-                                <td><a href="http://akademik.gku.edu.tr/web/gku">http://akademik.gku.edu.tr/web/gku</a>
-                                </td>
-                                <td> <a type="button" class="btn btn-primary" href="{{ route('akademikEdit') }} ">EDİT
-                                    </a></td>
-                                <td> <a type="reset" href="{{ route('akademikPanel') }}"
-                                        class="btn btn-warning">SIL</a> </a></td>
+                                <td><img src="{{asset($personel->resim)}}" width="150px" alt=""  /></td>
+                                <td>{{$personel->ad_soyad}}</td>
+                                <td> <b>{{$personel->unvan}}</b> </td>
+                                <td>{{$personel->tel}}</td>
+                                <td>{{$personel->mail}}</td>
+                                <td><a href="{{$personel->avesis}}">{{$personel->avesis}}</a></td>
+                                <td> <a type="button" class="btn btn-primary" href="{{route('akademikEdit',['id'=>$personel->id])}} ">EDİT </a></td>
+                                <td> <a type="reset" href="{{route('personelSil',['id'=>$personel->id])}}" class="btn btn-warning" onclick="return confirm('Emin misiniz?')">SIL</a> </a></td>
 
                             </tr>
-                            <tr>
-                                <td><img src="{{ asset('site/images/about/yonetim/t1.jpg') }}" width="150px" alt="" />
-                                </td>
-                                <td>Öğr. Gör. Serhat UZUN </td>
-                                <td> <b>Müdür Yardımcısı</b> </td>
-                                <td>0212 765 44 78</td>
-                                <td>serhat.uzun@sfl.bau.edu.tr</td>
-                                <td><a href="http://akademik.gku.edu.tr/web/gku">http://akademik.gku.edu.tr/web/gku</a>
-                                </td>
-
-                                <td> <a type="button" class="btn btn-primary" href="{{ route('akademikEdit') }} ">EDİT
-                                    </a></td>
-                                <td> <a type="reset" href="{{ route('akademikPanel') }}"
-                                        class="btn btn-warning">SIL</a> </a></td>
-
-                            </tr>
-                            <tr>
-                                <td><img src="{{ asset('site/images/about/yonetim/t2.jpg') }}" width="150px" alt="" />
-                                </td>
-                                <td>Öğr. Gör. Akif Yavuz ÖZDEMİREL </td>
-                                <td> <b>İdari Koordinatör</b> </td>
-                                <td>0212 765 44 78</td>
-                                <td>akifyavuz.ozdemirel@sfl.bau.edu.tr</td>
-                                <td><a href="http://akademik.gku.edu.tr/web/gku">http://akademik.gku.edu.tr/web/gku</a>
-                                </td>
-
-                                <td> <a type="button" class="btn btn-primary" href="{{ route('akademikEdit') }} ">EDİT
-                                    </a></td>
-                                <td> <a type="reset" href="{{ route('akademikPanel') }}"
-                                        class="btn btn-warning">SIL</a> </a></td>
-
-                            </tr>
-                            <tr>
-                                <td><img src="{{ asset('site/images/about/yonetim/t3.jpg') }}" width="150px" alt="" />
-                                </td>
-                                <td>Öğr. Gör. Çağla MİTRANİ </td>
-                                <td> <b>Ölçme ve Değerlendirme Birimi Koordinatörü</b> </td>
-                                <td>0212 765 44 78</td>
-                                <td>cagla.mitrani@sfl.bau.edu.tr</td>
-                                <td><a href="http://akademik.gku.edu.tr/web/gku">http://akademik.gku.edu.tr/web/gku</a>
-                                </td>
-
-                                <td> <a type="button" class="btn btn-primary" href="{{ route('akademikEdit') }} ">EDİT
-                                    </a></td>
-                                <td> <a type="reset" href="{{ route('akademikPanel') }}"
-                                        class="btn btn-warning">SIL</a> </a></td>
-
-                            </tr>
+                            @endforeach
 
 
                         </tbody>

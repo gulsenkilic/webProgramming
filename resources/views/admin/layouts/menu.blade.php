@@ -112,7 +112,7 @@
                          </div>
 
                          <div class="menu-item">
-                             <a class="menu-link" href="{{ route('adminLoginPage') }}" title="Çıkış"
+                             <a class="menu-link" href="{{ route('adminLogoutPage') }}" title="Çıkış"
                                  data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-dismiss="click"
                                  data-bs-placement="right">
                                  <span class="menu-title">Çıkış</span>

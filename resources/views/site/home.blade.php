@@ -128,139 +128,42 @@
                     <div class="carousel owl-carousel blog grid-view" data-margin="30" data-dots="true" data-autoplay="true"
                         data-nav="true" data-autoplay-timeout="5000"
                         data-responsive='{"0":{"items": "1"}, "768":{"items": "2"}, "992":{"items": "2"}, "1200":{"items": "3"}}'>
-                        <div class="item">
-                            <article>
-                                <figure class="overlay overlay-1 hover-scale rounded mb-5"><a href="{{ route('news1') }}">
-                                        <img src="site/images/homepage/3.jpg" alt="" /></a>
-                                    <figcaption>
-                                        <h5 class="from-top mb-0">Read More</h5>
-                                    </figcaption>
-                                </figure>
-                                <div class="post-header">
-                                    <div class="post-category text-line">
-                                        <a href="#" class="hover" rel="category">Eğitim</a>
+                        @foreach ($haberler as $haber)
+                            <div class="item">
+                                <article>
+                                    <figure class="overlay overlay-1 hover-scale rounded mb-5"><a
+                                            href="{{ route('haberDetayPage',['slug'=>$haber->slug]) }}">
+                                            <img src="{{ asset($haber->resim) }}" alt="" /></a>
+                                        <figcaption>
+                                            <h5 class="from-top mb-0">Read More</h5>
+                                        </figcaption>
+                                    </figure>
+                                    <div class="post-header">
+                                        <div class="post-category text-line">
+                                            <a href="#" class="hover" rel="category">{{ $haber->kategori }}</a>
+                                        </div>
+                                        <!-- /.post-category -->
+                                        <h2 class="post-title h3 mt-1 mb-3"><a class="link-dark"
+                                                href="{{ route('haberDetayPage',['slug'=>$haber->slug]) }}">
+                                                {{ $haber->baslik }}
+                                            </a></h2>
                                     </div>
-                                    <!-- /.post-category -->
-                                    <h2 class="post-title h3 mt-1 mb-3"><a class="link-dark"
-                                            href="{{ route('news1') }}">
-                                            2022-2023 Yılı Erasmus Öğrenci Hareketliliği Başvuruları
-                                        </a></h2>
-                                </div>
-                                <!-- /.post-header -->
-                                <div class="post-footer">
-                                    <ul class="post-meta">
-                                        <li class="post-date"><i class="uil uil-calendar-alt"></i><span>14 Nisan
-                                                2021</span>
-                                        </li>
-                                        <li class="post-comments"><a href="#"><i class="uil uil-comment"></i>4</a></li>
-                                    </ul>
-                                    <!-- /.post-meta -->
-                                </div>
-                                <!-- /.post-footer -->
-                            </article>
-                            <!-- /article -->
-                        </div>
-                        <!-- /.item -->
-                        <div class="item">
-                            <article>
-                                <figure class="overlay overlay-1 hover-scale rounded mb-5"><a href="{{ route('news2') }}">
-                                        <img src="site/images/homepage/4.webp" alt="" /></a>
-                                    <figcaption>
-                                        <h5 class="from-top mb-0">Read More</h5>
-                                    </figcaption>
-                                </figure>
-                                <div class="post-header">
-                                    <div class="post-category text-line">
-                                        <a href="#" class="hover" rel="category">Üniversite</a>
+                                    <!-- /.post-header -->
+                                    <div class="post-footer">
+                                        <ul class="post-meta">
+                                            <li class="post-date"><i
+                                                    class="uil uil-calendar-alt"></i><span>{{ $haber->created_at }}</span>
+                                            </li>
+                                            <li class="post-comments"><a href="#"><i class="uil uil-comment"></i>4</a></li>
+                                        </ul>
+                                        <!-- /.post-meta -->
                                     </div>
-                                    <!-- /.post-category -->
-                                    <h2 class="post-title h3 mt-1 mb-3"><a class="link-dark"
-                                            href="{{ route('news2') }}">İstanbul Üniversitesi ile Gülşen Kılıç
-                                            Üniversitesi
-                                            Arasında
-                                            İş Birliği Protokolü İmzalandı</a></h2>
-                                </div>
-                                <!-- /.post-header -->
-                                <div class="post-footer">
-                                    <ul class="post-meta">
-                                        <li class="post-date"><i class="uil uil-calendar-alt"></i><span>29 Mart
-                                                2021</span>
-                                        </li>
-                                        <li class="post-comments"><a href="#"><i class="uil uil-comment"></i>3</a></li>
-                                    </ul>
-                                    <!-- /.post-meta -->
-                                </div>
-                                <!-- /.post-footer -->
-                            </article>
-                            <!-- /article -->
-                        </div>
-                        <!-- /.item -->
-                        <div class="item">
-                            <article>
-                                <figure class="overlay overlay-1 hover-scale rounded mb-5"><a href="{{ route('news3') }}">
-                                        <img src="site/images/homepage/5.jpg" alt="" /></a>
-                                    <figcaption>
-                                        <h5 class="from-top mb-0">Read More</h5>
-                                    </figcaption>
-                                </figure>
-                                <div class="post-header">
-                                    <div class="post-category text-line">
-                                        <a href="#" class="hover" rel="category">Sosyal</a>
-                                    </div>
-                                    <!-- /.post-category -->
-                                    <h2 class="post-title h3 mt-1 mb-3"><a class="link-dark"
-                                            href="{{ route('news3') }}">Bahçeköy Yerleşkesi'nde Organize Edilen Etkinlikte
-                                            Fidanlar
-                                            Toprakla Buluştu</a></h2>
-                                </div>
-                                <!-- /.post-header -->
-                                <div class="post-footer">
-                                    <ul class="post-meta">
-                                        <li class="post-date"><i class="uil uil-calendar-alt"></i><span>26 Şubat
-                                                2021</span>
-                                        </li>
-                                        <li class="post-comments"><a href="#"><i class="uil uil-comment"></i>6</a></li>
-                                    </ul>
-                                    <!-- /.post-meta -->
-                                </div>
-                                <!-- /.post-footer -->
-                            </article>
-                            <!-- /article -->
-                        </div>
-                        <!-- /.item -->
-                        <div class="item">
-                            <article>
-                                <figure class="overlay overlay-1 hover-scale rounded mb-5"><a href="{{ route('news4') }}">
-                                        <img src="site/images/homepage/6.jfif" alt="" /></a>
-                                    <figcaption>
-                                        <h5 class="from-top mb-0">Read More</h5>
-                                    </figcaption>
-                                </figure>
-                                <div class="post-header">
-                                    <div class="post-category text-line">
-                                        <a href="#" class="hover" rel="category">Başarılar</a>
-                                    </div>
-                                    <!-- /.post-category -->
-                                    <h2 class="post-title h3 mt-1 mb-3"><a class="link-dark"
-                                            href="{{ route('news4') }}">Mühendislik Fakültesi Öğretim Üyelerimiz “Kimya
-                                            Bilimine
-                                            Yön
-                                            Veren 100 Türk” Listesi’nde Yer Aldı</a></h2>
-                                </div>
-                                <div class="post-footer">
-                                    <ul class="post-meta">
-                                        <li class="post-date"><i class="uil uil-calendar-alt"></i><span>7 Haziran
-                                                2021</span>
-                                        </li>
-                                        <li class="post-comments"><a href="#"><i class="uil uil-comment"></i>2</a></li>
-                                    </ul>
-                                    <!-- /.post-meta -->
-                                </div>
-                                <!-- /.post-footer -->
-                            </article>
-                            <!-- /article -->
-                        </div>
-                        <!-- /.item -->
+                                    <!-- /.post-footer -->
+                                </article>
+                                <!-- /article -->
+                            </div>
+                        @endforeach
+
                     </div>
                     <!-- /.owl-carousel -->
                     <!-- /.owl-carousel -->
@@ -286,9 +189,9 @@
                             style="bottom: 2rem; right: -3.5rem;">
                             <img src="site/images/homepage/circle.svg" class="svg-inject icon-svg w-100 h-100" alt="" />
                         </div>
-                        <video poster="site/images/homepage/movie.jpg" class="player" autoplay loop playsinline muted
-                            preload="none">
-                            <source src="site/images/homepage/movie.mp4"  type="video/mp4">
+                        <video poster="site/images/homepage/movie.jpg" class="player" autoplay loop playsinline
+                            muted preload="none">
+                            <source src="site/images/homepage/movie.mp4" type="video/mp4">
                             <source src="site/images/homepage/movie.webm" type="video/webm">
                         </video>
                     </div>
@@ -314,7 +217,8 @@
                         </td>
 
                     </tr>
-                    <tr>
+                    @foreach ($duyurular as $duyuru)
+                          <tr>
                         <td>
                             <table>
                                 <tbody>
@@ -322,90 +226,23 @@
                                         <td class="text-white text-center bg-orange">Pazartesi</td>
                                     </tr>
                                     <tr>
-                                        <td> 18 Nisan</td>
+                                        <td> {{$duyuru->created_at}}</td>
                                     </tr>
                                 </tbody>
                             </table>
                         </td>
                         <td><a href="{{ route('notice1') }}">
-                                <h5>2022 Yaz Okulu Yurt Ücretleri</h5>
+                                <h5>{{$duyuru->baslik}}</h5>
                             </a></td>
                     </tr>
-                    <tr>
-                        <td>
-                            <table>
-                                <tbody>
-                                    <tr>
-                                        <td class="text-white text-center bg-orange">Çarşamba</td>
-                                    </tr>
-                                    <tr>
-                                        <td> 30 Mart</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </td>
-                        <td><a href="{{ route('notice2') }}">
-                                <h5>TÜBİTAK 2022 Yılı Üniversite Öğrencisi Stajyer Alımı</h5>
-                            </a></td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <table>
-                                <tbody>
-                                    <tr>
-                                        <td class="text-white text-center bg-orange">Pazar</td>
-                                    </tr>
-                                    <tr>
-                                        <td> 23 Ocak</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </td>
-                        <td><a href="{{ route('notice3') }}">
-                                <h6>Olumsuz Hava Koşulları Nedeniyle 24-25 Ocak 2022 Tarihlerinde Eğitime Ara Verilmiştir
-                                </h6>
-                            </a></td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <table>
-                                <tbody>
-                                    <tr>
-                                        <td class="text-white text-center bg-orange">Cuma</td>
-                                    </tr>
-                                    <tr>
-                                        <td> 21 Ocak</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </td>
-                        <td><a href="{{ route('notice4') }}">
-                                <h5>2021-2022 Bahar Yarıyılı Kurum İçi Yatay Geçiş Başvuru Kılavuzu</h5>
-                            </a></td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <table>
-                                <tbody>
-                                    <tr>
-                                        <td class="text-white text-center bg-orange">Salı</td>
-                                    </tr>
-                                    <tr>
-                                        <td> 11 Ocak</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </td>
-                        <td><a href="{{ route('notice5') }}">
-                                <h5>Siber Güvenlik Girişimlerine Özel Hızlandırma Programı Cybercube'un Başvuruları Devam
-                                    Ediyor!</h5>
-                            </a></td>
-                    </tr>
+                    @endforeach
+                  
+                 
                 </tbody>
             </table>
-            </div>
+        </div>
     </div>
-  
+
     <section id="snippet-1" class="wrapper bg-light wrapper-border">
         <div class="container pt-md-10 pb-5 pb-md-1">
             <h2 class="display-4 mb-3 text-center">ETKİNLİK TAKVİMİ</h2>
@@ -422,14 +259,14 @@
                             </figcaption>
                         </figure>
                         <!--div class="post-header">
-                                                <div class="post-category text-line">
-                                                    <a href="#" class="hover" rel="category">Eğitim</a>
-                                                </div>
-                                             
-                                                <h2 class="post-title h3 mt-1 mb-3"><a class="link-dark" href="{{ route('attraction1') }}">
-                                                    IWA DIPCON 2022 4th Regional Conference on Diffuse Pollution & Eutrophication
-                                               </a></h2>
-                                            </div-->
+                                                    <div class="post-category text-line">
+                                                        <a href="#" class="hover" rel="category">Eğitim</a>
+                                                    </div>
+                                                 
+                                                    <h2 class="post-title h3 mt-1 mb-3"><a class="link-dark" href="{{ route('attraction1') }}">
+                                                        IWA DIPCON 2022 4th Regional Conference on Diffuse Pollution & Eutrophication
+                                                   </a></h2>
+                                                </div-->
                         <!-- /.post-header -->
                         <div class="post-footer">
                             <ul class="post-meta">
@@ -453,12 +290,12 @@
                             </figcaption>
                         </figure>
                         <!--div class="post-header">
-                                                <div class="post-category text-line">
-                                                    <a href="#" class="hover" rel="category">Üniversite</a>
-                                                </div>
-                                             
-                                                <h2 class="post-title h3 mt-1 mb-3"><a class="link-dark" href="{{ route('attraction2') }}">VII. İstanbul Hipofiz Sempozyumu</a></h2>
-                                            </div -->
+                                                    <div class="post-category text-line">
+                                                        <a href="#" class="hover" rel="category">Üniversite</a>
+                                                    </div>
+                                                 
+                                                    <h2 class="post-title h3 mt-1 mb-3"><a class="link-dark" href="{{ route('attraction2') }}">VII. İstanbul Hipofiz Sempozyumu</a></h2>
+                                                </div -->
                         <!-- /.post-header -->
                         <div class="post-footer">
                             <ul class="post-meta">
@@ -482,12 +319,12 @@
                             </figcaption>
                         </figure>
                         <!--div class="post-header">
-                                                <div class="post-category text-line">
-                                                    <a href="#" class="hover" rel="category">Sosyal</a>
-                                                </div>
-                                                <h2 class="post-title h3 mt-1 mb-3"><a class="link-dark"
-                                                        href="{{ route('attraction3') }}">25. Makine & Teknoloji Günleri</a></h2>
-                                            </div-->
+                                                    <div class="post-category text-line">
+                                                        <a href="#" class="hover" rel="category">Sosyal</a>
+                                                    </div>
+                                                    <h2 class="post-title h3 mt-1 mb-3"><a class="link-dark"
+                                                            href="{{ route('attraction3') }}">25. Makine & Teknoloji Günleri</a></h2>
+                                                </div-->
                         <!-- /.post-header -->
                         <div class="post-footer">
                             <ul class="post-meta">
@@ -511,11 +348,11 @@
                             </figcaption>
                         </figure>
                         <!--div class="post-header">
-                                                <div class="post-category text-line">
-                                                    <a href="#" class="hover" rel="category">Başarılar</a>
-                                                </div>
-                                                <h2 class="post-title h3 mt-1 mb-3"><a class="link-dark" href="{{ route('attraction4') }}">13. Gelişim Girişim Günleri</a></h2>
-                                            </div-->
+                                                    <div class="post-category text-line">
+                                                        <a href="#" class="hover" rel="category">Başarılar</a>
+                                                    </div>
+                                                    <h2 class="post-title h3 mt-1 mb-3"><a class="link-dark" href="{{ route('attraction4') }}">13. Gelişim Girişim Günleri</a></h2>
+                                                </div-->
                         <div class="post-footer">
                             <ul class="post-meta">
                                 <li class="post-date"><i class="uil uil-calendar-alt"></i><span>7 Haziran 2021</span>
@@ -538,11 +375,11 @@
                             </figcaption>
                         </figure>
                         <!--div class="post-header">
-                                                <div class="post-category text-line">
-                                                    <a href="#" class="hover" rel="category">Başarılar</a>
-                                                </div>
-                                                <h2 class="post-title h3 mt-1 mb-3"><a class="link-dark" href="{{ route('attraction5') }}">Mühendislikte Topuk Sesleri '22</a></h2>
-                                            </div-->
+                                                    <div class="post-category text-line">
+                                                        <a href="#" class="hover" rel="category">Başarılar</a>
+                                                    </div>
+                                                    <h2 class="post-title h3 mt-1 mb-3"><a class="link-dark" href="{{ route('attraction5') }}">Mühendislikte Topuk Sesleri '22</a></h2>
+                                                </div-->
                         <div class="post-footer">
                             <ul class="post-meta">
                                 <li class="post-date"><i class="uil uil-calendar-alt"></i><span>7 Haziran 2021</span>
@@ -608,13 +445,13 @@
             <!-- /section -->
             <!--hr class="double my-2" />
 
-                    <h1 class="text-center display-4 mb-3"><span class="underline-3 style-1 yellow"><i
-                                class="uil uil-location-pin-alt"></i> BİZ NERDEYİZ?</span></h1>
-                    <div class="row mb-10">
-                        <iframe
-                            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12037.314669014475!2d28.99603911954346!3d41.0399411602627!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xdcd33e38cf3b830b!2zRG9sbWFiYWjDp2UgU2FyYXnEsQ!5e0!3m2!1str!2str!4v1650873696018!5m2!1str!2str"
-                            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-                    </div-->
+                        <h1 class="text-center display-4 mb-3"><span class="underline-3 style-1 yellow"><i
+                                    class="uil uil-location-pin-alt"></i> BİZ NERDEYİZ?</span></h1>
+                        <div class="row mb-10">
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12037.314669014475!2d28.99603911954346!3d41.0399411602627!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xdcd33e38cf3b830b!2zRG9sbWFiYWjDp2UgU2FyYXnEsQ!5e0!3m2!1str!2str!4v1650873696018!5m2!1str!2str"
+                                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                        </div-->
         </div>
 
     </section>

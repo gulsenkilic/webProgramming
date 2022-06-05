@@ -2,7 +2,12 @@
 @section('content')
     <div class="card-body py-3 mt-10">
         <div class="content-container">
-
+            @if (Session::has('message'))
+            <div class="alert alert-primary alert-icon alert-dismissible fade show mt-3" role="alert">
+                {{ Session::get('message') }}
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+            </div>
+        @endif
 
             <div class="card border-dark mb-3 ">
                 <div class="card-header">
@@ -27,138 +32,21 @@
                                 </tr>
                             </thead>
                             <tbody>
-
+                                @foreach ($personeller as $personel)
                                 <tr>
-                                    <td><img src="{{asset('site/images/about/yonetim/1.jpg')}}" width="150px" alt=""  /></td>
-                                    <td>Prof. Dr. GÜLŞEN KILIÇ</td>
-                                    <td> <b>Rektör</b> </td>
-                                    <td>0212 765 44 78</td>
-                                    <td>gulsen@gku.edu.tr</td>
-                                    <td><a href="http://akademik.gku.edu.tr/web/gku">http://akademik.gku.edu.tr/web/gku</a></td>
-                                    <td> <a type="button" class="btn btn-primary" href="{{route('akademikEdit')}} ">EDİT </a></td>
-                                    <td> <a type="reset" href="{{route('akademikPanel')}}" class="btn btn-warning">SIL</a> </a></td>
+                                    <td><img src="{{asset($personel->resim)}}" width="150px" alt=""  /></td>
+                                    <td>{{$personel->ad_soyad}}</td>
+                                    <td> <b>{{$personel->unvan}}</b> </td>
+                                    <td>{{$personel->tel}}</td>
+                                    <td>{{$personel->mail}}</td>
+                                    <td><a href="{{$personel->avesis}}">{{$personel->avesis}}</a></td>
+                                    <td> <a type="button" class="btn btn-primary" href="{{route('akademikEdit',['id'=>$personel->id])}} ">EDİT </a></td>
+                                    <td> <a type="reset" href="{{route('personelSil',['id'=>$personel->id])}}" class="btn btn-warning" onclick="return confirm('Emin misiniz?')">SIL</a> </a></td>
 
                                 </tr>
-                                <tr>
-                                    <td><img src="{{asset('site/images/about/yonetim/t1.jpg')}}" width="150px" alt=""  /></td>
-                                    <td>Prof. Dr. SEMANUR KILIÇ</td>
-                                    <td> <b>Rektör Yardımcsı</b> </td>
-                                    <td>0212 765 44 78</td>
-                                    <td>gulsen@gku.edu.tr</td>
-                                    <td><a href="http://akademik.gku.edu.tr/web/gku">http://akademik.gku.edu.tr/web/gku</a></td>
-
-                                    <td> <a type="button" class="btn btn-primary" href="{{route('akademikEdit')}} ">EDİT </a></td>
-                                    <td> <a type="reset" href="{{route('akademikPanel')}}" class="btn btn-warning">SIL</a> </a></td>
-
-                                </tr>
-                                <tr>
-                                    <td><img src="{{asset('site/images/about/yonetim/t2.jpg')}}" width="150px" alt=""  /></td>
-                                    <td>Prof. Dr. ŞEBNEM DEMİRCİ</td>
-                                    <td> <b>Rektör Yardımcsı</b> </td>
-                                    <td>0212 765 44 78</td>
-                                    <td>gulsen@gku.edu.tr</td>
-                                    <td><a href="http://akademik.gku.edu.tr/web/gku">http://akademik.gku.edu.tr/web/gku</a></td>
-
-                                    <td> <a type="button" class="btn btn-primary" href="{{route('akademikEdit')}} ">EDİT </a></td>
-                                    <td> <a type="reset" href="{{route('akademikPanel')}}" class="btn btn-warning">SIL</a> </a></td>
-
-                                </tr>
-                                <tr>
-                                    <td><img src="{{asset('site/images/about/yonetim/t3.jpg')}}" width="150px" alt=""  /></td>
-                                    <td>Prof. Dr. UMUT CAN DEMİRCİ</td>
-                                    <td> <b>Rektör Yardımcsı</b> </td>
-                                    <td>0212 765 44 78</td>
-                                    <td>gulsen@gku.edu.tr</td>
-                                    <td><a href="http://akademik.gku.edu.tr/web/gku">http://akademik.gku.edu.tr/web/gku</a></td>
-
-                                    <td> <a type="button" class="btn btn-primary" href="{{route('akademikEdit')}} ">EDİT </a></td>
-                                    <td> <a type="reset" href="{{route('akademikPanel')}}" class="btn btn-warning">SIL</a> </a></td>
-
-                                </tr>
-                                <tr>
-                                    <td><img src="{{asset('site/images/about/yonetim/t4.jpg')}}" width="150px" alt=""  /></td>
-                                    <td>Prof. Dr. DENİZ ATAY</td>
-                                    <td> <b>Eğitim Bilimleri Fakültesi Dekanı</b> </td>
-                                    <td>0212 765 44 78</td>
-                                    <td>gulsen@gku.edu.tr</td>
-                                    <td><a href="http://akademik.gku.edu.tr/web/gku">http://akademik.gku.edu.tr/web/gku</a></td>
-
-                                    <td> <a type="button" class="btn btn-primary" href="{{route('akademikEdit')}} ">EDİT </a></td>
-                                    <td> <a type="reset" href="{{route('akademikPanel')}}" class="btn btn-warning">SIL</a> </a></td>
-
-                                </tr>
-                                <tr>
-                                    <td><img src="{{asset('site/images/about/yonetim/t6.jpg')}}" width="150px" alt=""  /></td>
-                                    <td>Prof. Dr. SELÇUK BASALMA</td>
-                                    <td> <b>Diş Hekimliği Fakültesi Dekan</b> </td>
-                                    <td>0212 765 44 78</td>
-                                    <td>gulsen@gku.edu.tr</td>
-                                    <td><a href="http://akademik.gku.edu.tr/web/gku">http://akademik.gku.edu.tr/web/gku</a></td>
-
-                                    <td> <a type="button" class="btn btn-primary" href="{{route('akademikEdit')}} ">EDİT </a></td>
-                                    <td> <a type="reset" href="{{route('akademikPanel')}}" class="btn btn-warning">SIL</a> </a></td>
-
-                                </tr>
-                                <tr>
-                                    <td><img src="{{asset('site/images/about/yonetim/t7.jpg')}}" width="150px" alt=""  /></td>
-                                    <td>Prof. Dr. EMRE YILMAZ</td>
-                                    <td> <b>Hukuk Fakültesi Dekanı</b> </td>
-                                    <td>0212 765 44 78</td>
-                                    <td>gulsen@gku.edu.tr</td>
-                                    <td><a href="http://akademik.gku.edu.tr/web/gku">http://akademik.gku.edu.tr/web/gku</a></td>
-
-                                    <td> <a type="button" class="btn btn-primary" href="{{route('akademikEdit')}} ">EDİT </a></td>
-                                    <td> <a type="reset" href="{{route('akademikPanel')}}" class="btn btn-warning">SIL</a> </a></td>
-
-                                </tr>
-                                <tr>
-                                    <td><img src="{{asset('site/images/about/yonetim/t2.jpg')}}" width="150px" alt=""  /></td>
-                                    <td>Prof. Dr. MEHMET DÜNDAR</td>
-                                    <td> <b>Mimarlık ve Tasarım Fakültesi Dekanı </b> </td>
-                                    <td>0212 765 44 78</td>
-                                    <td>gulsen@gku.edu.tr</td>
-                                    <td><a href="http://akademik.gku.edu.tr/web/gku">http://akademik.gku.edu.tr/web/gku</a></td>
-
-                                    <td> <a type="button" class="btn btn-primary" href="{{route('akademikEdit')}} ">EDİT </a></td>
-                                    <td> <a type="reset" href="{{route('akademikPanel')}}" class="btn btn-warning">SIL</a> </a></td>
-
-                                </tr>
-                                <tr>
-                                    <td><img src="{{asset('site/images/about/yonetim/t3.jpg')}}" width="150px" alt=""  /></td>
-                                    <td>Prof. Dr. İPEK  ARICA</td>
-                                    <td> <b>Mühendislik ve Doğa Bilimleri Fakültesi Dekanı </b> </td>
-                                    <td>0212 765 44 78</td>
-                                    <td>gulsen@gku.edu.tr</td>
-                                    <td><a href="http://akademik.gku.edu.tr/web/gku">http://akademik.gku.edu.tr/web/gku</a></td>
-
-                                    <td> <a type="button" class="btn btn-primary" href="{{route('akademikEdit')}} ">EDİT </a></td>
-                                    <td> <a type="reset" href="{{route('akademikPanel')}}" class="btn btn-warning">SIL</a> </a></td>
-
-                                </tr>
-                                <tr>
-                                    <td><img src="{{asset('site/images/about/yonetim/t6.jpg')}}" width="150px" alt=""  /></td>
-                                    <td>Prof. Dr. ŞEYMA TOKTAŞ</td>
-                                    <td> <b>Tıp Fakültesi Dekanı </b> </td>
-                                    <td>0212 765 44 78</td>
-                                    <td>gulsen@gku.edu.tr</td>
-                                    <td><a href="http://akademik.gku.edu.tr/web/gku">http://akademik.gku.edu.tr/web/gku</a></td>
-
-                                    <td> <a type="button" class="btn btn-primary" href="{{route('akademikEdit')}} ">EDİT </a></td>
-                                    <td> <a type="reset" href="{{route('akademikPanel')}}" class="btn btn-warning">SIL</a> </a></td>
-
-                                </tr>
-                                <tr>
-                                    <td><img src="{{asset('site/images/about/yonetim/t3.jpg')}}" width="150px" alt=""  /></td>
-                                    <td>Prof. Dr. KEMAL SUHER</td>
-                                    <td> <b>İletişim Fakültesi Dekanı </b> </td>
-                                    <td>0212 765 44 78</td>
-                                    <td>gulsen@gku.edu.tr</td>
-                                    <td><a href="http://akademik.gku.edu.tr/web/gku">http://akademik.gku.edu.tr/web/gku</a></td>
-
-                                    <td> <a type="button" class="btn btn-primary" href="{{route('akademikEdit')}} ">EDİT </a></td>
-                                    <td> <a type="reset" href="{{route('akademikPanel')}}" class="btn btn-warning">SIL</a> </a></td>
-
-                                </tr>
+                                @endforeach
+                                
+                               
 
                             </tbody>
                         </table>

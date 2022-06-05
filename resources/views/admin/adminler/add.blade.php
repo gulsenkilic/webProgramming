@@ -2,6 +2,21 @@
 @section('content')
     <div class="card-body py-3 mt-12">
         <div class="content-container">
+            @if (Session::has('message'))
+                <div class="alert alert-danger alert-icon alert-dismissible fade show mt-3" role="alert">
+                    {{ Session::get('message') }}
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                </div>
+            @endif
+            @if ($errors->any())
+                <div class="alert alert-danger">
+                    <ul>
+                        @foreach ($errors->all() as $error)
+                            <li>{{ $error }}</li>
+                        @endforeach
+                    </ul>
+                </div>
+            @endif
             <div class="container-fluid">
 
                 <div class="card border-dark mb-3 w-100">
@@ -10,44 +25,49 @@
                         <a type="button" class="btn btn-warning h-100 mt-4" href='{{ route('adminList') }}'>GERİ DÖN</a>
                     </div>
                     <div class="card-body text-dark">
-                        <form action="{{ route('adminList') }} " method="">
+                        <form action="{{ route('adminEkleProcess') }} " method="Post">
                             <input type="hidden" name="id">
                             @csrf
                             <div class="table-responsive">
                                 <table class="table table-hover mt-0">
                                     <tr>
                                         <td>Kullanıcı adı</td>
-                                        <td><input class="form-control" type="text"></td>
+                                        <td><input class="form-control" type="text" name="userName"></td>
                                     </tr>
                                     <tr>
                                         <th>Email</th>
                                         <td>
-                                            <input class="form-control" type="text">
+                                            <input class="form-control" type="text" name="email">
 
                                         </td>
                                     </tr>
                                     <tr>
                                         <th>Telefon</th>
                                         <td>
-                                            <input class="form-control" type="text">
+                                            <input class="form-control" type="text" name="phone">
+
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>Şifre</th>
+                                        <td>
+                                            <input class="form-control" type="text" name="password">
 
                                         </td>
                                     </tr>
                                     <tr>
                                         <th>Kullancı Tipi</th>
-                                         <td><select class="form-select" name="status">
+                                         <td><select class="form-select" name="userType">
                                             <option value="">
-                                                LÜTFEN BİR SEÇİM YAPIN
+                                               
                                             </option>
-                                            <option value="ADMIN">
+                                            <option value="admin">
                                                 ADMIN
                                             </option>
-                                            <option value=" SUPER ADMIN">
+                                            <option value="superAdmin">
                                                 SUPER ADMIN
                                             </option>
-                                            <option value="USER ADMIN">
-                                                USER ADMIN
-                                            </option>
+                                         
                                            
                                             
                                         </select></td>
@@ -57,12 +77,11 @@
                                         <th>Statu</th>
                                          <td><select class="form-select" name="status">
                                             <option value="">
-                                                LÜTFEN BİR SEÇİM YAPIN
                                             </option>
-                                            <option value="AKTIF">
+                                            <option value="active">
                                                 AKTIF
                                             </option>
-                                            <option value="PASIF">
+                                            <option value="passive">
                                                PASIF
                                             </option>
                                           

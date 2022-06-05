@@ -16,6 +16,9 @@ use App\Http\Controllers\Admin\AdminController;
 */
 
 Route::get('/', [PagesController::class, 'index'])->name('homepage');
+
+Route::get('/haberDetay/{slug}', [PagesController::class, 'haberDetay'])->name('haberDetayPage');
+
 Route::get('/news1', [PagesController::class, 'news1'])->name('news1');
 Route::get('/news2', [PagesController::class, 'news2'])->name('news2');
 Route::get('/news3', [PagesController::class, 'news3'])->name('news3');
@@ -86,54 +89,66 @@ Route::get('/yerleskeler',[PagesController::class, 'yerleskeler'])->name('yerles
 
 
 //ADMİN
-//Route::middleware(['IsLogin'])->group(function () { //eğer login yapmşşsa loginle devam eder
+Route::middleware(['IsLogin'])->group(function () { 
     Route::get('unv-admin', [AdminController::class, 'redirectToLogin'])->name('adminRedirectToLogin');
     Route::get('unv-admin/login', [AdminController::class, 'login'])->name('adminLoginPage');
-    //Route::post('unv-admin/login/process', [AdminController::class, 'loginProcess'])->name('adminLoginProcess');//BACKEND İLE KONTRL EDİLİR
-//});
-//Route::middleware(['IsAdmin'])->group(function () {
+    Route::post('unv-admin/login/process', [AdminController::class, 'loginProcess'])->name('adminLoginProcess');
+});
+Route::middleware(['IsAdmin'])->group(function () {
     Route::get('unv-admin/logout', [AdminController::class, 'logout'])->name('adminLogoutPage');
     Route::get('unv-admin/dashboard', [AdminController::class, 'dashboard'])->name('adminDashboardPage');
     Route::get('unv-admin/yuksek-okullar', [AdminController::class, 'okullar'])->name('okullar');
     Route::get('unv-admin/fakulteler', [AdminController::class, 'fakulteler'])->name('fakulteler');
     Route::get('unv-admin/enstituler', [AdminController::class, 'enstituler'])->name('enstituler');
+
     Route::get('unv-admin/duyurular', [AdminController::class, 'duyurular'])->name('duyurular');
     Route::get('unv-admin/duyuru-ekle', [AdminController::class, 'duyuruEkle'])->name('duyuruEkle');
-    Route::get('unv-admin/duyuru/edit/duyuru1', [AdminController::class, 'duyuru1Edit'])->name('duyuru1Edit');
-    Route::get('unv-admin/duyuru/detay/duyuru1', [AdminController::class, 'duyuru1detay'])->name('duyuru1detay');
+    Route::post('unv-admin/duyuru-ekle/process', [AdminController::class, 'processDuyuruEkle'])->name('processDuyuruEkle');
+    Route::get('unv-admin/duyuru/edit/{id}', [AdminController::class, 'duyuruEdit'])->name('duyuruEdit');
+    Route::post('unv-admin/duyuru/edit/process', [AdminController::class, 'processDuyuruEdit'])->name('processDuyuruEdit');
+    Route::get('unv-admin/duyuru/detay/{id}', [AdminController::class, 'duyuruDetay'])->name('duyuruDetay');
+
     Route::get('unv-admin/haberler', [AdminController::class, 'haberler'])->name('haberler');
     Route::get('unv-admin/haberler/ekle', [AdminController::class, 'haberEkle'])->name('haberEkle');
-    Route::get('unv-admin/haberler/edit/haber1', [AdminController::class, 'haber1Edit'])->name('haber1Edit');
-    Route::get('unv-admin/haberler/detay/haber1', [AdminController::class, 'haber1Detay'])->name('haber1Detay');
+    Route::post('unv-admin/haberler/ekle/process', [AdminController::class, 'processHaberEkle'])->name('processHaberEkle');
+    Route::get('unv-admin/haberler/edit/{id}', [AdminController::class, 'haberEdit'])->name('haberEdit');
+    Route::post('unv-admin/haberler/edit/process', [AdminController::class, 'processHaberEdit'])->name('processHaberEdit');
+    Route::get('unv-admin/haberler/detay/haber/{id}', [AdminController::class, 'haberDetay'])->name('haberDetay');
+
+
     Route::get('unv-admin/etkinlikler', [AdminController::class, 'etkinlikler'])->name('etkinlikler');
     Route::get('unv-admin/etkinlikler/ekle', [AdminController::class, 'etkinlikEkle'])->name('etkinlikEkle');
-    Route::get('unv-admin/etkinlikler/edit', [AdminController::class, 'etkinlik1Edit'])->name('etkinlik1Edit');
-    Route::get('unv-admin/etkinlikler/detay/etkinlik1', [AdminController::class, 'etkinlik1Detay'])->name('etkinlik1Detay');
+    Route::post('unv-admin/etkinlikler/ekle/process', [AdminController::class, 'processEtkinlikEkle'])->name('processEtkinlikEkle');
+    Route::get('unv-admin/etkinlikler/edit/{id}', [AdminController::class, 'etkinlikEdit'])->name('etkinlikEdit');
+    Route::post('unv-admin/etkinlikler/edit/process', [AdminController::class, 'processEtkinlikEdit'])->name('processEtkinlikEdit');
+    Route::get('unv-admin/etkinlikler/detay/etkinlik/{id}', [AdminController::class, 'etkinlikDetay'])->name('etkinlikDetay');
+
+
     Route::get('unv-admin/akademik-kadro', [AdminController::class, 'akademik'])->name('akademikPanel');
     Route::get('unv-admin/akademik-kadro/ekle', [AdminController::class, 'akademikEkle'])->name('akademikEkle');
-    Route::get('unv-admin/akademik-kadro/edit/pers1', [AdminController::class, 'akademikEdit'])->name('akademikEdit');
+    Route::post('unv-admin/akademik-kadro/ekle/process', [AdminController::class, 'processAkademikEkle'])->name('processAkademikEkle');
+    Route::get('unv-admin/akademik-kadro/edit/{id}', [AdminController::class, 'akademikEdit'])->name('akademikEdit');
+    Route::post('unv-admin/akademik-kadro/edit/process', [AdminController::class, 'processAkademikEdit'])->name('processAkademikEdit');
+    Route::get('unv-admin/akademik-kadro/sil/{id}', [AdminController::class, 'personelSil'])->name('personelSil');
+
+
+
     Route::get('unv-admin/admin-list', [AdminController::class, 'adminList'])->name('adminList');
     Route::get('unv-admin/admin-list/ekle', [AdminController::class, 'adminEkle'])->name('adminEkle');
-    Route::get('unv-admin/admin-list/edit', [AdminController::class, 'adminEdit'])->name('adminEdit');
+    Route::post('unv-admin/admin-list/ekle/process', [AdminController::class, 'adminEkleProcess'])->name('adminEkleProcess');
+    Route::get('unv-admin/admin-list/edit/{id}', [AdminController::class, 'adminEdit'])->name('adminEdit');
+    Route::post('unv-admin/admin-list/edit/process', [AdminController::class, 'adminEditProcess'])->name('adminEditProcess');
+
+
     Route::get('unv-admin/yuksek-okullar/yabanci-diller-meslek-yüksek-okulu/detay', [AdminController::class, 'okullarDetay'])->name('okullarDetay');
     Route::get('unv-admin/yuksek-okullar/yabanci-diller-meslek-yüksek-okulu/haberler', [AdminController::class, 'okullarHaber'])->name('okullarHaber');
+    
     Route::get('unv-admin/yuksek-okullar/yabanci-diller-meslek-yüksek-okulu/duyurular', [AdminController::class, 'okullarDuyuru'])->name('okullarDuyuru');
     Route::get('unv-admin/yuksek-okullar/yabanci-diller-meslek-yüksek-okulu/akademik-kadro', [AdminController::class, 'okullarAkademik'])->name('okullarAkademik');
     Route::get('unv-admin/fakülteler/mühendislik-fakültesi/detay', [AdminController::class, 'fakulteDetay'])->name('fakulteDetay');
     Route::get('unv-admin/fakülteler/mühendislik-fakültesi/bolumler', [AdminController::class, 'fakulteBolumler'])->name('fakulteBolumler');
     Route::get('unv-admin/fakülteler/mühendislik-fakültesi/bolumler/bilgisayar-mühendisligi-bolumu/detay', [AdminController::class, 'fakulteBolumlerBilMuh'])->name('fakulteBolumlerBilMuh');
-    /*Route::get('unv-admin/review/edit', [AdminController::class, 'redirectToEditReview'])->name('adminReviewEditPage');
-    Route::post('unv-admin/review/edit/process', [AdminController::class, 'editReview'])->name('adminReviewEditProcessPage');
-    Route::get('unv-admin/discounts', [AdminController::class, 'discounts'])->name('adminDiscountsPage');
-    Route::get('unv-admin/discount/edit', [AdminController::class, 'redirectToEditDiscount'])->name('adminDiscountEditPage');
-    Route::post('unv-admin/discount/edit/process', [AdminController::class, 'editDiscount'])->name('adminDiscountEditProcessPage');
-    Route::get('unv-admin/discount/add', [AdminController::class, 'redirectToAddDiscount'])->name('adminDiscountAddPage');
-    Route::post('unv-admin/discount/add/process', [AdminController::class, 'addDiscount'])->name('adminDiscountAddProcessPage');
-
-    Route::get('unv-admin/blogs', [AdminController::class, 'blogs'])->name('adminBlogPage');
-    Route::get('unv-admin/blog/delete/{id}', [AdminController::class, 'deleteBlog'])->name('deleteBlog');
-    Route::get('unv-admin/blog/edit/{id}', [AdminController::class, 'editBlog'])->name('editBlog');
-    Route::post('unv-admin/blog/process', [AdminController::class, 'processBlog'])->name('processBlog');*/
-//});
+    
+});
 
 

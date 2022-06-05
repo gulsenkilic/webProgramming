@@ -11,19 +11,24 @@
                         href='{{ route('etkinlikler') }}'>GERİ DÖN</a>
                     </div>
                     <div class="card-body text-dark">
-                        <form action="{{ route('etkinlikler')}} " method="">
+                        
+                        <form action="{{ route('processEtkinlikEkle') }}" method="post" enctype="multipart/form-data">
                             <input type="hidden" name="id">
                             @csrf
                             <div class="table-responsive">
                                 <table class="table table-hover mt-0">
                                     <tr>
-                                        <td>Etkinlik Başlığı</td>
-                                        <td><input class="form-control" type="text" ></td>
+                                        <th>Slug</th>
+                                        <td><input name="slug" class="form-control" type="text"></td> 
                                     </tr>
                                     <tr>
-                                        <th>Etkinlik Metni</th>
+                                        <th>Başlık</th>
+                                        <td><input name="baslik" class="form-control" type="text"></td> 
+                                    </tr>
+                                    <tr>
+                                        <th>Haber Metni</th>
                                         <td>
-                                            <textarea class="form-control ckeditor" name="shortDescription_tr"></textarea>
+                                            <textarea class="form-control ckeditor" name="metin"></textarea>
 
                                         </td>
                                     </tr>
@@ -32,51 +37,78 @@
                                         <td><input name="image" class="form-control" type="file"></td>
                                     </tr>
                                     <tr>
+                                        <th>Kategori</th>
+                                        <td><select class="form-select" name="kategori">
+                                                <option value="">
+                                                </option>
+                                                <option value="egitim">
+                                                    EĞİTİM
+                                                </option>
+                                                <option value="universite">
+                                                    ÜNİVERSİTE
+                                                </option>
+                                                <option value="sosyal">
+                                                    SOSYAL
+                                                </option>
+                                                <option value="basarilar">
+                                                    BAŞARILAR
+                                                </option>
+                                                <option value="diger">
+                                                    DİĞER
+                                                </option>
+                                            </select></td>
+                                    </tr>
+                                    <tr>
                                         <th>Yayınlanacağı Sayfa</th>
-                                        <td><select class="form-select" name="status">
-                                            <option value="">
-                                                Yayınlanacağı Yer
-                                            </option>
-                                                <option value="EĞİTİM">
+                                        <td><select class="form-select" name="konum">
+                                                <option value="">
+                                                   
+                                                </option>
+                                                <option value="ana_sayfa">
                                                     ANA SAYFA
                                                 </option>
-                                                <option value="AKADEMİK">
+                                                <option value="muhendislik_fak">
                                                     MÜHENDİSLİK FAKULTESİ
                                                 </option>
-                                                <option value="GENEL">
-                                                    DİŞ HEKİMLİĞİ FAKULTESİ
-                                                </option>
-                                                <option value="ETKİNLİK">
+                                               
+                                                <option value="edebiyat_fak">
                                                     EDEBİYAT FAKULTESİ
                                                 </option>
 
-                                                <option value="EĞİTİM">
+                                                <option value="fen_fak">
                                                     FEN FAKULTESİ
                                                 </option>
-                                                <option value="AKADEMİK">
+                                                <option value="yabanci_diller">
                                                     YABANCI DİLLER MESLEK Y.O
                                                 </option>
-                                                <option value="GENEL">
-                                                    SAĞLIK BİLİMLERİ MESLEK Y.O
-                                                </option>
-                                                <option value="ETKİNLİK">
+                                               
+                                                <option value="bilgisayar_muh">
                                                     BİLGİSAYAR MUHENDİSLİĞİ
                                                 </option>
-                                                <option value="ETKİNLİK">
+                                                <option value="endustri_muh">
                                                     ENDUTIRI MUHENDİSLİĞİ
                                                 </option>
-                                                <option value="ETKİNLİK">
-                                                    YAZILIM MUHENDİSLİĞİ
-                                                </option>
-                                                <option value="ETKİNLİK">
+                                               
+                                                <option value="makina_muh">
                                                     MAKİNA MUHENDİSLİĞİ
                                                 </option>
-                                                <option value="ETKİNLİK">
-                                                    ELEKTIRIK ELEKTRONIK MUHENDİSLİĞİ
+                                                
+                                            </select></td>
+                                    </tr>
+                                    <tr>
+                                        <th>Statü</th>
+                                        <td><select class="form-select" name="statu">
+                                                <option value="">
+                                                    
                                                 </option>
-                                                <option value="ETKİNLİK">
-                                                    GIDA MUHENDİSLİĞİ
+                                                <option value="aktif">
+                                                   AKTİF
                                                 </option>
+                                                <option value="pasif">
+                                                    PASİF
+                                                </option>
+                                            
+                                                
                                             </select></td>
                                     </tr>
 
@@ -85,7 +117,7 @@
                                         </td>
                                     </tr>
 
-                                 
+
                                 </table>
                             </div>
                         </form>

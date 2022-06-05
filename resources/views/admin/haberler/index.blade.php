@@ -2,11 +2,15 @@
 @section('content')
     <div class="card-body py-3 mt-10">
         <div class="content-container">
-
-
+            @if (Session::has('message'))
+            <div class="alert alert-primary alert-icon alert-dismissible fade show mt-3" role="alert">
+                {{ Session::get('message') }}
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+            </div>
+        @endif
             <div class="card border-dark mb-3 ">
                 <div class="card-header">
-                    <p class="pt-7 text-primary"><b>HABERLER </b></p>
+                    <p class="pt-7 text-primary"><b>ANA SAYFA -- HABERLER </b></p>
                     <a type="button" class="btn btn-primary h-100 mt-4"
                         href='{{ route('haberEkle') }}'>YENI HABER EKLE</a>
                 </div>
@@ -18,75 +22,29 @@
                                     <th></th>
                                     <th>TARIH</th>
                                     <th>HABER AÇIKLAMA</th>
-                                    
+                
                                     <th>KATEGORİ</th>
                                     <th></th>
                                     <th></th>
                                 </tr>
                             </thead>
                             <tbody>
-
-                                <tr>
-                                    <td><img src="{{asset('site/images/homepage/3.jpg')}}" width="150px" alt=""  /></td>
-                                    <td style="width: 10%">18/04/2022</td>
-                                    <td> <b>2022-2023 Yılı Erasmus Öğrenci Hareketliliği Başvuruları</b> </td>
-                                    
+                                @foreach ($haberler as $haber)
+                                    <tr>
+                                    <td><img src="{{asset($haber->resim)}}" width="150px" alt=""  /></td>
+                                    <td style="width: 10%">{{$haber->created_at}}</td>
+                                    <td> <b>{{$haber->baslik}}</b> </td>
                                     <td><span
                                         class="badge badge-success">
-                                        Eğitim
+                                        {{$haber->kategori}}
                                     </span></td>
-                                    <td> <a type="button" class="btn btn-primary" href="{{route('haber1Edit')}} ">EDİT </a></td>
-                                    <td> <a type="reset" href="{{route('haber1Detay')}}" class="btn btn-warning">DETAY</a> </a></td>
+                                    <td> <a type="button" class="btn btn-primary" href="{{route('haberEdit',['id'=>$haber->id])}} ">EDİT </a></td>
+                                    <td> <a type="reset" href="{{route('haberDetay',['id'=>$haber->id])}}" class="btn btn-warning">DETAY</a> </a></td>
 
                                 </tr>
-                                <tr>
-                                    <td><img src="{{asset('site/images/homepage/4.webp')}}" alt="" width="150px" /></td>
-                                    <td style="width: 10%">18/04/2022</td>
-                                    <td> <b>İstanbul Üniversitesi ile Gülşen Kılıç
-                                        Üniversitesi
-                                        Arasında
-                                        İş Birliği Protokolü İmzalandı</b> </td>
-                                   
-                                    <td><span
-                                        class="badge badge-success">
-                                        Üniversite
-                                    </span></td>
-                                    <td> <a type="button" class="btn btn-primary" href="{{route('haber1Edit')}} ">EDİT </a></td>
-                                    <td> <a type="reset" href="{{route('haber1Detay')}}" class="btn btn-warning">DETAY</a> </a></td>
-
-                                </tr>
-                                <tr>
-                                    <td> <img src="{{asset('site/images/homepage/5.jpg')}}" alt="" width="150px" /></td>
-                                    <td style="width: 10%">18/04/2022</td>
-                                    <td> <b>Bahçeköy Yerleşkesi'nde Organize Edilen Etkinlikte
-                                        Fidanlar
-                                        Toprakla Buluştu</b> </td>
-                                    
-                                    <td><span
-                                        class="badge badge-success">
-                                        Sosyal
-                                    </span></td>
-                                    <td> <a type="button" class="btn btn-primary" href="{{route('haber1Edit')}} ">EDİT </a></td>
-                                    <td> <a type="reset" href="{{route('haber1Detay')}}" class="btn btn-warning">DETAY</a> </a></td>
-
-                                </tr>
-                                <tr>
-                                    <td><img src="{{asset('site/images/homepage/6.jfif')}}" alt="" width="150px" /></td>
-                                    <td style="width: 10%">18/04/2022</td>
-                                    <td> <b>Mühendislik Fakültesi Öğretim Üyelerimiz “Kimya
-                                        Bilimine
-                                        Yön
-                                        Veren 100 Türk” Listesi’nde Yer Aldı</b> </td>
-                                    
-                                    <td><span
-                                        class="badge badge-success">
-                                        Eğitim
-                                    </span></td>
-                                    <td> <a type="button" class="btn btn-primary" href="{{route('haber1Edit')}} ">EDİT </a></td>
-                                    <td> <a type="reset" href="{{route('haber1Detay')}}" class="btn btn-warning">DETAY</a> </a></td>
-
-                                </tr>
-                              
+                                @endforeach
+                                
+                                
 
                             </tbody>
                         </table>
