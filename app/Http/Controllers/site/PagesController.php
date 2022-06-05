@@ -46,21 +46,7 @@ class PagesController extends Controller{
        
     }
     
-    public function attraction1(){
-        return view('site.attractions.attraction1');
-    }
-    public function attraction2(){
-        return view('site.attractions.attraction2');
-    }
-    public function attraction3(){
-        return view('site.attractions.attraction3');
-    }
-    public function attraction4(){
-        return view('site.attractions.attraction4');
-    }
-    public function attraction5(){
-        return view('site.attractions.attraction5');
-    }
+
 
     public function about(){
         return view('site.about.aboutPage');
