@@ -10,6 +10,6 @@
         </nav>
         <h1 class="text-center display-4 pt-2 mb-3">{{$haber->baslik}}</h1>
         {!! $haber->metin !!}
-        <img src="{{asset('site/images/homepage/4.webp')}}" alt="" style="width: 100%">
+       
     </div>
 @endsection

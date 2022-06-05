@@ -27,28 +27,17 @@
         </table>
     </div-->
     <div class="container">
-        <div class="card mb-6">
+        @foreach ($duyurular as $duyuru)
+              <div class="card mb-6">
             <div class="card-body">
-              <a href="{{route('yabanciDuyurular1')}}">  4. Modül Etüt Programı (2021-2022)</a>   </div>
+              <a href="{{route('duyuruDetayPage',['slug'=>$duyuru->slug])}}"> {{$duyuru->baslik}}</a>   </div>
             <div class="card-footer">
               Ayrıntılar için tıklayınız.
             </div>
         </div>
-        <div class="card mb-6 ">
-            <div class="card-body">
-            <a href="{{route('yabanciDuyurular2')}}">Öğrencileri için 20 Nisan 2022 Tarihli İngilizce Yeterlik Sınavı Sonuçları</a> 
-            </div>
-            <div class="card-footer">
-                Ayrıntılar için tıklayınız.
-            </div>
-        </div>
-        <div class="card mb-6 ">
-            <div class="card-body">
-                <a href="{{route('yabanciDuyurular3')}}">4 Nisan 2022 Tarihli Toronto İngilizce Yeterlik (Proficiency) Sınavı Sonuçları</a> </div>
-            <div class="card-footer">
-                Ayrıntılar için tıklayınız.
-            </div>
-        </div>
+        
+        @endforeach
+      
        
     </div>
 

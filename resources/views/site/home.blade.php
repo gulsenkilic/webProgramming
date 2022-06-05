@@ -231,7 +231,7 @@
                                 </tbody>
                             </table>
                         </td>
-                        <td><a href="{{ route('notice1') }}">
+                        <td><a href="{{ route('duyuruDetayPage',['slug'=>$duyuru->slug]) }}">
                                 <h5>{{$duyuru->baslik}}</h5>
                             </a></td>
                     </tr>
@@ -249,28 +249,19 @@
             <div class="carousel owl-carousel blog grid-view" data-margin="30" data-dots="true" data-autoplay="true"
                 data-nav="true" data-autoplay-timeout="5000"
                 data-responsive='{"0":{"items": "1"}, "768":{"items": "2"}, "992":{"items": "2"}, "1200":{"items": "3"}}'>
-                <div class="item">
+                @foreach ($etkinlikler as $etkinlik)
+                     <div class="item">
                     <article>
-                        <figure class="overlay overlay-1 hover-scale rounded mb-5"><a href="{{ route('attraction1') }}">
-                                <img src="site/images/homepage/7.jfif" alt="" /></a>
+                        <figure class="overlay overlay-1 hover-scale rounded mb-5"><a href="{{ route('etkinlikDetayPage',['slug'=>$etkinlik->slug]) }}">
+                                <img src="{{$etkinlik->resim}}" alt="" /></a>
                             <figcaption>
-                                <h5 class="from-top mb-0">IWA DIPCON 2022 4th Regional Conference on Diffuse Pollution &
-                                    Eutrophication</h5>
+                                <h5 class="from-top mb-0">{{$etkinlik->baslik}}</h5>
                             </figcaption>
                         </figure>
-                        <!--div class="post-header">
-                                                    <div class="post-category text-line">
-                                                        <a href="#" class="hover" rel="category">Eğitim</a>
-                                                    </div>
-                                                 
-                                                    <h2 class="post-title h3 mt-1 mb-3"><a class="link-dark" href="{{ route('attraction1') }}">
-                                                        IWA DIPCON 2022 4th Regional Conference on Diffuse Pollution & Eutrophication
-                                                   </a></h2>
-                                                </div-->
-                        <!-- /.post-header -->
+                        
                         <div class="post-footer">
                             <ul class="post-meta">
-                                <li class="post-date"><i class="uil uil-calendar-alt"></i><span>14 Nisan 2021</span>
+                                <li class="post-date"><i class="uil uil-calendar-alt"></i><span>{{$etkinlik->tarih}}</span>
                                 </li>
                                 <li class="post-comments"><a href="#"><i class="uil uil-comment"></i>4</a></li>
                             </ul>
@@ -281,118 +272,9 @@
                     <!-- /article -->
                 </div>
                 <!-- /.item -->
-                <div class="item">
-                    <article>
-                        <figure class="overlay overlay-1 hover-scale rounded mb-5"><a href="{{ route('attraction2') }}">
-                                <img src="site/images/homepage/8.jfif" alt="" /></a>
-                            <figcaption>
-                                <h5 class="from-top mb-0">VII. İstanbul Hipofiz Sempozyumu</h5>
-                            </figcaption>
-                        </figure>
-                        <!--div class="post-header">
-                                                    <div class="post-category text-line">
-                                                        <a href="#" class="hover" rel="category">Üniversite</a>
-                                                    </div>
-                                                 
-                                                    <h2 class="post-title h3 mt-1 mb-3"><a class="link-dark" href="{{ route('attraction2') }}">VII. İstanbul Hipofiz Sempozyumu</a></h2>
-                                                </div -->
-                        <!-- /.post-header -->
-                        <div class="post-footer">
-                            <ul class="post-meta">
-                                <li class="post-date"><i class="uil uil-calendar-alt"></i><span>29 Mart 2021</span>
-                                </li>
-                                <li class="post-comments"><a href="#"><i class="uil uil-comment"></i>3</a></li>
-                            </ul>
-                            <!-- /.post-meta -->
-                        </div>
-                        <!-- /.post-footer -->
-                    </article>
-                    <!-- /article -->
-                </div>
-                <!-- /.item -->
-                <div class="item">
-                    <article>
-                        <figure class="overlay overlay-1 hover-scale rounded mb-5"><a href="{{ route('attraction3') }}">
-                                <img src="site/images/homepage/9.jfif" alt="" /></a>
-                            <figcaption>
-                                <h5 class="from-top mb-0">25. Makine & Teknoloji Günleri</h5>
-                            </figcaption>
-                        </figure>
-                        <!--div class="post-header">
-                                                    <div class="post-category text-line">
-                                                        <a href="#" class="hover" rel="category">Sosyal</a>
-                                                    </div>
-                                                    <h2 class="post-title h3 mt-1 mb-3"><a class="link-dark"
-                                                            href="{{ route('attraction3') }}">25. Makine & Teknoloji Günleri</a></h2>
-                                                </div-->
-                        <!-- /.post-header -->
-                        <div class="post-footer">
-                            <ul class="post-meta">
-                                <li class="post-date"><i class="uil uil-calendar-alt"></i><span>26 Şubat 2021</span>
-                                </li>
-                                <li class="post-comments"><a href="#"><i class="uil uil-comment"></i>6</a></li>
-                            </ul>
-                            <!-- /.post-meta -->
-                        </div>
-                        <!-- /.post-footer -->
-                    </article>
-                    <!-- /article -->
-                </div>
-                <!-- /.item -->
-                <div class="item">
-                    <article>
-                        <figure class="overlay overlay-1 hover-scale rounded mb-5"><a href="{{ route('attraction4') }}">
-                                <img src="site/images/homepage/10.jfif" alt="" /></a>
-                            <figcaption>
-                                <h5 class="from-top mb-0">13. Gelişim Girişim Günleri</h5>
-                            </figcaption>
-                        </figure>
-                        <!--div class="post-header">
-                                                    <div class="post-category text-line">
-                                                        <a href="#" class="hover" rel="category">Başarılar</a>
-                                                    </div>
-                                                    <h2 class="post-title h3 mt-1 mb-3"><a class="link-dark" href="{{ route('attraction4') }}">13. Gelişim Girişim Günleri</a></h2>
-                                                </div-->
-                        <div class="post-footer">
-                            <ul class="post-meta">
-                                <li class="post-date"><i class="uil uil-calendar-alt"></i><span>7 Haziran 2021</span>
-                                </li>
-                                <li class="post-comments"><a href="#"><i class="uil uil-comment"></i>2</a></li>
-                            </ul>
-                            <!-- /.post-meta -->
-                        </div>
-                        <!-- /.post-footer -->
-                    </article>
-                    <!-- /article -->
-                </div>
-                <!-- /.item -->
-                <div class="item">
-                    <article>
-                        <figure class="overlay overlay-1 hover-scale rounded mb-5"><a href="{{ route('attraction5') }}">
-                                <img src="site/images/homepage/11.jfif" alt="" /></a>
-                            <figcaption>
-                                <h5 class="from-top mb-0">Mühendislikte Topuk Sesleri '22</h5>
-                            </figcaption>
-                        </figure>
-                        <!--div class="post-header">
-                                                    <div class="post-category text-line">
-                                                        <a href="#" class="hover" rel="category">Başarılar</a>
-                                                    </div>
-                                                    <h2 class="post-title h3 mt-1 mb-3"><a class="link-dark" href="{{ route('attraction5') }}">Mühendislikte Topuk Sesleri '22</a></h2>
-                                                </div-->
-                        <div class="post-footer">
-                            <ul class="post-meta">
-                                <li class="post-date"><i class="uil uil-calendar-alt"></i><span>7 Haziran 2021</span>
-                                </li>
-                                <li class="post-comments"><a href="#"><i class="uil uil-comment"></i>2</a></li>
-                            </ul>
-                            <!-- /.post-meta -->
-                        </div>
-                        <!-- /.post-footer -->
-                    </article>
-                    <!-- /article -->
-                </div>
-                <!-- /.item -->
+                @endforeach
+               
+               
             </div>
             <!-- /.owl-carousel -->
         </div>

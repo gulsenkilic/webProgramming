@@ -29,14 +29,17 @@ class AdminController extends Controller
     }
     public function loginProcess(Request $request)
     {
+      
         if (Auth::attempt(['userName' => $request->userName, 'password' => $request->password, 'status' => 'active'])) {
             $userRow = User::where('userName', '=', $request->userName)->first();
-            //dd($userRow);
-            if ($userRow->userType == 'Admin' || $userRow->userType == 'SuperAdmin' || $userRow->userType == 'GuideAdmin') {
+
+          
+            if ($userRow->userType == 'admin' || $userRow->userType == 'superAdmin') {
                 User::where('userName', '=', $request->userName)->update([
                     'lastLoginDate' =>  new DateTime(),
                     'lastLoginIP' => $request->ip()
                 ]);
+
                 return redirect()->route('adminDashboardPage');
             }
         } else {

@@ -16,46 +16,34 @@ class PagesController extends Controller{
     public function index(){
         $haberler =  Haber::where('konum','=','ana_sayfa')->get();
         $duyurular =  Duyurular::where('konum','=','ana_sayfa')->get();
+        $etkinlikler =  Etkinlik::where('konum','=','ana_sayfa')->get();
+
         $data=[
             'haberler'=>$haberler,
-            'duyurular'=>$duyurular
+            'duyurular'=>$duyurular,
+            'etkinlikler'=>$etkinlikler
+
         ];
        
         return view('site.home',$data);
     }
     public function haberDetay($slug){
-        
+
         $haber =  Haber::where('slug','=',$slug)->first();
         return view('site.news.news1',['haber'=>$haber]);
        
     }
-    public function news1(){
-        return view('site.news.news1');
+    public function duyuruDetay($slug){
+
+        $duyuru =  Duyurular::where('slug','=',$slug)->first();
+        return view('site.notices.notice1',['duyuru'=>$duyuru]);
+       
     }
-    public function news2(){
-        return view('site.news.news2');
-    }
-    public function news3(){
-        return view('site.news.news3');
-    }
-    public function news4(){
-        return view('site.news.news4');
-    }
-   
-    public function notice1(){
-        return view('site.notices.notice1');
-    }
-    public function notice2(){
-        return view('site.notices.notice2');
-    }
-    public function notice3(){
-        return view('site.notices.notice3');
-    }
-    public function notice4(){
-        return view('site.notices.notice4');
-    }
-    public function notice5(){
-        return view('site.notices.notice5');
+    public function etkinlikDetay($slug){
+
+        $etkinlik =  Etkinlik::where('slug','=',$slug)->first();
+        return view('site.attractions.attraction1',['etkinlik'=>$etkinlik]);
+       
     }
     
     public function attraction1(){
@@ -73,6 +61,7 @@ class PagesController extends Controller{
     public function attraction5(){
         return view('site.attractions.attraction5');
     }
+
     public function about(){
         return view('site.about.aboutPage');
     }
@@ -80,7 +69,10 @@ class PagesController extends Controller{
         return view('site.about.vizyon-misyon');
     }
     public function about3(){
-        return view('site.about.administration');
+
+        $personeller = AkademikKadro::where('konum','=','ana_sayfa')->get();
+        return view('site.about.administration',['personeller'=>$personeller]);
+
     }
     public function prospectiveSt(){
         return view('site.student.prospective');
@@ -108,27 +100,21 @@ class PagesController extends Controller{
         
     }
      public function yabanci(){
-        return view('site.okullar.yabanci-diller.yabanci');
+
+        $haberler =  Haber::where('konum','=','yabanci_diller')->get();
+    
+        $data=[
+            'haberler'=>$haberler
+           
+        ];
+        return view('site.okullar.yabanci-diller.yabanci',$data);
         
     }
-    public function yabanciNew1(){
-        return view('site.okullar.yabanci-diller.news.yabanciNew1');
-        
-    }
-    public function yabanciNew2(){
-        return view('site.okullar.yabanci-diller.news.yabanciNew2');
-        
-    }
-    public function yabanciNew3(){
-        return view('site.okullar.yabanci-diller.news.yabanciNew3');
-        
-    }
-    public function yabanciNew4(){
-        return view('site.okullar.yabanci-diller.news.yabanciNew4');
-        
-    }
+   
     public function yabanciAkademik(){
-        return view('site.okullar.yabanci-diller.akademik');
+
+        $personeller = AkademikKadro::where('konum','=','yabanci_diller')->get();
+        return view('site.okullar.yabanci-diller.akademik',['personeller'=>$personeller]);
         
     }
     public function yabanciAbout(){
@@ -136,43 +122,38 @@ class PagesController extends Controller{
         
     }
     public function yabanciDuyurular(){
-        return view('site.okullar.yabanci-diller.duyurular');
+        $duyurular =  Duyurular::where('konum','=','yabanci_diller')->get();
+    
+        $data=[
+            'duyurular'=>$duyurular
+           
+        ];
+        return view('site.okullar.yabanci-diller.duyurular',$data);
         
     }
-    public function yabanciDuyurular1(){
-        return view('site.okullar.yabanci-diller.duyurular.duyuru1');
-        
-    }
-    public function yabanciDuyurular2(){
-        return view('site.okullar.yabanci-diller.duyurular.duyuru2');
-        
-    }
-    public function yabanciDuyurular3(){
-        return view('site.okullar.yabanci-diller.duyurular.duyuru3');
-        
-    }
+    
     public function yabanciOgrenci(){
         return view('site.okullar.yabanci-diller.ogrenci');
         
     }
     public function muh(){
-        return view('site.fakulteler.muh.muh');
+        $haberler =  Haber::where('konum','=','muhendislik_fak')->get();
+    
+        $data=[
+            'haberler'=>$haberler
+           
+        ];
+        return view('site.fakulteler.muh.muh',$data);
         
     }
-    public function muhNew1(){
-        return view('site.fakulteler.muh.news.news1');
-        
-    }
-    public function muhNew2(){
-        return view('site.fakulteler.muh.news.news2');
-        
-    }
+   
     public function muhAbout(){
         return view('site.fakulteler.muh.about');
         
     }
     public function muhKadro(){
-        return view('site.fakulteler.muh.kadro');
+        $personeller = AkademikKadro::where('konum','=','muhendislik_fak')->get();
+        return view('site.fakulteler.muh.kadro',['personeller'=>$personeller]);
         
     }
     public function muhBolumler(){
@@ -180,61 +161,40 @@ class PagesController extends Controller{
         
     }
     public function muhDuyuru(){
-        return view('site.fakulteler.muh.duyurular');
+        $duyurular =  Duyurular::where('konum','=','muhendislik_fak')->get();
+    
+        $data=[
+            'duyurular'=>$duyurular
+        ];
+        return view('site.fakulteler.muh.duyurular',$data);
         
     }
-    public function muhDuyurular1(){
-        return view('site.fakulteler.muh.duyurular.duyuru1');
-        
-    }
-    public function muhDuyurular2(){
-        return view('site.fakulteler.muh.duyurular.duyuru2');
-        
-    }
-    public function muhDuyurular3(){
-        return view('site.fakulteler.muh.duyurular.duyuru3');
-        
-    }
+    
     public function bilgisayar(){
-        return view('site.fakulteler.muh.bolumler.bil.bil');
+        $haberler =  Haber::where('konum','=','bilgisayar_muh')->get();
+    
+        $data=[
+            'haberler'=>$haberler
+           
+        ];
+        return view('site.fakulteler.muh.bolumler.bil.bil',$data);
         
     }
-    public function bilgisayarNew1(){
-        return view('site.fakulteler.muh.bolumler.bil.news.news1');
-        
-    }
-    public function bilgisayarNew2(){
-        return view('site.fakulteler.muh.bolumler.bil.news.news2');
-        
-    }
-    public function bilgisayarNew3(){
-        return view('site.fakulteler.muh.bolumler.bil.news.news3');
-        
-    }
+    
     public function bilgisayarKadro(){
-        return view('site.fakulteler.muh.bolumler.bil.akademik');
-        
+        $personeller = AkademikKadro::where('konum','=','bilgisayar_muh')->get();
+        return view('site.fakulteler.muh.bolumler.bil.akademik',['personeller'=>$personeller]);
     }
     public function bilgisayarDuyuru(){
-        return view('site.fakulteler.muh.bolumler.bil.duyurular');
+        $duyurular =  Duyurular::where('konum','=','bilgisayar_muh')->get();
+    
+        $data=[
+            'duyurular'=>$duyurular
+        ];
+        return view('site.fakulteler.muh.bolumler.bil.duyurular',$data);
         
     }
-    public function bilDuyurular1(){
-        return view('site.fakulteler.muh.bolumler.bil.duyurular.duyuru1');
-        
-    }
-    public function bilDuyurular2(){
-        return view('site.fakulteler.muh.bolumler.bil.duyurular.duyuru2');
-        
-    }
-    public function bilDuyurular3(){
-        return view('site.fakulteler.muh.bolumler.bil.duyurular.duyuru3');
-        
-    }
-    public function bililetisim(){
-        return view('site.fakulteler.muh.bolumler.bil.iletisim');
-        
-    }
+   
     public function iletisim(){
         return view('site.other.iletisim');
         
